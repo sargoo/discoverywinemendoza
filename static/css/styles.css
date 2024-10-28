@@ -1,0 +1,290 @@
+:root {
+  --bg-color: #FFFFFF; /* Fondo blanco para modo claro */
+  --text-color: #202124; /* Texto negro para modo claro */
+  
+}
+/*----------------------------------------------------------- RESETEAR VALORES---------------------------------------------- */
+
+* {
+margin: 0;
+padding: 0; 
+box-sizing: border-box;
+}
+/*----------------------------------------------------------- TIPOGRAFIAS---------------------------------------------- */
+
+.montserrat-uniquifier {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: bold;
+font-style: normal;
+}
+
+#montserrat-uniquifier{
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+/*----------------------------------------------------------- BODY---------------------------------------------- */
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+transition: background-color 0.3s ease, color 0.3s ease;
+font-size: 16px;
+}
+
+/*----------------------------------------------------------- HEADER ---------------------------------------------- */
+
+header {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+header h2 {
+font-size: 2.5rem;
+margin-bottom: 0.2em;
+word-wrap: break-word;
+overflow-wrap: break-word;
+hyphens: auto;
+}
+
+.header-content {
+text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+#background-img {
+display: flex;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.brand h2 {
+font-size: clamp(1.5rem, 5vw, 3rem);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand-word {
+display: inline-block;
+margin: 0.2em;
+}
+
+.brand .mendoza {
+margin-right: clamp(0.2em, 1vw, 0.5em);
+}
+
+.brand .real {
+color: #be0048;
+  margin-left: clamp(0.2em, 1vw, 0.5em);
+  margin-right: clamp(0.2em, 1vw, 0.5em);
+}
+
+.brand .experience {
+margin-left: clamp(0.2em, 1vw, 0.5em);
+}
+
+.brand h2 {
+  font-size: 3vw;
+  white-space: nowrap;
+}
+
+.brand-word {
+  display: inline-block;
+}
+
+/*----------------------------------------------------------- H1, H2, H3, ETC ---------------------------------------------- */
+
+h1 {
+display: flex;
+justify-content: center;
+text-align: center;
+margin-top: 1.5rem;
+font-size: 1.8rem;
+}
+
+h2 {
+display: flex;
+justify-content: center;
+text-align: center;
+margin-top: 1.5rem;
+font-size: 1.8rem;
+}
+
+/*----------------------------------------------------------- SECTION TOURS---------------------------------------------- */
+
+.tours {
+width: 90%;
+max-width: 1100px;
+margin: 40px auto;
+display: grid;
+grid-template-columns: repeat(4, minmax(280px, 1fr));
+gap: 1rem;
+padding: 1rem;
+}
+
+.tours > div {
+position: relative;
+overflow: hidden;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tours img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.tours p {
+position: absolute;
+bottom: 0;
+left: 0;
+margin: 0;
+padding: 0.5rem 1rem;
+color: white;
+width: 100%;
+font-size: 1.5rem;
+}
+
+/*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
+
+@media (max-width: 1200px) {
+.tours {
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+}
+}
+
+@media (max-width: 900px) {
+.tours {
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+}
+
+@media (max-width: 600px) {
+.tours {
+  grid-template-columns: 1fr;
+}
+}
+
+@media screen and (max-width: 768px) {
+body {
+    font-size: 14px;
+}
+
+.brand h2 {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+}
+
+.brand .mendoza { margin-right: 0.4em; }
+.brand .real { margin-left: 0.4em; margin-right: 0.4em; }
+.brand .experience { margin-left: 0.4em; }
+
+
+header h2 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+.tours {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
+
+@media screen and (max-width: 480px) {
+body {
+    font-size: 12px;
+}
+
+.brand h2 {
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.brand-word {
+  margin: 0.1em;
+}
+
+header h2 {
+    font-size: 1.8rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.tours {
+  grid-template-columns: 1fr;
+}
+
+}
+
+@media screen and (max-width: 412px) {
+header h2 {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+}
+
+@media screen and (max-height: 915px) and (max-width: 412px) {
+header {
+    height: auto;
+    min-height: 100vh;
+}
+
+.header-content {
+    padding: 2rem 1rem;
+}
+
+header h2 {
+    font-size: 1.4rem;
+}
+}
+
+@media screen and (max-width: 320px) {
+header {
+    height: auto;
+    min-height: 100vh;
+}
+
+.brand h2 {
+    flex-direction: column;
+}
+
+.brand-word {
+    margin: 0.1em 0;
+}
+}
