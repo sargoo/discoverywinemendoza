@@ -19,12 +19,6 @@ font-weight: bold;
 font-style: normal;
 }
 
-#montserrat-uniquifier{
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-}
 /*----------------------------------------------------------- BODY---------------------------------------------- */
 
 body {
@@ -34,6 +28,16 @@ transition: background-color 0.3s ease, color 0.3s ease;
 font-size: 16px;
 }
 
+/* Estilos del contenedor del menú */
+.brand-logo{
+  display: flex;
+  width: 5rem;
+  margin: 8rem 8 rem;
+}
+
+.nav-item {
+  padding-right: 1rem;
+}
 /*----------------------------------------------------------- HEADER ---------------------------------------------- */
 
 header {
@@ -287,4 +291,36 @@ header {
 .brand-word {
     margin: 0.1em 0;
 }
+}
+
+@media (max-width: 768px) {
+  /* Oculta el menú de navegación en pantallas pequeñas */
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Debajo del navbar */
+      right: 20px;
+      background-color: #fff;
+      width: 150px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Mostrar el menú cuando esté activo */
+  .navbar-menu.active {
+      display: flex;
+  }
+
+  /* Muestra el icono de hamburguesa en pantallas pequeñas */
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      right: 20px;
+  }
+
+  /* Espacio entre los elementos del menú en vista hamburguesa */
+  .navbar-menu li {
+      margin: 10px 0;
+  }
 }
