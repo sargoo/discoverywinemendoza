@@ -27,7 +27,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/tours.html">Tours</a>
+                <a class="nav-link" href="#tours">Tours</a>
               </li>
               <li class="nav-item ms-auto">
                 <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
@@ -63,77 +63,125 @@
 
     <h1 class="montserrat-uniquifier">Conoce lo mejor de Mendoza: VINO, BODEGAS, MONTAÑAS, EXCURSIONES.</h1>
     <h2 class="montserrat-uniquifier">Descubrí las experiencias únicas que ofrecemos en Mendoza</h2>
-    <div class="tours">
-        <div>
-            <img src="/static/img/01_tour_maipu.jpg" alt="">
-            <p class="montserrat-uniquifier">Tour de Bodegas Maipú</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="/templates/maipu.html">
+            <div class="card">
+              <img src="/static/img/01_tour_maipu.jpg" class="card-img-top" alt="Tour de Bodegas Maipú">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour de Bodegas Maipú</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/02_tour_valle_de_uco.jpg" alt="">
-            <p class="montserrat-uniquifier">Tour Bodegas Valle de Uco</p>
+        <div class="col-md-3">
+          <a href="/templates/valle_de_uco.html">
+            <div class="card">
+              <img src="/static/img/02_tour_valle_de_uco.jpg" class="card-img-top" alt="Tour Bodegas Valle de Uco">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour Bodegas Valle de Uco</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/03_tour_lujan_cuyo.jpg" alt="">
-            <p class="montserrat-uniquifier">Tour Bodegas Lujan de Cuyo</p>
+        <div class="col-md-3">
+          <a href="/templates/lujan_de_cuyo.html">
+            <div class="card">
+              <img src="/static/img/03_tour_lujan_cuyo.jpg" class="card-img-top" alt="Tour Bodegas Lujan de Cuyo">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour Bodegas Lujan de Cuyo</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/04_tour_city.jpg" alt="">
-            <p class="montserrat-uniquifier">City Tour</p>
+        <div class="col-md-3">
+          <a href="/templates/city_tour.html">
+            <div class="card">
+              <img src="/static/img/04_tour_city.jpg" class="card-img-top" alt="City Tour">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">City Tour</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/05_tour_alta_montana.jpg" alt="">
-            <p class="montserrat-uniquifier">Tour Alta Montaña</p>
+        <div class="col-md-3">
+          <a href="/templates/alta_montana.html">
+            <div class="card">
+              <img src="/static/img/05_tour_alta_montana.jpg" class="card-img-top" alt="Tour Alta Montaña">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour Alta Montaña</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/06_tour_4x4_exp.jpg" alt="">
-            <p class="montserrat-uniquifier">Tour 4x4</p>
+        <div class="col-md-3">
+          <a href="/templates/4x4_experience.html">
+            <div class="card">
+              <img src="/static/img/06_tour_4x4_exp.jpg" class="card-img-top" alt="Tour 4x4">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour 4x4</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/07_cooking_class.jpg" alt="">
-            <p class="montserrat-uniquifier">Cooking Class</p>
+        <div class="col-md-3">
+          <a href="/templates/cooking_class.html">
+            <div class="card">
+              <img src="/static/img/07_cooking_class.jpg" class="card-img-top" alt="Cooking Class">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Cooking Class</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <div>
-            <img src="/static/img/08_blending_exp.jpg" alt="">
-            <p class="montserrat-uniquifier">Blending Experience</p>
+        <div class="col-md-3">
+          <a href="/templates/blending_experience.html">
+            <div class="card">
+              <img src="/static/img/08_blending_exp.jpg" class="card-img-top" alt="Blending Experience">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Blending Experience</h5>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
     </div>
-    <div class="row m-6 flex-wrap">
+    <div class="row m-6 flex-wrap justify-content-center">
       <h2 class="montserrat-uniquifier">Nuestros vehiculos</h2>
-        <div class="col-lg-2 mb-4 text-center">
-          <img class="w-100 mb-4 img-fluid" src="/static/img/01_hiace.png" alt="">
-          <p class="montserrat-uniquifier text-nowrap">TOYOTA HIACE</p>
-          <p>15 pasajeros</p>
-        </div>
-        <div class="col-lg-2 mb-4 text-center">
-          <img class="w-100 mb-4 img-fluid" src="/static/img/02_hilux.png" alt="">
-          <p class="montserrat-uniquifier text-nowrap">TOYOTA HILUX</p>
-          <p>4 pasajeros</p>
-        </div>
-        <div class="col-lg-2 mb-4 text-center">
-          <img class="w-100 mb-4 img-fluid" src="/static/img/03_transit.png" alt="">
-          <p class="montserrat-uniquifier text-nowrap">FORD TRANSIT</p>
-          <p>17 pasajeros</p>
-        </div>
-        <div class="col-lg-2 mb-4 text-center">
-          <img class="w-100 mb-4 img-fluid" src="/static/img/04_corolla.png" alt="">
-          <p class="montserrat-uniquifier text-nowrap">TOYOTA COROLLA</p>
-          <p>4 pasajeros</p>
-        </div>
-        <div class="col-lg-2 mb-4 text-center">
-          <img class="w-100 mb-4 img-fluid" src="/static/img/05_etios.png" alt="">
-          <p class="montserrat-uniquifier text-nowrap">TOYOTA ETIOS</p>
-          <p>4 pasajeros</p>
-        </div>
-        <div class="col-lg-2 mb-4 text-center">
-          <img class="w-100 mb-4 img-fluid" src="/static/img/06_sprinter.png" alt="">
-          <p class="montserrat-uniquifier text-nowrap">MERCEDES 
-            SPRINTER
-          </p>
-          <p>15 pasajeros</p>
-        </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+        <img class="mw-100 mb-4 img-fluid" src="/static/img/01_hiace.png" alt="">
+        <p class="montserrat-uniquifier text-nowrap">TOYOTA HIACE</p>
+        <p>15 pasajeros</p>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+        <img class="mw-100 mb-4 img-fluid" src="/static/img/02_hilux.png" alt="">
+        <p class="montserrat-uniquifier text-nowrap">TOYOTA HILUX</p>
+        <p>4 pasajeros</p>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+        <img class="mw-100 mb-4 img-fluid" src="/static/img/03_transit.png" alt="">
+        <p class="montserrat-uniquifier text-nowrap">FORD TRANSIT</p>
+        <p>17 pasajeros</p>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+        <img class="mw-100 mb-4 img-fluid" src="/static/img/04_corolla.png" alt="">
+        <p class="montserrat-uniquifier text-nowrap">TOYOTA COROLLA</p>
+        <p>4 pasajeros</p>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+        <img class="mw-100 mb-4 img-fluid" src="/static/img/05_etios.png" alt="">
+        <p class="montserrat-uniquifier text-nowrap">TOYOTA ETIOS</p>
+        <p>4 pasajeros</p>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+        <img class="mw-100 mb-4 img-fluid" src="/static/img/06_sprinter.png" alt="">
+        <p class="montserrat-uniquifier text-nowrap">MERCEDES 
+          SPRINTER
+        </p>
+        <p>15 pasajeros</p>
+      </div>
     </div>
-    <!-- menu hamburguesa -->
-     <script src="/js/menu.js"></script>
     <!-- tripadivsor -->
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-c961e7b8-727c-474d-9e83-70c107fa4a36" id="montserrat-uniquifier" data-elfsight-app-lazy>
