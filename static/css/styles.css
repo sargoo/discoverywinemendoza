@@ -155,13 +155,70 @@ font-size: 1.8rem;
   padding: 10px;
 }
 
+
+/*----------------------------------------------------------- HOJAS DE TOURS---------------------------------------------- */
+
+/* Imagen de la marca de agua */
+.watermark {
+  position: absolute;
+  top: 80%; /* Ajusta la posición vertical */
+  left: 10%; /* Ajusta la posición horizontal */
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  width: 10%;
+  z-index: 1; /* Asegura que la marca de agua esté por encima del fondo */
+}
+
+/* Contenedor del texto */
+.position-absolute {
+  z-index: 1;
+  top: 80%; /* Ajusta la posición vertical del texto */
+  left: 15%; /* Ajusta la posición horizontal del texto */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Permite que el texto se ajuste si es necesario */
+}
+
+/* Espacio entre la imagen y el texto */
+.ms-3 {
+  margin-left: 15px;
+}
+
 /*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
 
+
+/*----------------------------------------------------------- 1200PX---------------------------------------------- */
 @media (max-width: 1200px) {
 .tours {
   grid-template-columns: repeat(3, minmax(280px, 1fr));
 }
+
+.watermark {
+  width: 10%;
+  top: 80%;
+  left: 10%;
 }
+
+.position-absolute {
+  top: 80%;
+  left: 15%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-white h5 {
+  font-size: 1.6rem;
+}
+
+.text-white p {
+  font-size: 1.2rem;
+}
+
+}
+
+/*----------------------------------------------------------- 900PX---------------------------------------------- */
+
 
 @media (max-width: 900px) {
 .tours {
@@ -169,11 +226,17 @@ font-size: 1.8rem;
 }
 }
 
+/*----------------------------------------------------------- 600PX---------------------------------------------- */
+
+
 @media (max-width: 600px) {
 .tours {
   grid-template-columns: 1fr;
 }
 }
+
+/*----------------------------------------------------------- 768PX---------------------------------------------- */
+
 
 @media screen and (max-width: 768px) {
 body {
@@ -203,7 +266,33 @@ h2 {
 .tours {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+.watermark {
+  width: 15%; /* Ajusta el tamaño de la marca de agua */
+  top: 75%; /* Ajusta la posición vertical */
+  left: 7%; /* Ajusta la posición horizontal */
 }
+
+.position-absolute {
+  top: 75%; /* Ajusta la posición del texto */
+  left: 12%; /* Ajusta la posición horizontal */
+  flex-direction: row; /* Mantiene la alineación en fila */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ms-3 {
+  margin-left: 15px;
+}
+
+.text-white h5 {
+  font-size: 1.4rem;
+}
+
+.text-white p {
+  font-size: 1.1rem;
+}
+}
+/*----------------------------------------------------------- 480PX---------------------------------------------- */
 
 @media screen and (max-width: 480px) {
 body {
@@ -234,7 +323,23 @@ h2 {
   grid-template-columns: 1fr;
 }
 
+.watermark-container {
+  top: 90%; /* Más abajo en móviles*/ 
+  left: 20%; /* Más centrado*/
+  flex-direction: column; /* Imagen arriba, texto abajo*/
+  align-items: center; /* Centrar elementos */
 }
+.watermark {
+  width: 20%; /* Imagen más grande en móviles */
+  margin-bottom: 10px; /* Espaciado entre imagen y texto*/
+}
+.text-start {
+  text-align: center; /* Centrar texto en móviles */
+}
+}
+
+/*----------------------------------------------------------- 412PX---------------------------------------------- */
+
 
 @media screen and (max-width: 412px) {
 header h2 {
@@ -248,9 +353,25 @@ h1 {
 h2 {
     font-size: 1.2rem;
 }
+
+.watermark-container {
+  top: 90%; /* Más abajo en móviles */ 
+  left: 20%; /* Más centrado */
+  flex-direction: column; /* Imagen arriba, texto abajo*/
+  align-items: center; /* Centrar elementos */
+}
+.watermark {
+  width: 20%; /* Imagen más grande en móviles */
+  margin-bottom: 10px; /* Espaciado entre imagen y texto */
+}
+.text-start {
+  text-align: center; /* Centrar texto en móviles */
+}
 }
 
-@media screen and (max-height: 915px) and (max-width: 412px) {
+/*----------------------------------------------------------- 915PX Y 412PX---------------------------------------------- */
+
+@media screen and (max-height: 915px) and (max-width: 412px) { 
 header {
     height: auto;
     min-height: 100vh;
@@ -263,7 +384,34 @@ header {
 header h2 {
     font-size: 1.4rem;
 }
+
+.watermark {
+  width: 20%; /* Aumenta el tamaño de la marca de agua en pantallas pequeñas */
+  top: 75%; /* Ajusta la posición vertical */
+  left: 5%; /* Ajusta la posición horizontal */
 }
+
+.position-absolute {
+  top: 70%; /* Ajusta la posición vertical del texto */
+  left: 10%; /* Ajusta la posición horizontal del texto */
+  flex-direction: column; /* Cambia la alineación a columna en pantallas pequeñas */
+  align-items: flex-start; /* Alinea el texto al inicio */
+}
+
+.ms-3 {
+  margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+  margin-top: 10px; /* Agrega espacio entre la imagen y el texto */
+}
+
+.text-white h5 {
+  font-size: 1.2rem; /* Reduce el tamaño del texto */
+}
+
+.text-white p {
+  font-size: 1rem; /* Reduce el tamaño del texto */
+}
+
+} 
 
 @media screen and (max-width: 320px) {
 header {
@@ -278,8 +426,25 @@ header {
 .brand-word {
     margin: 0.1em 0;
 }
+
+.watermark-container {
+  top: 90%; /* Más abajo en móviles*/
+  left: 20%; /* Más centrado */
+  flex-direction: column; /* Imagen arriba, texto abajo*/
+  align-items: center; /* Centrar elementos */
+}
+.watermark {
+  width: 20%; /* Imagen más grande en móviles*/
+  margin-bottom: 10px; /* Espaciado entre imagen y texto*/ 
+}
+.text-start {
+  text-align: center; /* Centrar texto en móviles */
 }
 
+}
+
+
+/*----------------------------------------------------------- 768PX---------------------------------------------- */
 @media (max-width: 768px) {
   /* Oculta el menú de navegación en pantallas pequeñas */
   .navbar-menu {
@@ -321,4 +486,63 @@ header {
     margin: 0; /* Reduce el margin horizontal a 10px */
   }
 
+  .watermark {
+    width: 15%; /* Ajusta el tamaño de la marca de agua */
+    top: 75%; /* Ajusta la posición vertical */
+    left: 7%; /* Ajusta la posición horizontal */
+  }
+
+  .position-absolute {
+    top: 75%; /* Ajusta la posición del texto */
+    left: 12%; /* Ajusta la posición horizontal */
+    flex-direction: row; /* Mantiene la alineación en fila */
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .ms-3 {
+    margin-left: 15px;
+  }
+
+  .text-white h5 {
+    font-size: 1.4rem;
+  }
+
+  .text-white p {
+    font-size: 1.1rem;
+  }
+}
+
+/*----------------------------------------------------------- 576PX---------------------------------------------- */
+
+@media (max-width: 576px) {
+  .watermark {
+    width: 20%; /* Aumenta el tamaño de la marca de agua */
+    top: 70%; /* Ajusta la posición vertical */
+    left: 15%; /* Centra la marca de agua horizontalmente */
+    transform: translateX(-50%); /* Asegura el centrado */
+  }
+
+  .position-absolute {
+    width: 100%;
+    top: 75%; /* Ajusta la posición vertical del texto */
+    left: 15%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Asegura el centrado */
+    flex-direction:row; /* Coloca el texto abajo de la marca de agua */
+    align-items:end; /* Centra el texto */
+    justify-content: center;
+  }
+
+  .ms-3 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .text-white h5 {
+    font-size: 1.2rem;
+  }
+
+  .text-white p {
+    font-size: 1rem;
+  }
 }
