@@ -19,6 +19,13 @@ font-weight: bold;
 font-style: normal;
 }
 
+.montserrat-uniquifier2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:lighter;
+  font-style: normal;
+}
+
 /*----------------------------------------------------------- BODY---------------------------------------------- */
 
 body {
@@ -129,6 +136,25 @@ justify-content: center;
 text-align: center;
 margin-top: 1.5rem;
 font-size: 1.8rem;
+}
+
+h4{
+  background-color: #be0048;
+  text-align: center;
+}
+.span-subtitle{
+  color: #fff;
+}
+
+span{
+  color: #fff;
+}
+
+/*----------------------------------------------------------- IMAGES---------------------------------------------- */
+
+.dw-icons {
+  width: 10%;
+  height: 50%;
 }
 
 /*----------------------------------------------------------- SECTION TOURS---------------------------------------------- */

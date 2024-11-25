@@ -1,199 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
-        <div class="container-fluid ">
-            <a href="/index.html">
-                <img class="navbar-brand brand-logo" src="/static/img/logo.png" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
+    <div class="container-fluid ">
+      <a href="/index.html">
+        <img class="navbar-brand brand-logo" src="/static/img/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent-index" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-index">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/tours.html">Tours</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
+              Nosotros
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-index" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-index">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/tours.html">Tours</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
-                  Nosotros
-                </a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/blogs.html">Blogs</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/faq.html">FAQ</a>
-              </li>
-            </ul>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <img src="/static/img/header_intro.jpg" id="background-img"
+      alt="grupo de personas disfrutando del tour de bodegas en Mendoza">
+    <div class="header-content">
+      <div class="brand">
+        <h2 class="montserrat-uniquifier">
+          <span class="brand-word mendoza">MENDOZA</span>
+          <span class="brand-word real">REAL</span>
+          <span class="brand-word experience">EXPERIENCE</span>
+        </h2>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="montserrat-uniquifier">Conoce lo mejor de Mendoza: VINO, BODEGAS, MONTAÑAS, EXCURSIONES.</h1>
+  <h2 class="montserrat-uniquifier">Descubrí las experiencias únicas que ofrecemos en Mendoza</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="/templates/maipu.html">
+          <div class="card">
+            <img src="/static/img/01_tour_maipu.jpg" class="card-img-top" alt="Tour de Bodegas Maipú">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Tour de Bodegas Maipú</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/valle_de_uco.html">
+          <div class="card">
+            <img src="/static/img/02_tour_valle_de_uco.jpg" class="card-img-top" alt="Tour Bodegas Valle de Uco">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Tour Bodegas Valle de Uco</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/lujan_de_cuyo.html">
+          <div class="card">
+            <img src="/static/img/03_tour_lujan_cuyo.jpg" class="card-img-top" alt="Tour Bodegas Lujan de Cuyo">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Tour Bodegas Lujan de Cuyo</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/city_tour.html">
+          <div class="card">
+            <img src="/static/img/04_tour_city.jpg" class="card-img-top" alt="City Tour">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">City Tour</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/alta_montana.html">
+          <div class="card">
+            <img src="/static/img/05_tour_alta_montana.jpg" class="card-img-top" alt="Tour Alta Montaña">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Tour Alta Montaña</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/4x4_experience.html">
+          <div class="card">
+            <img src="/static/img/06_tour_4x4_exp.jpg" class="card-img-top" alt="Tour 4x4">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Tour 4x4</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/cooking_class.html">
+          <div class="card">
+            <img src="/static/img/07_cooking_class.jpg" class="card-img-top" alt="Cooking Class">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Cooking Class</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/templates/blending_experience.html">
+          <div class="card">
+            <img src="/static/img/08_blending_exp.jpg" class="card-img-top" alt="Blending Experience">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Blending Experience</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row m-6 flex-wrap justify-content-center">
+    <h2 class="montserrat-uniquifier">Nuestros vehiculos</h2>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+      <img class="mw-100 mb-4 img-fluid" src="/static/img/01_hiace.png" alt="">
+      <p class="montserrat-uniquifier text-nowrap">TOYOTA HIACE</p>
+      <p>15 pasajeros</p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+      <img class="mw-100 mb-4 img-fluid" src="/static/img/02_hilux.png" alt="">
+      <p class="montserrat-uniquifier text-nowrap">TOYOTA HILUX</p>
+      <p>4 pasajeros</p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+      <img class="mw-100 mb-4 img-fluid" src="/static/img/03_transit.png" alt="">
+      <p class="montserrat-uniquifier text-nowrap">FORD TRANSIT</p>
+      <p>17 pasajeros</p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+      <img class="mw-100 mb-4 img-fluid" src="/static/img/04_corolla.png" alt="">
+      <p class="montserrat-uniquifier text-nowrap">TOYOTA COROLLA</p>
+      <p>4 pasajeros</p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+      <img class="mw-100 mb-4 img-fluid" src="/static/img/05_etios.png" alt="">
+      <p class="montserrat-uniquifier text-nowrap">TOYOTA ETIOS</p>
+      <p>4 pasajeros</p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
+      <img class="mw-100 mb-4 img-fluid" src="/static/img/06_sprinter.png" alt="">
+      <p class="montserrat-uniquifier text-nowrap">MERCEDES
+        SPRINTER
+      </p>
+      <p>15 pasajeros</p>
+    </div>
+  </div>
+  <div>
+    <h4>
+      <span class="span-subtitle montserrat-uniquifier2">
+        DISCOVERY WINE
+      </span>
+      <span class="montserrat-uniquifier text-nowrap">
+        TRAVEL EXPERIENCE
+      </span>
+    </h4>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/01-pequenos-grupos.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">grupos pequeños</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Realmente lo decimos en serio: de 8 a 12 invitados en salidas grupales programadas.</small></p>
+            </div>
           </div>
         </div>
-      </nav>
-    <header>
-        <img src="/static/img/header_intro.jpg" id="background-img"
-            alt="grupo de personas disfrutando del tour de bodegas en Mendoza">
-        <div class="header-content">
-            <div class="brand">
-                <h2 class="montserrat-uniquifier">
-                    <span class="brand-word mendoza">MENDOZA</span>
-                    <span class="brand-word real">REAL</span>
-                    <span class="brand-word experience">EXPERIENCE</span>
-                </h2>
+      </div>
+    </div>    
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/02-itinerario-original.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">grupos pequeños</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Realmente lo decimos en serio: de 8 a 12 invitados en salidas grupales programadas.</small></p>
             </div>
-        </div>
-    </header>
-
-    <h1 class="montserrat-uniquifier">Conoce lo mejor de Mendoza: VINO, BODEGAS, MONTAÑAS, EXCURSIONES.</h1>
-    <h2 class="montserrat-uniquifier">Descubrí las experiencias únicas que ofrecemos en Mendoza</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <a href="/templates/maipu.html">
-            <div class="card">
-              <img src="/static/img/01_tour_maipu.jpg" class="card-img-top" alt="Tour de Bodegas Maipú">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Tour de Bodegas Maipú</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/valle_de_uco.html">
-            <div class="card">
-              <img src="/static/img/02_tour_valle_de_uco.jpg" class="card-img-top" alt="Tour Bodegas Valle de Uco">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Tour Bodegas Valle de Uco</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/lujan_de_cuyo.html">
-            <div class="card">
-              <img src="/static/img/03_tour_lujan_cuyo.jpg" class="card-img-top" alt="Tour Bodegas Lujan de Cuyo">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Tour Bodegas Lujan de Cuyo</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/city_tour.html">
-            <div class="card">
-              <img src="/static/img/04_tour_city.jpg" class="card-img-top" alt="City Tour">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">City Tour</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/alta_montana.html">
-            <div class="card">
-              <img src="/static/img/05_tour_alta_montana.jpg" class="card-img-top" alt="Tour Alta Montaña">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Tour Alta Montaña</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/4x4_experience.html">
-            <div class="card">
-              <img src="/static/img/06_tour_4x4_exp.jpg" class="card-img-top" alt="Tour 4x4">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Tour 4x4</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/cooking_class.html">
-            <div class="card">
-              <img src="/static/img/07_cooking_class.jpg" class="card-img-top" alt="Cooking Class">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Cooking Class</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/templates/blending_experience.html">
-            <div class="card">
-              <img src="/static/img/08_blending_exp.jpg" class="card-img-top" alt="Blending Experience">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-white">Blending Experience</h5>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row m-6 flex-wrap justify-content-center">
-      <h2 class="montserrat-uniquifier">Nuestros vehiculos</h2>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
-        <img class="mw-100 mb-4 img-fluid" src="/static/img/01_hiace.png" alt="">
-        <p class="montserrat-uniquifier text-nowrap">TOYOTA HIACE</p>
-        <p>15 pasajeros</p>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
-        <img class="mw-100 mb-4 img-fluid" src="/static/img/02_hilux.png" alt="">
-        <p class="montserrat-uniquifier text-nowrap">TOYOTA HILUX</p>
-        <p>4 pasajeros</p>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
-        <img class="mw-100 mb-4 img-fluid" src="/static/img/03_transit.png" alt="">
-        <p class="montserrat-uniquifier text-nowrap">FORD TRANSIT</p>
-        <p>17 pasajeros</p>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
-        <img class="mw-100 mb-4 img-fluid" src="/static/img/04_corolla.png" alt="">
-        <p class="montserrat-uniquifier text-nowrap">TOYOTA COROLLA</p>
-        <p>4 pasajeros</p>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
-        <img class="mw-100 mb-4 img-fluid" src="/static/img/05_etios.png" alt="">
-        <p class="montserrat-uniquifier text-nowrap">TOYOTA ETIOS</p>
-        <p>4 pasajeros</p>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 text-center vehiculo-img">
-        <img class="mw-100 mb-4 img-fluid" src="/static/img/06_sprinter.png" alt="">
-        <p class="montserrat-uniquifier text-nowrap">MERCEDES 
-          SPRINTER
-        </p>
-        <p>15 pasajeros</p>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/03-precios-honestos.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">grupos pequeños</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Realmente lo decimos en serio: de 8 a 12 invitados en salidas grupales programadas.</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- tripadivsor -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-c961e7b8-727c-474d-9e83-70c107fa4a36" id="montserrat-uniquifier" data-elfsight-app-lazy>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/04-no-extras.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Sin extras "opcionales" a la venta</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Sin sorpresas durante el tour. Precio claro desde el inicio.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- instagram -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-bd739fa8-2f61-438f-9b4c-b1a1f3b7259e" data-elfsight-app-lazy></div>
-    <!-- whatsapp -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/05-gran-valor.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Gran valor</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Combina todos los servicios y experiencias, y te darás cuenta de que obtienes más por tu dinero.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/06-actividades-exclusivas.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Actividades exclusivas</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Descubre lugares que no están en las guías turísticas.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/07-mas-alla-de-lo-comun.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Más allá de lo común</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Disfruta de una auténtica experiencia de la vida europea.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/08-guias-locales.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Guías locales</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Tus guías son expertos de la región que aman compartir su cultura.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/09-sabemos-tu-nombre.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Sabemos tu nombre</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Te conocemos por tu nombre, no por un número de reserva.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/10-asistencia-complementaria.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Asistencia complementaria</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Ofrecemos ayuda antes y después del viaje: vuelos, trenes, logística e ideas. Aprovecha nuestro conocimiento y más de 27 años de experiencia en turismo.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="d-flex align-items-center">
+            <img src="/static/img/11-paz-mental.png" class="img-fluid rounded-start dw-icons me-3" alt="...">
+            <p class="card-text mb-0">Tranquilidad</p>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Nos encargamos de todos los detalles. Solo reserva tu viaje, empaca y ¡disfruta!</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tripadivsor -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-c961e7b8-727c-474d-9e83-70c107fa4a36" id="montserrat-uniquifier" data-elfsight-app-lazy>
+  </div>
+  <!-- instagram -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-bd739fa8-2f61-438f-9b4c-b1a1f3b7259e" data-elfsight-app-lazy></div>
+  <!-- whatsapp -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
