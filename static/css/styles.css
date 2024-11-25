@@ -26,6 +26,14 @@ font-style: normal;
   font-style: normal;
 }
 
+.montserrat-uniquifier3 {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 /*----------------------------------------------------------- BODY---------------------------------------------- */
 
 body {
@@ -120,6 +128,12 @@ margin-left: clamp(0.2em, 1vw, 0.5em);
   display: inline-block;
 }
 
+/*----------------------------------------------------------- FOOTER ---------------------------------------------- */
+
+footer {
+background-color: darkgrey;
+}
+
 /*----------------------------------------------------------- H1, H2, H3, ETC ---------------------------------------------- */
 
 h1 {
@@ -138,9 +152,32 @@ margin-top: 1.5rem;
 font-size: 1.8rem;
 }
 
+.h2-tours{
+  display: flex;
+  justify-content:flex-start;
+  margin: 1.5rem 1.5rem;
+}
+
+.h3-tours{
+  display: flex;
+  justify-content:flex-start;
+  margin: 1.5rem 1.5rem;
+  color:dimgrey;
+} 
+
 h4{
   background-color: #be0048;
   text-align: center;
+}
+
+footer h5{
+  font-size: 1.7rem;
+  color: #000;
+  text-align: center;
+}
+
+footer li{
+  color: #000;
 }
 .span-subtitle{
   color: #fff;
@@ -150,6 +187,16 @@ span{
   color: #fff;
 }
 
+footer a{
+  text-decoration: none;
+}
+
+footer img{
+  width: 3%;
+  height:3%;
+  padding: 0.5rem;
+}
+
 /*----------------------------------------------------------- IMAGES---------------------------------------------- */
 
 .dw-icons {
@@ -157,6 +204,9 @@ span{
   height: 50%;
 }
 
+.img-tours-svg {
+  width: 30px;
+}
 /*----------------------------------------------------------- SECTION TOURS---------------------------------------------- */
 
 .card {
@@ -209,6 +259,12 @@ span{
 /* Espacio entre la imagen y el texto */
 .ms-3 {
   margin-left: 15px;
+}
+
+.tour-info {
+  padding: 50px;
+  background-color:#be0048;
+  color: #fff;
 }
 
 /*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
