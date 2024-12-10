@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
-        <div class="container-fluid ">
-            <a href="/index.html">
-                <img class="navbar-brand brand-logo" src="/static/img/logo.png" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
+    <div class="container-fluid ">
+      <a href="/index.html">
+        <img class="navbar-brand brand-logo" src="/static/img/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent-index" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-index">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-auto">
+            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/tours.html">Tours</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
+              Nosotros
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-index" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-index">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item ms-auto">
-                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/tours.html">Tours</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
-                  Nosotros
-                </a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/blogs.html">Blogs</a>
-              </li>
-              <li class="nav-item ms-auto">
-                <a class="nav-link" href="/templates/faq.html">FAQ</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <header>
-      <div class="position-relative" style="width: 100%; height: 100vh;">
-        <!-- Imagen de fondo -->
-        <img src="/static/img/banner_alta_montana2.jpg" id="background-img" alt="Fondo" class="img-fluid">
-        
-        <!-- Imagen de la marca de agua -->
-        <img src="/static/img/Mendoza v2 PNG white.png" class="watermark" alt="Marca de agua">
-        
-        <!-- Contenedor del texto (al lado de la marca de agua) -->
-        <div class="position-absolute" style="top: 80%; left: 15%; z-index: 1; display: flex; align-items: center;">
-          <!-- Texto a la derecha de la imagen -->
-          <div class="text-white ms-3">
-            <h5 class="mb-1">Alta Montaña</h5>
-            <p class="mb-0">Tradición y glamour</p>
-          </div>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="/templates/faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="position-relative" style="width: 100%; height: 100vh;">
+      <!-- Imagen de fondo -->
+      <img src="/static/img/banner_alta_montana2.jpg" id="background-img" alt="Fondo" class="img-fluid">
+
+      <!-- Imagen de la marca de agua -->
+      <img src="/static/img/Mendoza v2 PNG white.png" class="watermark" alt="Marca de agua">
+
+      <!-- Contenedor del texto (al lado de la marca de agua) -->
+      <div class="position-absolute" style="top: 80%; left: 15%; z-index: 1; display: flex; align-items: center;">
+        <!-- Texto a la derecha de la imagen -->
+        <div class="text-white ms-3">
+          <h5 class="mb-1">Alta Montaña</h5>
+          <p class="mb-0">Tradición y glamour</p>
         </div>
       </div>
-    </header>
-    <!-- <div class="container-tours-amenities"> -->
-    <!-- <div class="row"> -->
-      <div class="d-flex gap-3 p-4 align-items-start">
-        <!-- Par 3 -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-          <img class="img-tours-svg me-2" src="/static/img/horarios.png" alt="horario">
-          <span class="badge text-bg-light montserrat-uniquifier">08:00 - 16:00</span>
-        </div>
-        <!-- Par 4 -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-          <img class="img-tours-svg me-2" src="/static/img/traslados.png" alt="transporte">
-          <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
-        </div>
-        <!-- Par 5 -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-          <img class="img-tours-svg me-2" src="/static/img/svg_distancia.svg" alt="">
-          <span class="badge text-bg-light montserrat-uniquifier">195KM / 121 MI</span>
-        </div>
-      </div> 
-      <div class=" container p-4 tour-info">
-        <div class="row justify-content-center">
-          <div class="col-4">
-            <p>IDIOMAS</p>
-            <p>ESPAÑOL / PORTUGUES / INGLES</p>
-            <button class="p-2 text-bg-warning montserrat-uniquifier" >RESERVAR TOUR</button>
-          </div>
-          <div class="col-8">
-            <p>Embárcate en una aventura única a través del tour de Altas Montañas en Mendoza, una experiencia que te llevará a descubrir la majestuosidad de la cordillera de los Andes.</p>
-            <p>Con paisajes  impresionantes que cambian a cada curva del camino, te sumergirás en la grandeza de la naturaleza.</p>
-            <p>Visitaremos: Dique potrerillos, Uspallata, Puente del Inca, Penitentes y el Aconcagua.</p>
-            <p>Este tour de Altas Montañas en Mendoza no solo es un viaje, es una experiencia que te conectará con la asombrosa belleza de la naturaleza y la historia de esta región única.</p>
-            <p>¡Prepárate para vivir momentos inolvidables entre las alturas de los Andes!</p>
-          </div>
-        </div>
+    </div>
+  </header>
+  <!-- <div class="container-tours-amenities"> -->
+  <!-- <div class="row"> -->
+  <div class="d-flex gap-3 p-4 align-items-start">
+    <!-- Par 3 -->
+    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <img class="img-tours-svg me-2" src="/static/img/horarios.png" alt="horario">
+      <span class="badge text-bg-light montserrat-uniquifier">08:00 - 16:00</span>
+    </div>
+    <!-- Par 4 -->
+    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <img class="img-tours-svg me-2" src="/static/img/traslados.png" alt="transporte">
+      <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
+    </div>
+    <!-- Par 5 -->
+    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <img class="img-tours-svg me-2" src="/static/img/svg_distancia.svg" alt="">
+      <span class="badge text-bg-light montserrat-uniquifier">195KM / 121 MI</span>
+    </div>
+  </div>
+  <div class=" container p-4 tour-info">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <p>IDIOMAS</p>
+        <img class="img-tours-svg me-2" src="/static/img/ar.svg" alt="">
+        <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
+        <img class="img-tours-svg me-2" src="/static/img/uk.svg" alt="">
+        <p><br></p>
+        <button class="p-2 text-bg-warning montserrat-uniquifier">RESERVAR TOUR</button>
       </div>
-    
+      <div class="col-8">
+        <p>Embárcate en una aventura única a través del tour de Altas Montañas en Mendoza, una experiencia que te
+          llevará a descubrir la majestuosidad de la cordillera de los Andes.</p>
+        <p>Con paisajes impresionantes que cambian a cada curva del camino, te sumergirás en la grandeza de la
+          naturaleza.</p>
+        <p>Visitaremos: Dique potrerillos, Uspallata, Puente del Inca, Penitentes y el Aconcagua.</p>
+        <p>Este tour de Altas Montañas en Mendoza no solo es un viaje, es una experiencia que te conectará con la
+          asombrosa belleza de la naturaleza y la historia de esta región única.</p>
+        <p>¡Prepárate para vivir momentos inolvidables entre las alturas de los Andes!</p>
+      </div>
+    </div>
+  </div>
+
   <h2 class="montserrat-uniquifier h2-tours">CONOCÉ MAS SOBRE MENDOZA</h2>
   <h3 class="montserrat-uniquifier h3-tours">Combinalo con estos otros tours</h3>
   <div class="container">
@@ -187,68 +198,66 @@
     </div>
   </div>
 
-    <footer class="text-white py-4">
-      <div class="container">
-        <div class="row">
-          <!-- Columna 1: Información de contacto -->
-          <div class="col-md-4">
-            <h5 class="montserrat-uniquifier3">ESTILO DE VIAJE GASTRONÓMICO Y ENOLÓGICO</h5>
+  <footer class="text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1: Información de contacto -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
+          <ul class="list-unstyled">
+            <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
+              medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
+              reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
+              individuales.</li>
+          </ul>
+        </div>
+        <!-- Columna 2: Enlaces útiles -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
+          <div class="d-flex justify-content-between">
             <ul class="list-unstyled">
-              <li>Food N' Wine Vacations™ se trata de vivir experiencias. Nuestros tours se centran en conectar con las personas y los lugares, su historia, paisajes, gastronomía y tradiciones. Desde recorrer paisajes impresionantes hasta degustar especialidades regionales y vinos, y alojarse en encantadoras fincas privadas.</li>
+              <li><a href="#" class="text-reset">Bodegas Maipú</a></li>
+              <li><a href="#" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+              <li><a href="#" class="text-reset">Bodegas Valle de Uco</a></li>
+              <li><a href="#" class="text-reset">Alta Montaña</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-reset">4x4 Experience</a></li>
+              <li><a href="#" class="text-reset">City Tour</a></li>
+              <li><a href="#" class="text-reset">Cooking Class</a></li>
+              <li><a href="#" class="text-reset">Blending Experience</a></li>
             </ul>
           </div>
-          <!-- Columna 2: Enlaces útiles -->
-          <div class="col-md-4">
-            <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
-            <div class="d-flex justify-content-between">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-reset">Secretos de la Toscana</a></li>
-                <li><a href="#" class="text-reset">Tour de vinos en la Toscana</a></li>
-                <li><a href="#" class="text-reset">Lo mejor de Sicilia</a></li>
-                <li><a href="#" class="text-reset">Colores de Puglia</a></li>
-                <li><a href="#" class="text-reset">Soñando con la Costa de Amalfi</a></li>
-                <li><a href="#" class="text-reset">Paraíso culinario</a></li>
-                <li><a href="#" class="text-reset">Descubre Piamonte</a></li>
-              </ul>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-reset">Francia</a></li>
-                <li><a href="#" class="text-reset">Tour lo mejor de Provenza</a></li>
-                <li><a href="#" class="text-reset">Bordeaux Clásico</a></li>
-                <li><a href="#" class="text-reset">Saborea Borgoña como un local</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <!-- Columna 3: Redes sociales -->
-          <div class="col-md-4">
-            <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
-            <div class="d-flex justify-content-around">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-reset">Por qué Food N'Wine</a></li>
-                <li><a href="#" class="text-reset">Opiniones</a></li>
-                <li><a href="#" class="text-reset">Blog</a></li>
-                <li><a href="#" class="text-reset">Sobre nosotros</a></li>
-              </ul>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-reset">Envíanos un correo</a></li>
-                <li><a href="#" class="text-reset">Grupos privados</a></li>
-                <li><a href="#" class="text-reset">Asesores de viajes</a></li>
-              </ul>
-            </div>
+        </div>
+
+        <!-- Columna 3: Redes sociales -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-reset">Por qué Discovery Wine</a></li>
+              <li><a href="#" class="text-reset">Opiniones</a></li>
+              <li><a href="#" class="text-reset">Blog</a></li>
+              <li><a href="#" class="text-reset">Envíanos un correo</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="text-center mt-3">
-        <img src="/static/img/facebook-favicon.png" alt="">
-        <img src="/static/img/tripadvisor-favicon.png" alt="">
-        <img src="/static/img/instagram-favicon.png" alt="">
-      </div>
-    </footer>
+    </div>
+    <div class="text-center mt-3">
+      <img src="/static/img/facebook-favicon.png" alt="">
+      <img src="/static/img/tripadvisor-favicon.png" alt="">
+      <img src="/static/img/instagram-favicon.png" alt="">
+    </div>
+  </footer>
 
- <!-- whatsapp -->
- <script src="https://static.elfsight.com/platform/platform.js" async></script>
- <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
- <!-- bootstrap -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- whatsapp -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
