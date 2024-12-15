@@ -53,6 +53,10 @@ font-size: 16px;
 .nav-item {
   padding-right: 1rem;
 }
+
+.blog-title {
+  font-weight: bold;
+}
 /*----------------------------------------------------------- HEADER ---------------------------------------------- */
 
 header {
@@ -61,7 +65,7 @@ header {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -74,22 +78,27 @@ hyphens: auto;
 }
 
 .header-content {
-text-align: center;
+  text-align: center;
   padding: 1rem;
   width: 100%;
 }
 
+#position-relative {
+  height: 70%;
+}
+
+
 #background-img {
-display: flex;
-justify-content: center;
-position: absolute;
-top: 0;
-left: 0;
-z-index: -1;
-width: 100%;
-height: 70%;
-object-fit: cover;
-margin:0 0 0 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .brand h2 {

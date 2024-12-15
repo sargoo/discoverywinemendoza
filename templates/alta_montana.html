@@ -31,7 +31,7 @@
             <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/tours.html">Tours</a>
+            <a class="nav-link" href="#seccion-1">Tours</a>
           </li>
           <li class="nav-item ms-auto">
             <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
@@ -60,11 +60,11 @@
       <img src="/static/img/Mendoza v2 PNG white.png" class="watermark" alt="Marca de agua">
 
       <!-- Contenedor del texto (al lado de la marca de agua) -->
-      <div class="position-absolute" style="top: 80%; left: 15%; z-index: 1; display: flex; align-items: center;">
+      <div class="position-absolute" style=" z-index: 1">
         <!-- Texto a la derecha de la imagen -->
         <div class="text-white ms-3">
-          <h5 class="mb-1">Alta Montaña</h5>
-          <p class="mb-0">Tradición y glamour</p>
+          <h5 class="mb-1 montserrat-uniquifier">Alta Montaña</h5>
+          <p class="mb-0 montserrat-uniquifier">Tradición y glamour</p>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
     </div>
   </div>
 
-  <h2 class="montserrat-uniquifier h2-tours">CONOCÉ MAS SOBRE MENDOZA</h2>
+  <h2 class="montserrat-uniquifier h2-tours" id="seccion-1" class="anchor">CONOCÉ MAS SOBRE MENDOZA</h2>
   <h3 class="montserrat-uniquifier h3-tours">Combinalo con estos otros tours</h3>
   <div class="container">
     <div class="row">
@@ -198,6 +198,24 @@
     </div>
   </div>
 
+  <div>
+    <div class="position-relative" style="width: 100%; height: 100vh;">
+      <img src="/static/img/blur-alta-montana.jpg" id="background-img" alt="">
+
+      <div class="position-absolute" style=" z-index: 1">
+      <!-- Texto a la derecha de la imagen -->
+        <div class="text-white ms-3">
+          <h5 class="mb-1 montserrat-uniquifier">PEDIRLE A MANU</h5>
+          <p class="text-reset">FOTOS CON TEXTO INCLUIDO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- whatsapp -->
+   <script src="https://static.elfsight.com/platform/platform.js" async></script>
+   <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+
   <footer class="text-white py-4">
     <div class="container">
       <div class="row">
@@ -216,16 +234,16 @@
           <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
           <div class="d-flex justify-content-between">
             <ul class="list-unstyled">
-              <li><a href="#" class="text-reset">Bodegas Maipú</a></li>
-              <li><a href="#" class="text-reset">Bodegas Lujan de Cuyo</a></li>
-              <li><a href="#" class="text-reset">Bodegas Valle de Uco</a></li>
-              <li><a href="#" class="text-reset">Alta Montaña</a></li>
+              <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+              <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+              <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
+              <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
             </ul>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-reset">4x4 Experience</a></li>
-              <li><a href="#" class="text-reset">City Tour</a></li>
-              <li><a href="#" class="text-reset">Cooking Class</a></li>
-              <li><a href="#" class="text-reset">Blending Experience</a></li>
+              <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
+              <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
+              <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
+              <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
             </ul>
           </div>
         </div>
@@ -251,9 +269,6 @@
     </div>
   </footer>
 
-  <!-- whatsapp -->
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
