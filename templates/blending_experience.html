@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head >
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/static/css/styles.css">
@@ -14,11 +14,11 @@
   <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
-    <div class="container-fluid ">
+<body class="row">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier p-0">
+    <div class="container-fluid-us container-fluid">
       <a href="/index.html">
-        <img class="navbar-brand brand-logo" src="/static/img/logo.png" alt="">
+        <img class="navbar-brand brand-logo" src="/static/img/BASE.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent-index" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -26,187 +26,40 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent-index">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
           <li class="nav-item ms-auto">
             <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link" href="#seccion-1">Tours</a>
+            <a class="nav-link active" href="/index.html#seccion-1">Tours</a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
+            <a class="nav-link text-white" href="/templates/nosotros.html" aria-expanded="false">
               Nosotros
             </a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
+            <a class="nav-link text-white" href="/templates/bodegas.html">Bodegas</a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/blogs.html">Blogs</a>
+            <a class="nav-link text-white" href="/templates/blogs.html">Blogs</a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/faq.html">FAQ</a>
+            <a class="nav-link text-white" href="/templates/faq.html">FAQ</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <header>
-    <div class="position-relative" style="width: 100%; height: 100vh;">
-      <!-- Imagen de fondo -->
-      <img src="/static/img/08_blending_exp.jpg" id="background-img" alt="Fondo" class="img-fluid">
 
-      <!-- Imagen de la marca de agua -->
-      <img src="/static/img/Mendoza v2 PNG white.png" class="watermark" alt="Marca de agua">
-
-      <!-- Contenedor del texto (al lado de la marca de agua) -->
-      <div class="position-absolute" style=" z-index: 1">
-        <!-- Texto a la derecha de la imagen -->
-        <div class="text-white ms-3">
-          <h5 class="mb-1 montserrat-uniquifier">blending experience</h5>
-          <p class="mb-0  montserrat-uniquifier">Tradición y glamour</p>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- <div class="container-tours-amenities"> -->
-  <!-- <div class="row"> -->
-  <div class="d-flex gap-3 p-4 align-items-start">
-    <!-- Par 1 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2 p-0" src="/static/img/svg_barriles.svg" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">DEGUSTACION</span>
-    </div>
-    <!-- Par 2 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/svg_comida.svg" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">almuerzo</span>
-    </div>
-    <!-- Par 3 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/svg_horario.svg" alt="horario">
-      <span class="badge text-bg-light montserrat-uniquifier">08:00 - 16:00</span>
-    </div>
-    <!-- Par 4 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/svg_transport.svg" alt="transporte">
-      <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
-    </div>
-    <!-- Par 5 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/svg_distancia.svg" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">120KM / 74 MI</span>
-    </div>
+  <div>
+    <img class="blending-experience" src= "/static/img/06_staff-alta1.jpg" alt="">
   </div>
-  <div class=" container p-4 tour-info">
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <p>OPCIONES</p>
-        <p>1,2 o 3 bodegas, una con almuerzo</p>
-        <img class="img-tours-svg me-2" src="/static/img/ar.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/uk.svg" alt="">
-        <p><br></p>
-        <button class="p-2 text-bg-warning montserrat-uniquifier">RESERVAR TOUR</button>
-      </div>
-      <div class="col-8">
-        <p>Valle de Uco, una región vitinícola donde la altitud y el microclima convergen para dar vida a vinos de
-          excepcional calidad.</p>
-        <p>Visitarás bodegas de renombre en el Valle de Uco, donde podrás explorar las instalaciones modernas y conocer
-          las innovadoras prácticas que han elevado la calidad de los vinos de altura. Las catas exclusivas de cepas
-          únicas cultivadas en estas altitudes te sumergirán en los sabores y aromas que definen a esta región vinícola.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="montserrat-uniquifier h2-tours">CONOCÉ MAS SOBRE MENDOZA</h2>
-  <h3 class="montserrat-uniquifier h3-tours">Combinalo con estos otros tours</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <a href="/templates/maipu.html">
-          <div class="card">
-            <img src="/static/img/01_tour_maipu.jpg" class="card-img-top" alt="Tour de Bodegas Maipú">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour de Bodegas Maipú</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/valle_de_uco.html">
-          <div class="card">
-            <img src="/static/img/02_tour_valle_de_uco.jpg" class="card-img-top" alt="Tour Bodegas Valle de Uco">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour Bodegas Valle de Uco</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/lujan_de_cuyo.html">
-          <div class="card">
-            <img src="/static/img/03_tour_lujan_cuyo.jpg" class="card-img-top" alt="Tour Bodegas Lujan de Cuyo">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour Bodegas Lujan de Cuyo</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/city_tour.html">
-          <div class="card">
-            <img src="/static/img/04_tour_city.jpg" class="card-img-top" alt="City Tour">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">City Tour</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/alta_montana.html">
-          <div class="card">
-            <img src="/static/img/05_tour_alta_montana.jpg" class="card-img-top" alt="Tour Alta Montaña">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour Alta Montaña</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/4x4_experience.html">
-          <div class="card">
-            <img src="/static/img/06_tour_4x4_exp.jpg" class="card-img-top" alt="Tour 4x4">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour 4x4</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/cooking_class.html">
-          <div class="card">
-            <img src="/static/img/07_cooking_class.jpg" class="card-img-top" alt="Cooking Class">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Cooking Class</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/blending_experience.html">
-          <div class="card">
-            <img src="/static/img/08_blending_exp.jpg" class="card-img-top" alt="Blending Experience">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Blending Experience</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
+  
+  
+   <!-- whatsapp -->
+   <script src="https://static.elfsight.com/platform/platform.js" async></script>
+   <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
   <footer class="text-white py-4">
     <div class="container">
       <div class="row">
@@ -259,10 +112,6 @@
       <img src="/static/img/instagram-favicon.png" alt="">
     </div>
   </footer>
-
-  <!-- whatsapp -->
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

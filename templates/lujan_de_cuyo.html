@@ -15,41 +15,38 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
-    <div class="container-fluid ">
-      <a href="/index.html">
-        <img class="navbar-brand brand-logo" src="/static/img/logo.png" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier ">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+      <a href="/index.html" class="position-absolute start-0 top-50 translate-middle-y ps-3">
+        <img class="brand-logo" src="/static/img/logo.png" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent-index" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent-index">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item ms-auto">
-            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a class="nav-link" href="#seccion-1">Tours</a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
-              Nosotros
-            </a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/blogs.html">Blogs</a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a class="nav-link" href="/templates/faq.html">FAQ</a>
-          </li>
-        </ul>
-      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-bodegas" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html#seccion-1">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
+                  Nosotros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class=  "nav-link" href="/templates/bodegas.html">Bodegas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/blogs.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
     </div>
   </nav>
   <header>
@@ -102,7 +99,7 @@
     <div class="row justify-content-center">
       <div class="col-4">
         <p>OPCIONES</p>
-        <p>1,2 o 3 bodegas, una con almuerzo</p>
+        <p>1,2 o 3 bodegas</p>
         <p>IDIOMAS</p>
         <img class="img-tours-svg me-2" src="/static/img/ar.svg" alt="">
         <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
@@ -120,6 +117,10 @@
         <p>Descubre la esencia de Luján de Cuyo en un día completo de emocionantes descubrimientos!</p>
       </div>
     </div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center " style="max-height: 100%; max-width: 100%; object-fit: contain;">
+    <img src="/static/img/pasos.png" class="img-fluid" style="max-width: 90%;">
   </div>
 
   <h2 class="montserrat-uniquifier h2-tours" id="seccion-1" class="anchor">CONOCÉ MAS SOBRE MENDOZA</h2>
