@@ -287,7 +287,7 @@
     <div class="modal-content">
       <!-- Encabezado del modal -->
       <div class="modal-header">
-        <h5 class="modal-title montserrat-uniquifier" id="reservationModalLabel">RESERVAR TOUR</h5>
+        <h5 class="modal-title montserrat-uniquifier" id="reservationModalLabel">RESERVAR TOUR </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <!-- Cuerpo del modal con el formulario -->
@@ -295,25 +295,25 @@
         <form id="reservationForm" action="https://formsubmit.co/d303fee054e5cb714e495217bddd9bfc" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
             <label for="lastName" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresa tu apellido" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Teléfono</label>
-            <input type="text" class="form-control" id="phone" name="phone">
+            <input type="text" class="form-control" id="phone" name="phone" required>
           </div>
           <div class="mb-3">
             <label for="guests" class="form-label">Cantidad de Personas</label>
-            <input type="number" class="form-control" id="guests" name="guests" placeholder="Número de personas">
+            <input type="number" class="form-control" id="guests" name="guests" placeholder="Número de personas" required>
           </div>
           <div class="mb-3">
             <label for="date" class="form-label">Fecha del Tour</label>
-            <input type="date" class="form-control" id="date" name="date">
+            <input type="date" class="form-control" id="date" name="date" required>
           </div>
 
           <!-- Lista de tours -->
