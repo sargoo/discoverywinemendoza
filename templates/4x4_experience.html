@@ -93,8 +93,17 @@
         <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
         <img class="img-tours-svg me-2" src="/static/img/uk.svg" alt="">
         <p><br></p>
-        <button class="p-2 text-bg-warning montserrat-uniquifier">RESERVAR TOUR</button>
+        <button class="p-2 text-bg-warning montserrat-uniquifier" data-bs-toggle="modal"
+          data-bs-target="#reservationModal">
+          RESERVAR TOUR
+        </button>
       </div>
+
+      <!-- Mensaje de éxito flotante -->
+      <div id="successMessage" class="alert alert-success d-none" role="alert">
+        ¡Reserva enviada con éxito!
+      </div>
+
       <div class="col-8">
         <p>Este exclusivo tour te invita a explorar la majestuosidad de la naturaleza a bordo de un vehículo
           todoterreno, llevándote a lugares remotos y revelando una perspectiva completamente nueva de las montañas</p>
@@ -268,6 +277,98 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <!-- Modal -->
+  <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header">
+        <h5 class="modal-title montserrat-uniquifier" id="reservationModalLabel">RESERVAR TOUR</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Cuerpo del modal con el formulario -->
+      <div class="modal-body">
+        <form id="reservationForm" action="https://formsubmit.co/d303fee054e5cb714e495217bddd9bfc" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre">
+            <label for="lastName" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+          </div>
+          <div class="mb-3">
+            <label for="guests" class="form-label">Cantidad de Personas</label>
+            <input type="number" class="form-control" id="guests" name="guests" placeholder="Número de personas">
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Fecha del Tour</label>
+            <input type="date" class="form-control" id="date" name="date">
+          </div>
+
+          <!-- Lista de tours -->
+          <div class="mb-3">
+            <label class="form-label">Seleccione sus tours</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Maipú" value="Maipu" id="tourMaipu">
+              <label class="form-check-label" for="tourMaipu">Maipú</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Valle de Uco" value="Valle de Uco"
+                id="tourValleUco">
+              <label class="form-check-label" for="tourValleUco">Valle de Uco</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Luján de Cuyo" value="Lujan de Cuyo"
+                id="tourLujan">
+              <label class="form-check-label" for="tourLujan">Luján de Cuyo</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="City Tour" value="City Tour" id="tourCity">
+              <label class="form-check-label" for="tourCity">City Tour</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Alta Montaña" value="Alta Montaña"
+                id="tourAltaMontana">
+              <label class="form-check-label" for="tourAltaMontana">Alta Montaña</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="4x4 Experience" value="4x4 Experience"
+                id="tour4x4">
+              <label class="form-check-label" for="tour4x4">4x4 Experience</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Cooking Class" value="Cooking Class"
+                id="tourCooking">
+              <label class="form-check-label" for="tourCooking">Cooking Class</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Blending Experience" value="Blending Experience"
+                id="tourBlending">
+              <label class="form-check-label" for="tourBlending">Blending Experience</label>
+            </div>
+          </div>
+
+          <!-- Botones -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-warning">Enviar Reserva</button>
+          </div>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/valle_de_uco.html">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/app.js"></script>
 </body>
 
 </html>
