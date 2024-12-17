@@ -300,6 +300,23 @@ footer img{
   padding: 10px;
 }
 
+/*----------------------------------------------------------- BOTONES---------------------------------------------- */
+
+
+#successMessage {
+  position: fixed; /* Fija el elemento en la pantalla */
+  top: 50%; /* Lo centra verticalmente */
+  left: 50%; /* Lo centra horizontalmente */
+  transform: translate(-50%, -50%); /* Corrige el centrado */
+  z-index: 1050; /* Asegura que esté por encima de otros elementos */
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /*----------------------------------------------------------- HOJAS DE TOURS---------------------------------------------- */
 
