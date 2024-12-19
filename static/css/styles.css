@@ -49,28 +49,19 @@ body .bg-black {
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 16px;
 }
-.navbar{
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-}
-
-
 /* Estilos del contenedor del menú */
 .brand-logo{
   width: 5rem;
   height: auto;
 }
 
-.nav-item {
-  text-align: center;
+.navbar-toggler {
+  position: absolute;
+  left: 1rem;
+  z-index: 2; /* Asegura que esté por encima del logo */
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .navbar-nav{
   display: flex;
   justify-content: center;  
@@ -368,5 +359,3 @@ footer img{
 
 
 /*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
-
-

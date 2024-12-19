@@ -12,38 +12,48 @@
     <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier ">
-    <div class="container-fluid d-flex justify-content-center align-items-center">
-      <a href="/index.html" class="position-absolute start-0 top-50 translate-middle-y ps-3">
-        <img class="brand-logo" src="/static/img/logo.png" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
+    <div class="container-fluid">
+      <!-- Botón de menú hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent-bodegas" aria-controls="navbarSupportedContent-bodegas"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo centrado en móvil -->
+      <a href="/index.html" class="navbar-brand mx-auto d-lg-none">
+        <img class="brand-logo" src="/static/img/logo.png" alt="Logo">
       </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-bodegas" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/index.html#seccion-1">Tours</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/templates/nosotros.html" aria-expanded="false">
-                  Nosotros
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class=  "nav-link" href="/templates/bodegas.html">Bodegas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/templates/blogs.html">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/templates/faq.html">FAQ</a>
-              </li>
-            </ul>
-          </div>
+
+      <!-- Logo para desktop (mantén el logo a la izquierda) -->
+      <a href="/index.html" class="d-none d-lg-block ps-3 position-absolute start-0 top-50 translate-middle-y ps-3">
+        <img class="brand-logo" src="/static/img/logo.png" alt="Logo">
+      </a>
+
+      <!-- Menú centrado (sin considerar el logo) -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion-1">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
