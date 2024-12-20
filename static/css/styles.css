@@ -99,6 +99,20 @@ hyphens: auto;
   
 }
 
+.header-buttons-spacing {
+  margin-top: -100px; /* Reduce el espacio entre el header y los botones */
+  position: relative;
+}
+
+.toggle-button {
+  background-color: #000;
+  border: none; /* Quita el borde */
+  outline: none; /* Quita el contorno */
+  box-shadow: none; /* Quita la sombra */
+  z-index: 10;
+}
+
+
 #position-relative {
   height: 70%;
 }
@@ -164,7 +178,6 @@ hyphens: auto;
 }
 
 .brand-word {
-display: inline-block;
 margin: 0;
 }
 

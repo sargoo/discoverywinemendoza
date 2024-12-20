@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Experiencias de Vino en Mendoza | Tours de Bodegas y Más</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
@@ -56,93 +59,104 @@
       </div>
     </div>
   </nav>
-      <header class="d-flex p-1">
-        <img src="/static/img/01_banner_bodegas.jpg" id="background-img"
-          alt="grupo de personas disfrutando del tour de bodegas en Mendoza">
-        <div class="header-content">
-          <div class="brand">
-            <h2 class="montserrat-uniquifier">
-              <span class="brand-word mendoza">BODEGAS MAS POPULARES</span>
-            </h2>
-            <h5 class="text-white fst-italic">Eche un vistazo a las bodegas de moda</h5>
-            <h5 class="text-white fst-italic">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
-          </div>
-        </div>
-      </header>
+  <header class="p-1 position-relative">
+    <img src="/static/img/01_banner_bodegas.jpg" id="background-img"
+      alt="grupo de personas disfrutando del tour de bodegas en Mendoza" class="w-100">
+    <div class=" position-absolute top-50 start-50 translate-middle text-center d-flex flex-column align-items-center">
+      <div class="">
+        <h2 class="montserrat-uniquifier">
+          <span class="">BODEGAS MAS POPULARES</span>
+        </h2>
+        <h5 class="text-white fst-italic">Eche un vistazo a las bodegas de moda</h5>
+        <h5 class="text-white fst-italic">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
+      </div>
+    </div>
+  </header>
 
-      <div class="d-flex  justify-content-center p-5 ">
-        <!-- Par 1 -->
-        <div class="d-flex align-items-center border border-secondary  p-1 rounded-5">
-          <button class="border-0">
-            <span class="badge text-bg-light montserrat-uniquifier">Maipu</span>
+
+
+  <div class="container">
+    <div class="row justify-content-center pt-1 pb-5 header-buttons-spacing">
+      <!-- Par 1 -->
+      <div class="col-12 col-md-4 mb-3">
+        <a href="/templates/nosotros.html">
+          <button class="btn btn-dark text-white shadow-none toggle-button w-100">
+            <span class="montserrat-uniquifier">VALLE DE UCO</span>
           </button>
-          
-        </div>
-        <!-- Par 2 -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5"> 
-          <button class="border-0">
-            <span class="badge text-bg-light montserrat-uniquifier">Valle de Uco</span>
-          </button>
-          
-        </div>
-        <!-- Par 3 -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-          <button class=" border-0">
-            <span class="badge text-bg-light montserrat-uniquifier">Lujan de Cuyo</span>  
-          </button>
-        </div>
+        </a>
       </div>
-
-      <div>
-        <div class="position-relative display-flex justify-content-center align-items-center " style="width: 100%; height: 80vh;">
-          <img class="position-relative flex justify-content-center align-items-center " src="/static/img/zuccardi.jpg" id="background-img" alt="">
-        </div>
+      <!-- Par 2 -->
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-dark text-white shadow-none toggle-button w-100">
+          <span class="montserrat-uniquifier">MAIPU</span>
+        </button>
       </div>
-
-      <div>
-        <div class="position-relative display-flex justify-content-center align-items-center " style="width: 100%; height: 80vh;">
-          <img class="position-relative flex justify-content-center align-items-center " src="/static/img/andeluna.jpg" id="background-img" alt="">
-        </div>
+      <!-- Par 3 -->
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-dark text-white shadow-none toggle-button w-100">
+          <span class="montserrat-uniquifier">LUJAN DE CUYO</span>
+        </button>
       </div>
+    </div>
+  </div>
+  
 
-      <div>
-        <div class="position-relative display-flex justify-content-center align-items-center " style="width: 100%; height: 80vh;">
-          <img class="position-relative flex justify-content-center align-items-center " src="/static/img/salentein.jpg" id="background-img" alt="">
-        </div>
+
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/zuccardi.jpg" alt="Imagen de Zuccardi">
       </div>
-
-      <div>
-        <div class="position-relative display-flex justify-content-center align-items-center " style="width: 100%; height: 80vh;">
-          <img class="position-relative flex justify-content-center align-items-center " src="/static/img/alfa-crux.jpg" id="background-img" alt="">
-        </div>
+    </div>
+  
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/andeluna.jpg" alt="Imagen de Andeluna">
       </div>
-
-      <div>
-        <div class="position-relative display-flex justify-content-center align-items-center " style="width: 100%; height: 80vh;">
-          <img class="position-relative flex justify-content-center align-items-center " src="/static/img/la-azul.jpg" id="background-img" alt="">
-        </div>
+    </div>
+  
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/salentein.jpg" alt="Imagen de Salentein">
       </div>
-
-       <!-- whatsapp -->
+    </div>
+  
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/alfa-crux.jpg" alt="Imagen de Alfa Crux">
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/la-azul.jpg" alt="Imagen de La Azul">
+      </div>
+    </div>
+  </div>
+  
+  <!-- whatsapp -->
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
   <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
-      
-      <footer class="text-white py-4">
-        <div class="container">
-          <div class="row">
-            <!-- Columna 1: Información de contacto -->
-            <div class="col-md-4">
-              <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
-              <ul class="list-unstyled">
-                <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos individuales.</li>
-              </ul>
-            </div>
-            <!-- Columna 2: Enlaces útiles -->
-            <div class="col-md-4">
-              <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
-              <div class="d-flex justify-content-between">
-                <ul class="list-unstyled">
-                  <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+
+  <footer class="text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1: Información de contacto -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
+          <ul class="list-unstyled">
+            <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
+              medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
+              reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
+              individuales.</li>
+          </ul>
+        </div>
+        <!-- Columna 2: Enlaces útiles -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
+          <div class="d-flex justify-content-between">
+            <ul class="list-unstyled">
+              <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
               <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
               <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
               <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
@@ -152,32 +166,43 @@
               <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
               <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
               <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <!-- Columna 3: Redes sociales -->
-            <div class="col-md-4">
-              <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
-              <div class="d-flex justify-content-center">
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-reset">Por qué Discovery Wine</a></li>
-                  <li><a href="#" class="text-reset">Opiniones</a></li>
-                  <li><a href="#" class="text-reset">Blog</a></li>
-                  <li><a href="#" class="text-reset">Envíanos un correo</a></li>
-                </ul>
-              </div>
-            </div>
+            </ul>
           </div>
         </div>
-        <div class="text-center mt-3">
-          <img src="/static/img/facebook-favicon.png" alt="">
-          <img src="/static/img/tripadvisor-favicon.png" alt="">
-          <img src="/static/img/instagram-favicon.png" alt="">
+
+        <!-- Columna 3: Redes sociales -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-reset">Por qué Discovery Wine</a></li>
+              <li><a href="#" class="text-reset">Opiniones</a></li>
+              <li><a href="#" class="text-reset">Blog</a></li>
+              <li><a href="#" class="text-reset">Envíanos un correo</a></li>
+            </ul>
+          </div>
         </div>
-      </footer>
-<!-- bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <img src="/static/img/facebook-favicon.png" alt="">
+      <img src="/static/img/tripadvisor-favicon.png" alt="">
+      <img src="/static/img/instagram-favicon.png" alt="">
+    </div>
+  </footer>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script>
+    function selectButton(button) {
+      // Elimina la clase 'active' de todos los botones
+      document.querySelectorAll('.toggle-button').forEach((btn) => btn.classList.remove('btn-dark', 'text-white', 'active'));
+
+      // Agrega la clase 'active' al botón seleccionado
+      button.classList.add('btn-dark', 'text-white', 'active');
+    }
+  </script>
 </body>
 
 </html>
