@@ -36,6 +36,10 @@ font-style: normal;
 
 /*----------------------------------------------------------- BODY---------------------------------------------- */
 
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.9); /* Negro con transparencia */
+}
+
 body {
 background-color: var(--bg-color);
 color: var(--text-color);
@@ -218,6 +222,10 @@ justify-content: center;
 text-align: center;
 margin-top: 1.5rem;
 font-size: 1.8rem;
+}
+
+.titulos-blogs{
+  color: #be0048;
 }
 
 h2 {
