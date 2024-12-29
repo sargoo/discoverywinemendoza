@@ -72,6 +72,9 @@ body .bg-black {
 .blog-title {
   font-weight: bold;
 }
+
+
+
 /*----------------------------------------------------------- HEADER ---------------------------------------------- */
 
 header {
@@ -155,9 +158,9 @@ hyphens: auto;
   letter-spacing: 0.03rem;
 }
 
-.container-fluid-us{
+/* .container-fluid-us{ 
   background-image: url(/static/img/06_staff-alta1.jpg)
-}
+}*/
 
 .brand h2 {
   font-size: clamp(1.5rem, 5vw, 3rem);
@@ -241,6 +244,10 @@ font-size: 1.8rem;
 h4{
   background-color: #be0048;
   text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 footer h5{
@@ -358,6 +365,11 @@ footer img{
   color: #fff;
 }
 
+.tour-info + .tour-info {
+  margin-top: 15%; /* Ajusta el valor según sea necesario */
+  margin-bottom: 10%;
+}
+
 
 /*----------------------------------------------------------- ANIMACIONES ---------------------------------------------- */
 
@@ -372,3 +384,76 @@ footer img{
 
 
 /*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
+
+/* Estilos generales */
+.image-wrapper {
+  text-align: center;
+}
+
+.image-wrapper img {
+  width: 100%; /* Asegura que las imágenes ocupen el ancho del contenedor */
+  height: auto;
+  margin-top: 1rem; /* Espacio adicional en móvil */
+}
+
+h2, h4, p {
+  margin-bottom: 1rem; /* Espaciado consistente entre elementos */
+}
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Cambia el diseño a columna en móviles */
+  }
+
+  .col-md-7,
+  .col-md-5 {
+    text-align: center; /* Centra el contenido en móviles */
+  }
+
+  .image-wrapper img {
+    width: 100%; /* Ajusta las imágenes al ancho completo */
+    margin-top: 1rem; /* Espacio entre texto e imagen */
+  }
+   
+}
+
+/* Imagen de fondo */
+.bg-img img {
+  object-fit: cover;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Envía la imagen al fondo */
+}
+
+/* Imagen de las copas */
+.copa {
+  max-width: 50%; /* Ajusta el tamaño de la copa */
+  height: auto;
+  margin-bottom: 0; /* Asegura que esté completamente abajo */
+  align-self: flex-end; /* Fuerza la posición inferior */
+}
+
+/* Contenedor principal */
+.container {
+  z-index: 1;
+}
+
+.text-container {
+  z-index: 2; /* Asegura que el texto esté por encima del fondo */
+  max-width: 60%; /* Reduce el ancho máximo para evitar overflow */
+   /*margin-right: auto; /* Mantiene el texto hacia la izquierda */
+   /*padding: 0 1rem; Ajusta el padding para reducir espacio adicional */
+}
+
+.text-container p {
+  font-size: 1rem; /* Ajusta el tamaño para dispositivos pequeños */
+  margin-bottom: 1rem;
+}
+
+.col-md-6 {
+  padding: 1rem;
+}

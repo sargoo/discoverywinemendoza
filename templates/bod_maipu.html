@@ -59,122 +59,83 @@
       </div>
     </div>
   </nav>
+  <header class="p-1 position-relative">
+    <img src="/static/img/01_banner_bodegas.jpg" id="background-img"
+      alt="grupo de personas disfrutando del tour de bodegas en Mendoza" class="w-100">
+    <div class=" position-absolute top-50 start-50 translate-middle text-center d-flex flex-column align-items-center">
+      <div class="">
+        <h2 class="montserrat-uniquifier">
+          <span class="">BODEGAS MAS POPULARES</span>
+        </h2>
+        <h5 class="text-white fst-italic">Eche un vistazo a las bodegas de moda</h5>
+        <h5 class="text-white fst-italic">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
+      </div>
+    </div>
+  </header>
 
-  <div class="position-relative text-white">
-    <!-- Imagen de fondo -->
-    <div class="bg-img">
-      <img src="/static/img/02_bg_completo.jpg" alt="Fondo" class="w-60">
+
+
+  <div class="container">
+    <div class="row justify-content-center pt-1 pb-5 header-buttons-spacing">
+      <!-- Par 1 -->
+      <div class="col-12 col-md-4 mb-3">
+        <a href="/templates/bodegas.html">
+          <button class="btn btn-dark text-white shadow-none toggle-button w-100">
+            <span class="montserrat-uniquifier">VALLE DE UCO</span>
+          </button>
+        </a>
+      </div>
+      <!-- Par 2 -->
+      <div class="col-12 col-md-4 mb-3">
+        <a href="/templates/bod_maipu.html">
+            <button class="btn btn-dark text-white shadow-none toggle-button w-100 active">
+            <span class="montserrat-uniquifier">MAIPU</span>
+            </button>
+        </a>
+      </div>
+      <!-- Par 3 -->
+      <div class="col-12 col-md-4 mb-3">
+        <a href="/templates/bod_lujan_de_cuyo.html">
+            <button class="btn btn-dark text-white shadow-none toggle-button w-100">
+                <span class="montserrat-uniquifier">LUJAN DE CUYO</span>
+            </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/07-santa-julia.png" alt="Imagen de Zuccardi">
+      </div>
     </div>
   
-    <!-- Contenedor principal -->
-    <div class="container position-absolute top-0 start-0 w-100 h-100 d-flex">
-      <div class="row flex-nowrap w-100">
-        <!-- Imagen de las copas -->
-        <div class="col-12 col-md-6 d-flex justify-content-start align-items-end w-100 h-75">
-          <img src="/static/img/01_intro.png" alt="Copas" class="img-fluid copa">
-        </div>
-        <!-- Texto a la derecha -->
-        <div class="col-6 d-flex flex-column justify-content-center" 
-           style=" margin-left: -50px;">
-          <p class="mb-3 fs-4 montserrat-uniquifier">
-            Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y viñedos de Mendoza, una de las capitales mundiales del vino.
-          </p>
-          <p class="mb-3 fs-4 montserrat-uniquifier">
-            Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la región y date el gusto de probar los más exquisitos varietales, acompañados de deliciosas comidas gourmet y regionales.
-          </p>
-          <p class="mb-3 fs-4 montserrat-uniquifier"> 
-            Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está preparado para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo logístico listo para cumplir las demandas más exigentes.
-          </p>
-        </div>
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/08-lopez.png" alt="Imagen de Andeluna">
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/09-trapiche.png" alt="Imagen de Salentein">
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-8">
+        <img class="img-fluid rounded-3" src="/static/img/10-casa-vigil.png" alt="Imagen de Alfa Crux">
       </div>
     </div>
   </div>
   
-  
-
-
-
-  <div class="container tour-info text-white py-5 position-relative mb-7">
-    <div class="row align-items-center">
-      <!-- Contenedor del texto -->
-      <div class="col-md-7 text-center text-md-start order-2 order-md-1">
-        <h2 class="fw-bold">HUGO LARICCHIA</h2>
-        <h4 class="fst-italic">FUNDADOR</h4>
-        <p class="mt-4">
-          Su conocimiento sobre vinos mendocinos es propio de un apasionado; su experiencia laboral le permitió dotar a
-          este proyecto de un nivel de profesionalismo pocas veces visto y su amor por Mendoza lo llevó a participar en
-          la política local liderando listas en las elecciones.
-        </p>
-        <p class="fst-italic">
-          Fue una irrupción meteórica desde el sector privado a la política tradicional.
-        </p>
-      </div>
-      <!-- Contenedor de la imagen -->
-      <div class="col-md-5 position-relative order-1 order-md-2">
-        <div class="image-wrapper">
-          <img src="/static/img/hugo.png" alt="Hugo Laricchia" class="img-fluid w-100">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tour-info text-white py-5 position-relative mt-7">
-    <div class="row align-items-center">
-      <!-- Contenedor de la imagen -->
-      <div class="col-md-7 position-relative order-2 order-md-1">
-        <div class="image-wrapper">
-          <img src="/static/img/nico.png" alt="Nicolás Laricchia" class="img-fluid w-100">
-        </div>
-      </div>
-      <!-- Contenedor del texto -->
-      <div class="col-md-5 text-center text-md-start order-1 order-md-2">
-        <h2 class="fw-bold">NICOLAS LARICCHIA</h2>
-        <h4 class="fst-italic">RRPP Y ADMINISTRACIÓN</h4>
-        <p class="mt-4">
-          Durante varios años, exploró y vivió en diversos países, enriqueciendo su perspectiva y adquieriendo
-          conocimientos. Ahora, emocionado, regresa a Mendoza con la intención de compartir su profunda pasión por el
-          vino a través de encuentros en los viñedos.
-        </p>
-        <p class="fst-italic">
-          Comprometido con su comunidad, contribuye al avance de la cultura del vino fusionando la tradición local con
-          una visión contemporánea y diversa.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tour-info text-white py-5 position-relative mt-7">
-    <div class="row align-items-center">
-      <!-- Contenedor del texto -->
-      <div class="col-md-5 text-center text-md-start order-2 order-md-1">
-        <h2 class="fw-bold">MALENA LARICCHIA</h2>
-        <h4 class="fst-italic">LOGÍSTICA Y FINANZAS</h4>
-        <p class="mt-4">
-          Despeñó el rol de guía de turismo en una de las bodegas más destacadas de Mendoza. Alandes de Karim Mussi y
-          simultáneamente aportaba su experiencia en Discovery Wine Mendoza.
-        </p>
-        <p class="fst-italic">
-          Además de su dedicación profesional, encuentra tiempo para cultivar su faceta artística como música y
-          cantante, habiendo grabado discos y participando en eventos culturales.
-        </p>
-      </div>
-      <!-- Contenedor de la imagen -->
-      <div class="col-md-7 position-relative order-1 order-md-2">
-        <div class="image-wrapper">
-          <img src="/static/img/malena.png" alt="Malena Laricchia" class="img-fluid w-100">
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
   <!-- whatsapp -->
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
   <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+
   <footer class="text-white py-4">
     <div class="container">
       <div class="row">
@@ -229,8 +190,17 @@
   </footer>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script>
+    function selectButton(button) {
+      // Elimina la clase 'active' de todos los botones
+      document.querySelectorAll('.toggle-button').forEach((btn) => btn.classList.remove('btn-dark', 'text-white', 'active'));
+
+      // Agrega la clase 'active' al botón seleccionado
+      button.classList.add('btn-dark', 'text-white', 'active');
+    }
+  </script>
 </body>
 
 </html>
