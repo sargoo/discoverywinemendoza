@@ -111,6 +111,10 @@ hyphens: auto;
   position: relative;
 }
 
+.custom-margin {
+  margin-left: 17vw; /* Ajusta este valor según lo necesites */
+}
+
 .toggle-button {
   background-color: #000;
   border: none; /* Quita el borde */
@@ -352,14 +356,14 @@ footer img{
 }
 
 /* Contenedor del texto */
-.position-absolute {
+.position-watermark {
   z-index: 1;
-  top: 50%; /* Ajusta la posición vertical del texto */
-  left: 15%; /* Ajusta la posición horizontal del texto */
+  top: 50%; /* Ajusta la posición vertical del texto*/
+  left: 15%; /* Ajusta la posición horizontal del texto*/ 
   display: flex;
   align-items:flex-start;
   justify-content:flex-start;
-  flex-wrap: wrap; /* Permite que el texto se ajuste si es necesario */
+  flex-wrap: wrap; /* Permite que el texto se ajuste si es necesario*/
 }
 
 /* Espacio entre la imagen y el texto */

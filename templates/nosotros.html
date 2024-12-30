@@ -38,13 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+            <a class="nav-link " aria-current="page" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#seccion-1">Tours</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/templates/nosotros.html">Nosotros</a>
+            <a class="nav-link active" href="/templates/nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
@@ -61,39 +61,27 @@
   </nav>
   
 
-  <div class="position-relative text-white">
-    <!-- Imagen de fondo -->
-    <div class="bg-img">
-      <img src="/static/img/02_bg_completo.jpg" alt="Fondo" class="w-60">
-    </div>
   
-    <!-- Contenedor principal -->
-    <div class="container position-absolute top-0 start-0 w-100 h-100 d-flex">
-      <div class="row flex-nowrap w-100">
-        <!-- Imagen de las copas -->
-        <div class="col-12 col-md-6 d-flex justify-content-start align-items-end w-100 h-75">
-          <img src="/static/img/01_intro.png" alt="Copas" class="img-fluid copa">
+  <header class="position-relative mb-5" style="height: 100vh; overflow: hidden;">
+    <!-- Imagen de fondo -->
+    <img src="/static/img/02_bg_completo.jpg" alt="Fondo" class="w-100 h-100 position-absolute" style="object-fit: cover; z-index: -1;">
+  
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <!-- Columna izquierda: Imagen -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="/static/img/01_intro.png" alt="Copas" class="img-fluid" style="max-width: 170%; object-fit: contain;">
         </div>
-        <!-- Texto a la derecha -->
-        <div class="col-6 d-flex flex-column justify-content-center" 
-           style=" margin-left: -50px;">
-          <p class="mb-3 fs-4 montserrat-uniquifier">
-            Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y viñedos de Mendoza, una de las capitales mundiales del vino.
-          </p>
-          <p class="mb-3 fs-4 montserrat-uniquifier">
-            Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la región y date el gusto de probar los más exquisitos varietales, acompañados de deliciosas comidas gourmet y regionales.
-          </p>
-          <p class="mb-3 fs-4 montserrat-uniquifier"> 
-            Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está preparado para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo logístico listo para cumplir las demandas más exigentes.
-          </p>
+        
+        <!-- Columna derecha: Texto -->
+        <div class="col-md-6 text-white text-start">
+          <p>Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y viñedos de Mendoza, una de las capitales mundiales del vino.</p>
+          <p>Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la región y date el gusto de probar los más exquisitos varietales, acompañados de deliciosas comidas gourmet y regionales.</p>
+          <p>Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está preparado para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo logístico listo para cumplir las demandas más exigentes.</p>
         </div>
       </div>
     </div>
-  </div>
-  
-  
-
-
+  </header>
 
   <div class="container tour-info text-white py-5 position-relative mb-7">
     <div class="row align-items-center">
