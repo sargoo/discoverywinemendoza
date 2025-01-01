@@ -79,17 +79,16 @@
   </header>
 
   <!-- <div class="container-tours-amenities"> -->
-  <!-- <div class="row"> -->
-  <div class="d-flex gap-3 p-4 align-items-start">
+  <div class="d-flex flex-wrap gap-3 p-4 align-items-start justify-content-center">
     <!-- Par 1 -->
     <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2 p-0" src="/static/img/degustacion.png" alt="">
+      <img class="img-tours-svg me-2" src="/static/img/degustacion.png" alt="">
       <span class="badge text-bg-light montserrat-uniquifier">DEGUSTACION</span>
     </div>
     <!-- Par 2 -->
     <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
       <img class="img-tours-svg me-2" src="/static/img/almuerzo.png" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">almuerzo</span>
+      <span class="badge text-bg-light montserrat-uniquifier">ALMUERZO</span>
     </div>
     <!-- Par 3 -->
     <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
@@ -104,20 +103,23 @@
     <!-- Par 5 -->
     <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
       <img class="img-tours-svg me-2" src="/static/img/distancia.png" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">30KM / 19 MI</span>
+      <span class="badge text-bg-light montserrat-uniquifier">20 Km / 12.43 MI</span>
     </div>
   </div>
-  <div class=" container p-4 tour-info">
+
+  <div class="container p-4 tour-info">
     <div class="row justify-content-center">
-      <div class="col-4">
-        <p>OPCIONES</p>
-        <p>1,2 o 3 bodegas</p>
-        <p>IDIOMAS</p>
-        <img class="img-tours-svg me-2" src="/static/img/ar.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/uk.svg" alt="">
-        <p><br></p>
-        <button class="p-2 text-bg-warning montserrat-uniquifier" data-bs-toggle="modal"
+      <!-- Columna izquierda -->
+      <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+        <p class="fw-bold">OPCIONES</p>
+        <p>1, 2 o 3 bodegas.</p>
+        <p class="fw-bold">IDIOMAS</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-2">
+          <img class="img-tours-svg" src="/static/img/ar.svg" alt="Español">
+          <img class="img-tours-svg" src="/static/img/br.svg" alt="Portugués">
+          <img class="img-tours-svg" src="/static/img/uk.svg" alt="Inglés">
+        </div>
+        <button class="mt-3 btn btn-warning montserrat-uniquifier" data-bs-toggle="modal"
           data-bs-target="#reservationModal">
           RESERVAR TOUR
         </button>
@@ -128,7 +130,8 @@
         ¡Reserva enviada con éxito!
       </div>
 
-      <div class="col-8">
+      <!-- Columna derecha -->
+      <div class="col-12 col-md-8 text-center text-md-start">
         <p>Luján de Cuyo, conocida como “La tierra del Malbec”, ha sido el epicentro de la proyección internacional de
           la viticultura mendocina. Este distrito marcó el punto de inflexión en el que Mendoza cautivó al mundo con sus
           vinos excepcionales. Fue en Luján de Cuyo donde los primeros vinos de alta gama vieron la luz, fusionando la
@@ -300,12 +303,13 @@
       <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
         <img src="/static/img/facebook-favicon.png" alt="facebook">
       </a>
-      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html" target="_blank">
+      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+        target="_blank">
         <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
       </a>
       <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
         <img src="/static/img/instagram-favicon.png" alt="instagram">
-      </a> 
+      </a>
     </div>
     <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
   </footer>

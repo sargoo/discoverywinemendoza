@@ -15,7 +15,8 @@
   <style>
     body {
       background-color: black;
-      color: white; /* Para que el texto sea visible */
+      color: white;
+      /* Para que el texto sea visible */
     }
   </style>
 </head>
@@ -29,17 +30,17 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <!-- Logo centrado en móvil -->
       <a href="/index.html" class="navbar-brand mx-auto d-lg-none">
         <img class="brand-logo" src="/static/img/BASE.png" alt="Logo">
       </a>
-  
+
       <!-- Logo para desktop -->
       <a href="/index.html" class="d-none d-lg-block ps-3 position-absolute start-0 top-50 translate-middle-y">
         <img class="brand-logo" src="/static/img/BASE.png" alt="Logo">
       </a>
-  
+
       <!-- Menú centrado -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
@@ -70,17 +71,20 @@
     <div class="container-fluid p-0 position-relative" style="overflow: hidden;">
       <!-- Imagen de fondo ocupando todo el espacio del header -->
       <img src="/static/img/blending_background.jpg" alt="Fondo" class="w-100" style="height: 80vh; object-fit: cover;">
-  
+
       <div class="row position-absolute w-100 h-100" style="top: 0; left: 0;">
         <!-- Columna izquierda: Logo y texto -->
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center p-4">
           <img src="/static/img/blending-exp-logo.png" alt="Logo" class="img-fluid mb-3 w-50 ">
-          <p class="text-white text-center text-italic">Creá tu propio vino acompañado <br>de profesionales en un día de <br> aprendizaje y fantásticas historias.</p>
+          <p class="text-white text-center text-italic">Creá tu propio vino acompañado <br>de profesionales en un día de
+            <br> aprendizaje y fantásticas historias.
+          </p>
         </div>
-  
+
         <!-- Columna derecha: Imagen ajustada -->
         <div class="col-md-6 d-flex justify-content-center align-items-center h-100">
-          <img src="/static/img/exp_pc.png" alt="Imagen PC" class="img-fluid" style="max-height: 110%; max-width: 140%; object-fit: contain;">
+          <img src="/static/img/exp_pc.png" alt="Imagen PC" class="img-fluid"
+            style="max-height: 110%; max-width: 140%; object-fit: contain;">
         </div>
       </div>
     </div>
@@ -90,43 +94,51 @@
     <div class="row  g-0 align-items-center">
       <div class="col-4 text-center pr-1">
         <img src="/static/img/BASE.png" alt="" class="img-fluid" style="max-width: 60%; height: auto;">
-        <p><br><br>Esta aventura coienza con una visita <br>a la bodega, donde nos acompañara el <br>enólogo y la dueña de la misma. <br> Se hará un repaso por su historia y la <br> descripción del proceso de elaboración.</p>
+        <p><br><br>Esta aventura coienza con una visita <br>a la bodega, donde nos acompañara el <br>enólogo y la dueña
+          de la misma. <br> Se hará un repaso por su historia y la <br> descripción del proceso de elaboración.</p>
       </div>
-      <div class="col-4 text-center px-1" >
+      <div class="col-4 text-center px-1">
         <p class="fs-2">en alianza con</p>
         <img src="/static/img/línea.png" alt="" class="img-fluid" style="max-width: 0.7%; height: auto;">
       </div>
       <div class="col-4 text-center pl-1">
         <img src="/static/img/RJ.png" alt="" class="img-fluid" style="max-width: 50%; height: auto;">
-        <p>El enólogo nos guiara a través de las <br> caracteristicas de los varietales y se <br> procederá a seleccionar entre cuatro <br> cortes, de los cuales pueden usar los <br> que deséen para lograr un toque.</p>
+        <p>El enólogo nos guiara a través de las <br> caracteristicas de los varietales y se <br> procederá a
+          seleccionar entre cuatro <br> cortes, de los cuales pueden usar los <br> que deséen para lograr un toque.</p>
       </div>
     </div>
   </div>
-  
 
-  
+
+
   <div class="container text-center">
     <h3>LOS VARIETALES QUE SE UTILIZARÁN</h3>
     <div class="row">
-      <div class="col-3">
-        <img src="/static/img/premium-malbec.png" alt="" class="img-fluid">
-        <p>Premium Malbec</p>
-        <p>de Barrica</p>
+      <!-- Grupo 1: Columnas 1 y 2 -->
+      <div class="col-12 col-md-6 d-flex justify-content-center mb-4">
+        <div class="d-flex flex-column align-items-center me-3">
+          <img src="/static/img/premium-malbec.png" alt="" class="img-fluid mb-2">
+          <p class="mb-0">Premium Malbec</p>
+          <p>de Barrica</p>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <img src="/static/img/petit-verdot.png" alt="" class="img-fluid mb-2">
+          <p class="mb-0">Petit Verdot</p>
+          <p>de Barrica</p>
+        </div>
       </div>
-      <div class="col-3">
-        <img src="/static/img/petit-verdot.png" alt="" class="img-fluid">
-        <p>Petit Verdot</p>
-        <p>de Barrica</p>
-      </div>
-      <div class="col-3">
-        <img src="/static/img/merlot.png" alt="" class="img-fluid">
-        <p>Merlot</p>
-        <p>de Pileta</p>
-      </div>
-      <div class="col-3">
-        <img src="/static/img/cabernet_franc.png" alt="" class="img-fluid">
-        <p>Cabernet Franc</p>
-        <p>de Pileta</p>
+      <!-- Grupo 2: Columnas 3 y 4 -->
+      <div class="col-12 col-md-6 d-flex justify-content-center mb-4">
+        <div class="d-flex flex-column align-items-center me-3">
+          <img src="/static/img/merlot.png" alt="" class="img-fluid mb-2">
+          <p class="mb-0">Merlot</p>
+          <p>de Pileta</p>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <img src="/static/img/cabernet_franc.png" alt="" class="img-fluid mb-2">
+          <p class="mb-0">Cabernet Franc</p>
+          <p>de Pileta</p>
+        </div>
       </div>
     </div>
   </div>
@@ -134,43 +146,45 @@
 
   <div class="container mb-5">
     <div class="row justify-content-center">
-      <div class="col-12" style="max-width: 80%; width: 100%; padding: 0;">
+      <div class="col-12 col-md-10 mx-auto p-0">
         <div class="row bg-danger p-4 justify-content-center">
-          <div class="col-4 text-center">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
             <img src="/static/img/wine-stopper.png" alt="" class="img-fluid" style="max-width: 50%; height: auto;">
-            <p>Se usará corcho Diam 5, lo que <br> sumado a la barrica francesa <br>nos asegurará un potenial de <br> guardado de al menos diez años.</p>
+            <p>Se usará corcho Diam 5, lo que <br> sumado a la barrica francesa <br>nos asegurará un potenial de <br>
+              guardado de al menos diez años.</p>
           </div>
-          <div class="col-4 text-center">
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
             <img src="/static/img/barrel (1).png" alt="" class="img-fluid" style="max-width: 50%; height: auto;">
-            <p>El minimo que puede <br>elaborarse de este modo <br>son 300 botellas, esto es,<br> una barrica de 225 litros.</p>
+            <p>El mínimo que puede <br>elaborarse de este modo <br>son 300 botellas, esto es,<br> una barrica de 225
+              litros.</p>
           </div>
-          <div class="col-4 text-center">
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4 text-center">
             <img src="/static/img/wine (1).png" alt="" class="img-fluid" style="max-width: 50%; height: auto;">
-            <p>Utilizaremos botellas "Prestige" <br>y dormirán el tiempo que el <br>enólogo determiine para que esté <br>en condiciones de beberse.</p>
+            <p>Utilizaremos botellas "Prestige" <br>y dormirán el tiempo que el <br>enólogo determine para que esté
+              <br>en condiciones de beberse.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  
+  
 
   <div class="d-flex justify-content-center align-items-center mt-5">
     <p class="text-center text-italic">
-      Definir un blend, se trata del momento de mayor creatividad en el arte de hacer vino, <br>es la alquimia que ilumina el trabajo de años en el viñedo y en la bodega. <br>
-      Cuando se piensa en el blend se está buscando a aquel vino ideal, soñado;<br> la experiencia gustativa de nuestras vidas y que perduran en la memoria. <br>
-      Nacerá entonces un individuo único, el vino que reflejará la personalidad del autor <br>del blend, un vino con alma, un vino que cuente una historia.
+      Definir un blend, se trata del momento de mayor creatividad en el arte de hacer vino, <br>es la alquimia que
+      ilumina el trabajo de años en el viñedo y en la bodega. <br>
+      Cuando se piensa en el blend se está buscando a aquel vino ideal, soñado;<br> la experiencia gustativa de nuestras
+      vidas y que perduran en la memoria. <br>
+      Nacerá entonces un individuo único, el vino que reflejará la personalidad del autor <br>del blend, un vino con
+      alma, un vino que cuente una historia.
     </p>
   </div>
-  
-  
-  
-  
-
-
-  
-  
-  
-
-
 
   <!-- whatsapp -->
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
@@ -224,14 +238,15 @@
     <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
       <img src="/static/img/facebook-favicon.png" alt="facebook">
     </a>
-    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html" target="_blank">
+    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+      target="_blank">
       <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
     </a>
     <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
       <img src="/static/img/instagram-favicon.png" alt="instagram">
-    </a> 
-  </div>
-  <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
+    </a>
+    </div>
+    <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
   </footer>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

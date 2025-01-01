@@ -85,41 +85,43 @@
 
 
 
-  <!-- <div class="container-tours-amenities"> -->
-  <!-- <div class="row"> -->
-  <div class="d-flex gap-3 p-4 align-items-start">
-    <!-- Par 1 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2 p-0" src="/static/img/degustacion.png" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">DEGUSTACION</span>
-    </div>
-    <!-- Par 2 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/almuerzo.png" alt="">
-      <span class="badge text-bg-light montserrat-uniquifier">CENA</span>
-    </div>
-    <!-- Par 3 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/horarios.png" alt="horario">
-      <span class="badge text-bg-light montserrat-uniquifier">19:00 - 23:00</span>
-    </div>
-    <!-- Par 4 -->
-    <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-      <img class="img-tours-svg me-2" src="/static/img/traslados.png" alt="transporte">
-      <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
-    </div>
+   <!-- <div class="container-tours-amenities"> -->
+    <div class="d-flex flex-wrap gap-3 p-4 align-items-start justify-content-center">
+      <!-- Par 1 -->
+      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+        <img class="img-tours-svg me-2" src="/static/img/degustacion.png" alt="">
+        <span class="badge text-bg-light montserrat-uniquifier">DEGUSTACION</span>
+      </div>
+      <!-- Par 2 -->
+      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+        <img class="img-tours-svg me-2" src="/static/img/almuerzo.png" alt="">
+        <span class="badge text-bg-light montserrat-uniquifier">ALMUERZO</span>
+      </div>
+      <!-- Par 3 -->
+      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+        <img class="img-tours-svg me-2" src="/static/img/horarios.png" alt="horario">
+        <span class="badge text-bg-light montserrat-uniquifier">08:00 - 16:00</span>
+      </div>
+      <!-- Par 4 -->
+      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+        <img class="img-tours-svg me-2" src="/static/img/traslados.png" alt="transporte">
+        <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
+      </div>
   </div>
-  <div class=" container p-4 tour-info">
+
+  <div class="container p-4 tour-info">
     <div class="row justify-content-center">
-      <div class="col-4">
-        <p>OPCIONES</p>
-        <p>1,2 o 3 bodegas, una con almuerzo</p>
-        <p>IDIOMAS</p>
-        <img class="img-tours-svg me-2" src="/static/img/ar.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/uk.svg" alt="">
-        <p><br></p>
-        <button class="p-2 text-bg-warning montserrat-uniquifier" data-bs-toggle="modal"
+      <!-- Columna izquierda -->
+      <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+        <p class="fw-bold">OPCIONES</p>
+        <p>1, 2 o 3 bodegas.</p>
+        <p class="fw-bold">IDIOMAS</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-2">
+          <img class="img-tours-svg" src="/static/img/ar.svg" alt="Español">
+          <img class="img-tours-svg" src="/static/img/br.svg" alt="Portugués">
+          <img class="img-tours-svg" src="/static/img/uk.svg" alt="Inglés">
+        </div>
+        <button class="mt-3 btn btn-warning montserrat-uniquifier" data-bs-toggle="modal"
           data-bs-target="#reservationModal">
           RESERVAR TOUR
         </button>
@@ -130,7 +132,8 @@
         ¡Reserva enviada con éxito!
       </div>
 
-      <div class="col-8">
+      <!-- Columna derecha -->
+      <div class="col-12 col-md-8 text-center text-md-start">
         <p>Descubrirán los secretos de la preparación del famoso asado argentino, o de unas deliciosas empandas desde
           los primeros pasos hasta el momento de disfrutar el plato final a la perfección.</p>
         <p>Asado: <br> ¡Embárcate en una experiencia única con nuestra clase de cocina de asado argentino en Mendoza!

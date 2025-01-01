@@ -69,19 +69,18 @@
       <img src="/static/img/Mendoza v2 PNG white.png"
         class="watermark position-absolute top-50 start-0 ms-4 translate-middle-y" alt="Marca de agua">
       <!-- Contenedor del texto (al lado de la marca de agua) -->
-    <div class="position-absolute top-50 start-0 translate-middle-y custom-margin z-index-1">
-      <!-- Texto a la derecha de la imagen -->
-      <div class="text-white d-flex flex-column align-items-start">
-        <h5 class="mb-1 montserrat-uniquifier">City Tour</h5>
-        <p class="mb-0 montserrat-uniquifier">Tradición y glamour</p>
+      <div class="position-absolute top-50 start-0 translate-middle-y custom-margin z-index-1">
+        <!-- Texto a la derecha de la imagen -->
+        <div class="text-white d-flex flex-column align-items-start">
+          <h5 class="mb-1 montserrat-uniquifier">City Tour</h5>
+          <p class="mb-0 montserrat-uniquifier">Tradición y glamour</p>
+        </div>
       </div>
-    </div>
     </div>
   </header>
 
   <!-- <div class="container-tours-amenities"> -->
-  <!-- <div class="row"> -->
-  <div class="d-flex gap-3 p-4 align-items-start">
+  <div class="d-flex flex-wrap gap-3 p-4 align-items-start justify-content-center">
     <!-- Par 3 -->
     <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
       <img class="img-tours-svg me-2" src="/static/img/horarios.png" alt="horario">
@@ -92,17 +91,19 @@
       <img class="img-tours-svg me-2" src="/static/img/traslados.png" alt="transporte">
       <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
     </div>
-
   </div>
-  <div class=" container p-4 tour-info">
+
+  <div class="container p-4 tour-info">
     <div class="row justify-content-center">
-      <div class="col-4">
-        <p>IDIOMAS</p>
-        <img class="img-tours-svg me-2" src="/static/img/ar.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/br.svg" alt="">
-        <img class="img-tours-svg me-2" src="/static/img/uk.svg" alt="">
-        <p><br></p>
-        <button class="p-2 text-bg-warning montserrat-uniquifier" data-bs-toggle="modal"
+      <!-- Columna izquierda -->
+      <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+        <p class="fw-bold">IDIOMAS</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-2">
+          <img class="img-tours-svg" src="/static/img/ar.svg" alt="Español">
+          <img class="img-tours-svg" src="/static/img/br.svg" alt="Portugués">
+          <img class="img-tours-svg" src="/static/img/uk.svg" alt="Inglés">
+        </div>
+        <button class="mt-3 btn btn-warning montserrat-uniquifier" data-bs-toggle="modal"
           data-bs-target="#reservationModal">
           RESERVAR TOUR
         </button>
@@ -113,7 +114,8 @@
         ¡Reserva enviada con éxito!
       </div>
 
-      <div class="col-8">
+      <!-- Columna derecha -->
+      <div class="col-12 col-md-8 text-center text-md-start">
         <p>En el city tour recorreremos los siguientes lugares emblematicos de Mendoza:</p>
         <p>ÁREA FUNDACIONAL DE MENDOZA: <br> Toda la historia de Mendoza en un solo lugar.</p>
         <p>PLAZA INDEPENDENCIA Y SUS CUATRO SATELITES: <br> Conocerás la plaza principal de Mendoza y sus otras 4
@@ -278,14 +280,15 @@
     <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
       <img src="/static/img/facebook-favicon.png" alt="facebook">
     </a>
-    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html" target="_blank">
+    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+      target="_blank">
       <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
     </a>
     <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
       <img src="/static/img/instagram-favicon.png" alt="instagram">
-    </a> 
-  </div>
-  <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
+    </a>
+    </div>
+    <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
   </footer>
 
   <!-- bootstrap -->
