@@ -256,6 +256,8 @@ font-size: 1.8rem;
 h4{
   background-color: #be0048;
   text-align: center;
+  padding: 1%;
+
 }
 
 .text-italic {
@@ -385,14 +387,6 @@ footer img{
 
 /*----------------------------------------------------------- ANIMACIONES ---------------------------------------------- */
 
-.card:hover {
-  box-shadow: 0px 0px 30px 1px rgba(255, 0, 0, 0.925);
-};
-
-.card-img-top:hover {
-  transform: scale(0.98);
- border-radius: 20px;
-};
 
 
 /*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
