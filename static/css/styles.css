@@ -89,6 +89,9 @@ header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  margin-bottom: 0; /* Asegura que no haya espacio adicional debajo */
+  padding-bottom: 0; /* Asegura que no haya relleno adicional */
+
 }
 
 header h2 {
@@ -123,10 +126,11 @@ hyphens: auto;
   z-index: 10;
 }
 
-
-#position-relative {
-  height: 70%;
+.reduce-spacing {
+  margin-top: 0; /* Eliminamos margen negativo para simplificar */
+  margin-bottom: 0; /* Aseguramos que no haya margen inferior */
 }
+
 
 #background-img-index {
   display: flex;
@@ -145,7 +149,7 @@ hyphens: auto;
 #background-img {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: -1;
@@ -211,11 +215,19 @@ margin-left: clamp(0.2em, 1vw, 0.5em);
   white-space: nowrap;
 }
 
+.d-flex-tours {
+  margin-top: -5% !important; /* Forzamos la eliminación de márgenes superiores */
+}
+
+.d-flex-bodegas{
+  margin-top: -8% !important; /* Forzamos la eliminación de márgenes superiores */
+}
 
 /*----------------------------------------------------------- FOOTER ---------------------------------------------- */
 
 footer {
 background-color: darkgrey;
+margin-top: -13% !important;
 }
 
 /*----------------------------------------------------------- H1, H2, H3, ETC ---------------------------------------------- */
@@ -314,6 +326,7 @@ footer img{
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Añade transición suave */
 }
 
 .card-title {
@@ -357,6 +370,7 @@ footer img{
   z-index: 1; /* Asegura que la marca de agua esté por encima del fondo */
 }
 
+
 /* Contenedor del texto */
 .position-watermark {
   z-index: 1;
@@ -387,7 +401,19 @@ footer img{
 
 /*----------------------------------------------------------- ANIMACIONES ---------------------------------------------- */
 
+/* Efecto de zoom al pasar el mouse */
+  .zoom-effect {
+    transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+  }
 
+  .zoom-effect:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+  }
+
+  .card-img-top.zoom-effect:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+  }
 
 /*----------------------------------------------------------- MEDIA QUERIES---------------------------------------------- */
 
@@ -404,6 +430,19 @@ footer img{
 
 h2, h4, p {
   margin-bottom: 1rem; /* Espaciado consistente entre elementos */
+}
+
+@media (min-width: 1200px) {
+  .col-md-6 img {
+    max-width: 250%;
+  }
+}
+
+/* Para pantallas de notebooks (menor de 1200px) */
+@media (max-width: 1199px) {
+  .col-md-6 img {
+    max-width: 170%;
+  }
 }
 
 /* Media Query para pantallas móviles */

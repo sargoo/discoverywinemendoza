@@ -52,9 +52,6 @@
           <li class="nav-item">
             <a class="nav-link" href="/templates/blogs.html">Blogs</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/templates/faq.html">FAQ</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -86,24 +83,24 @@
 
 
    <!-- <div class="container-tours-amenities"> -->
-    <div class="d-flex flex-wrap gap-3 p-4 align-items-start justify-content-center">
+    <div class="d-flex d-flex-tours flex-wrap gap-3 p-4 align-items-start justify-content-center">
       <!-- Par 1 -->
-      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <div class="d-flex d-flex-tours align-items-center border border-secondary p-1 rounded-5">
         <img class="img-tours-svg me-2" src="/static/img/degustacion.png" alt="">
         <span class="badge text-bg-light montserrat-uniquifier">DEGUSTACION</span>
       </div>
       <!-- Par 2 -->
-      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <div class="d-flex d-flex-tours align-items-center border border-secondary p-1 rounded-5">
         <img class="img-tours-svg me-2" src="/static/img/almuerzo.png" alt="">
         <span class="badge text-bg-light montserrat-uniquifier">ALMUERZO</span>
       </div>
       <!-- Par 3 -->
-      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <div class="d-flex d-flex-tours align-items-center border border-secondary p-1 rounded-5">
         <img class="img-tours-svg me-2" src="/static/img/horarios.png" alt="horario">
         <span class="badge text-bg-light montserrat-uniquifier">08:00 - 16:00</span>
       </div>
       <!-- Par 4 -->
-      <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+      <div class="d-flex d-flex-tours align-items-center border border-secondary p-1 rounded-5">
         <img class="img-tours-svg me-2" src="/static/img/traslados.png" alt="transporte">
         <span class="badge text-bg-light montserrat-uniquifier">TRANSPORTE PRIVADO</span>
       </div>
@@ -235,16 +232,17 @@
     </div>
   </div>
 
-  <div>
-    <div class="position-relative" style="width: 100%; height: 100vh;">
-      <img src="/static/img/blur-cooking-class.jpg" id="background-img" alt="">
-
-      <div class="position-absolute" style=" z-index: 1">
-      <!-- Texto a la derecha de la imagen -->
-        <div class="text-white ms-3">
-          <h5 class="mb-1 montserrat-uniquifier">PEDIRLE A MANU</h5>
-          <p class="text-reset">FOTOS CON TEXTO INCLUIDO</p>
-        </div>
+  <div class="position-relative mb-0" style="width: 100%; height: 100vh;">
+    <img src="/static/img/blur-cooking-class.jpg" id="background-img" alt="">
+    <!-- Contenedor del texto centrado a la derecha -->
+    <div class="position-absolute"
+      style="top: 40%; right: 0; transform: translateY(-50%); text-align: right; padding-right: 2rem;">
+      <h2 class="montserrat-uniquifier text-white fw-bold" style="text-align: left;">
+        <div>EXPERIENCIAS <br>ÚNICAS</div>
+      </h2>
+      <div class="position-absolute"
+        style=" transform: translateY(-50%); text-align: right; padding-right: 2rem;">
+        <h5 class="text-white fst-italic">Cooking class, Mendoza</h5>
       </div>
     </div>
   </div>
