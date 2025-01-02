@@ -230,6 +230,16 @@ background-color: darkgrey;
 margin-top: -13% !important;
 }
 
+.footer-2 {
+  background-color: darkgrey;
+  margin-top: -1% !important;
+  }
+
+.footer-3 {
+  margin-top: 0% !important;
+
+}
+
 /*----------------------------------------------------------- H1, H2, H3, ETC ---------------------------------------------- */
 
 h1 {
