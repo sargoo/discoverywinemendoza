@@ -77,6 +77,10 @@ body .bg-black {
   font-weight: bold;
 }
 
+.staff{
+  color: #be0048;
+}
+
 
 
 /*----------------------------------------------------------- HEADER ---------------------------------------------- */
@@ -441,6 +445,8 @@ footer img{
 h2, h4, p {
   margin-bottom: 1rem; /* Espaciado consistente entre elementos */
 }
+
+ 
 
 @media (min-width: 1200px) {
   .col-md-6 img {
