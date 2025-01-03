@@ -15,6 +15,63 @@
 </head>
 
 <body>
+
+  <style>
+    .number {
+      font-size: 3.5rem;
+      /* Reducido de 4rem a 3.5rem */
+      font-weight: bold;
+      color: #be0048;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .icon-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      /* Reducido de 1.5rem a 1rem */
+      min-height: 100px;
+    }
+
+    .title-container {
+      width: 100%;
+      text-align: center;
+      min-height: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .display-1 {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .number {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .display-1 {
+        font-size: 3.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      .number {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
       <!-- Botón de menú hamburguesa -->
@@ -139,9 +196,80 @@
     </div>
   </div>
 
-  <div class="d-flex justify-content-center align-items-center "
-    style="max-height: 100%; max-width: 100%; object-fit: contain;">
-    <img src="/static/img/pasos.png" class="img-fluid" style="max-width: 90%;">
+  <div class="container-fluid py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8"> <!-- Agregado contenedor para limitar el ancho -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+
+          <!-- Step 1 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start"> <!-- Cambiado a align-items-start -->
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">1</span>
+              </div>
+              <div class="text-center w-100"> <!-- Contenido centrado pero número a la izquierda -->
+                <div class="mb-3">
+                  <img src="/static/img/reception-bell.png" alt="Hotel" class="img-fluid" style="width: 60px;">
+                </div>
+                <div class="title-container">
+                  <h3 class="text-uppercase mb-2" style="color: #be0048;">HOTEL<br>&nbsp;</h3>
+                </div>
+                <p class="fst-italic">el chofer lo buscará<br>a la hora pactada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start">
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">2</span>
+              </div>
+              <div class="text-center w-100">
+                <div class="mb-3">
+                  <img src="/static/img/v&d.png" alt="Visita y Degustación" class="img-fluid" style="width: 120px;">
+                </div>
+                <h3 class="text-uppercase mb-2" style="color: #be0048;">VISITA Y<br>DEGUSTACIÓN</h3>
+                <p class="fst-italic">en la bodega<br>previamente acordada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start">
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">3</span>
+              </div>
+              <div class="text-center w-100">
+                <div class="mb-3">
+                  <img src="/static/img/v&d.png" alt="Visita y Degustación" class="img-fluid" style="width: 120px;">
+                </div>
+                <h3 class="text-uppercase mb-2" style="color: #be0048;">VISITA Y<br>DEGUSTACIÓN</h3>
+                <p class="fst-italic">en la bodega<br>previamente acordada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start">
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">4</span>
+              </div>
+              <div class="text-center w-100">
+                <div class="mb-3">
+                  <img src="/static/img/almuerzo.png" alt="Almuerzo y Degustación" class="img-fluid"
+                    style="width: 60px;">
+                </div>
+                <h3 class="text-uppercase mb-2" style="color: #be0048;">ALMUERZO Y<br> DEGUSTACIÓN</h3>
+                <p class="fst-italic">en la bodega<br>previamente acordada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <h2 class="montserrat-uniquifier h2-tours " id="seccion-1" class="anchor">CONOCÉ MAS SOBRE MENDOZA</h2>
