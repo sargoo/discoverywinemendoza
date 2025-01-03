@@ -22,6 +22,7 @@
       font-size: 3.5rem;
       line-height: 1.2;
       word-wrap: break-word;
+    
     }
 
     .subtitle-responsive {
@@ -29,7 +30,29 @@
       line-height: 1.4;
     }
 
+    /* Estilos base para el texto */
+    .text-responsive {
+      font-size: 1rem;
+      line-height: 1.4;
+      text-align: center;
+      color: #000; /* Cambiado de #be0048 a #000 */
+    }
+
+    /* Estilos para el título */
+    .title-responsive {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+
+    }
+
     /* Media queries para dispositivos móviles */
+    @media (max-width: 430px) {
+      .vehiculo-img {
+        width: 50%;
+        float: left;
+      }
+    }
+
     @media (max-width: 576px) {
       .title-responsive {
         font-size: 2rem;
@@ -38,9 +61,19 @@
       .subtitle-responsive {
         font-size: 1.2rem;
       }
+
       .vehiculo-img {
-        width: 50%; /* Fuerza 2 columnas en móvil */
+        width: 50%;
+        /* Fuerza 2 columnas en móvil */
         float: left;
+      }
+
+      .text-responsive {
+        font-size: 1.1rem;
+      }
+
+      .title-responsive {
+        font-size: 2.25rem;
       }
     }
 
@@ -54,12 +87,21 @@
         font-size: 1.4rem;
       }
     }
+
     /* Override para el grid de vehículos */
-@media (max-width: 768px) {
-  .vehicles-grid {
-      flex-direction: row !important;
+    @media (max-width: 768px) {
+      .vehicles-grid {
+        flex-direction: row !important;
+      }
+
+      .text-responsive {
+        font-size: 1.2rem;
+      }
+
+      .title-responsive {
+        font-size: 2.5rem;
+      }
     }
-}
 
     /* Media queries para pantallas medianas */
     @media (min-width: 769px) and (max-width: 992px) {
@@ -72,13 +114,27 @@
       }
     }
 
-    @media (max-width: 430px) {
-  .vehiculo-img {
-    width: 50%;
-    float: left;
-    }
-  }
 
+
+    @media (min-width: 992px) {
+      .text-responsive {
+        font-size: 1.25rem;
+      }
+
+      .title-responsive {
+        font-size: 2.75rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .text-responsive {
+        font-size: 1.3rem;
+      }
+
+      .title-responsive {
+        font-size: 3rem;
+      }
+    }
   </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
@@ -146,13 +202,20 @@
     </div>
   </header>
 
-  <h1 class="montserrat-uniquifier" id="seccion-1" class="anchor">Conoce lo mejor de Mendoza: VINO, BODEGAS, MONTAÑAS,
-    TRASLADOS, EXCURSIONES.</h1>
-
-  <h2 class="montserrat-uniquifier">Descubrí las experiencias únicas que ofrecemos en Mendoza</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <h1 class="title-responsive text-center montserrat-uniquifier">DISCOVERY WINE MENDOZA</h1>
+        <h2 class="text-responsive montserrat-uniquifier" >Discovery Wine Mendoza™ Somos una empresa dedicada a la
+          planificación y ejecución de tours privados "a medida" por los viñedos y bodegas de Mendoza, Argentina. En el
+          corazón de una de las capitales del vino reconocidas a nivel mundial, ofrecemos experiencias personalizadas
+          que se adaptan a tus gustos individuales.</h2>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid py-4">
     <div class="row g-4 justify-content-center"> <!-- Agregado g-4 para espaciado uniforme -->
-      <div class="col-12 col-sm-6 col-lg-3"> <!-- Modificado para responsive -->
+      <div class="col-md-3"> <!-- Modificado para responsive -->
         <a href="/templates/maipu.html">
           <div class="card position-relative overflow-hidden">
             <img src="/static/img/01_tour_maipu.jpg" class="card-img-top zoom-effect" alt="Tour de Bodegas Maipú">
@@ -239,44 +302,45 @@
       <div class="col-12 text-center mb-4">
         <h2 class="montserrat-uniquifier">Nuestros vehiculos</h2>
       </div>
-      
+
       <!-- Grid de vehículos con clase específica -->
-      <div class="row vehicles-grid justify-content-evenly px-4"> <!-- Agregado justify-content-evenly y padding horizontal -->
+      <div class="row vehicles-grid justify-content-evenly px-4">
+        <!-- Agregado justify-content-evenly y padding horizontal -->
         <!-- Toyota Hiace -->
         <div class="col-6 col-lg mb-4 text-center vehiculo-img"> <!-- Cambiado col-lg-2 a col-lg -->
           <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/01_hiace.png" alt="Toyota Hiace">
           <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA HIACE</p>
           <p class="mb-0">15 pasajeros</p>
         </div>
-  
+
         <!-- Toyota Hilux -->
         <div class="col-6 col-lg mb-4 text-center vehiculo-img">
           <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/02_hilux.png" alt="Toyota Hilux">
           <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA HILUX</p>
           <p class="mb-0">4 pasajeros</p>
         </div>
-  
+
         <!-- Ford Transit -->
         <div class="col-6 col-lg mb-4 text-center vehiculo-img">
           <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/03_transit.png" alt="Ford Transit">
           <p class="montserrat-uniquifier text-nowrap mb-1">FORD TRANSIT</p>
           <p class="mb-0">17 pasajeros</p>
         </div>
-  
+
         <!-- Toyota Corolla -->
         <div class="col-6 col-lg mb-4 text-center vehiculo-img">
           <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/04_corolla.png" alt="Toyota Corolla">
           <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA COROLLA</p>
           <p class="mb-0">4 pasajeros</p>
         </div>
-  
+
         <!-- Toyota Etios -->
         <div class="col-6 col-lg mb-4 text-center vehiculo-img">
           <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/05_etios.png" alt="Toyota Etios">
           <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA ETIOS</p>
           <p class="mb-0">4 pasajeros</p>
         </div>
-  
+
         <!-- Mercedes Sprinter -->
         <div class="col-6 col-lg mb-4 text-center vehiculo-img">
           <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/06_sprinter.png" alt="Mercedes Sprinter">
@@ -286,8 +350,8 @@
       </div>
     </div>
   </div>
-  
-  
+
+
 
 
 
