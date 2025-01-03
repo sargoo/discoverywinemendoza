@@ -15,6 +15,52 @@
 </head>
 
 <body>
+  <style>
+    /* Estilos base para el título y subtítulo */
+    .title-responsive {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        word-wrap: break-word;
+    }
+    
+    .subtitle-responsive {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+    
+    /* Media queries para dispositivos móviles */
+    @media (max-width: 576px) {
+        .title-responsive {
+            font-size: 2rem;
+        }
+        
+        .subtitle-responsive {
+            font-size: 1.2rem;
+        }
+    }
+    
+    /* Media queries para tablets */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .title-responsive {
+            font-size: 2.5rem;
+        }
+        
+        .subtitle-responsive {
+            font-size: 1.4rem;
+        }
+    }
+    
+    /* Media queries para pantallas medianas */
+    @media (min-width: 769px) and (max-width: 992px) {
+        .title-responsive {
+            font-size: 3rem;
+        }
+        
+        .subtitle-responsive {
+            font-size: 1.6rem;
+        }
+    }
+    </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
       <!-- Botón de menú hamburguesa -->
@@ -57,24 +103,37 @@
       </div>
     </div>
   </nav>
+  <header class="position-relative vh-100 overflow-hidden">
+    <!-- Video de fondo -->
+    <video 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="position-absolute w-100 h-100" 
+        style="object-fit: cover;"
+    >
+        <source src="/static/img/web-welcome-1440.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
 
-
-
-  <header class="container-fluid d-flex justify-content-center align-items-center vh-100 p-0">
-    <div class="w-100">
-      <img src="/static/img/header_intro.jpg" id="background-img-index" class="img-fluid mx-auto d-block px-5"
-        style="height: 100%; object-fit: cover;" alt="grupo de personas disfrutando del tour de bodegas en Mendoza">
+    <!-- Overlay para mejorar legibilidad del texto -->
+    <div class="position-absolute w-100 h-100" 
+         style="background: rgba(0, 0, 0, 0.3);">
     </div>
-    <div class="header-content translate-middle d-flex justify-content-center align-items-center text-center w-100">
-      <div class="brand d-flex">
-        <h2 class="montserrat-uniquifier mb-0">
-          <span class="brand-word mendoza">MENDOZA</span>
-          <span class="brand-word real">REAL</span>
-          <span class="brand-word experience">EXPERIENCE</span>
-        </h2>
-      </div>
+
+    <!-- Contenido central -->
+    <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="text-center text-white px-3">
+            <h1 class="title-responsive fw-bold mb-4 montserrat-uniquifier">
+                DISCOVERY WINE MENDOZA
+            </h1>
+            <p class="subtitle-responsive montserrat-uniquifier">
+                Private tours & real experience
+            </p>
+        </div>
     </div>
-  </header>
+</header>
 
   <h1 class="montserrat-uniquifier" id="seccion-1" class="anchor">Conoce lo mejor de Mendoza: VINO, BODEGAS, MONTAÑAS,
     TRASLADOS, EXCURSIONES.</h1>
