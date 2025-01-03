@@ -15,6 +15,48 @@
 </head>
 
 <body>
+  <style>
+    /* Reset and base styles */
+    html, body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Main content */
+    main {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Footer styles - Remove negative margins */
+    footer {
+        flex-shrink: 0;
+        background-color: darkgrey;
+        margin-top: 0 !important;
+        width: 100%;
+    }
+    
+    /* Container adjustments */
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    /* Remove extra spacing */
+    .mb-5, .pb-5 {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
       <!-- Botón de menú hamburguesa -->
@@ -78,7 +120,7 @@
   </div>
 </header>
 
-<nav class="bg-white py-3 shadow-sm" style="z-index: 1020;">
+<nav class="bg-white py-3" style="z-index: 1020;">
   <div class="container">
       <div class="d-flex flex-wrap gap-2 gap-md-3 justify-content-center">
           <!-- Valle de Uco -->
@@ -103,29 +145,29 @@
   </div>
 </nav>
 
-<!-- Contenedor principal con espaciado adecuado -->
-<div class="mb-5 pb-5">
+<div>
   <!-- Contenedor de imágenes responsive -->
   <div class="container py-4">
       <div class="row g-4 justify-content-center">
           <!-- Una imagen por fila -->
           <div class="col-12 col-sm-10 col-md-8">
-              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/zuccardi.jpg" alt="Imagen de Zuccardi">
+              <img class="img-fluid rounded-3 w-100" src="/static/img/zuccardi.jpg" alt="Imagen de Zuccardi">
           </div>
           <div class="col-12 col-sm-10 col-md-8">
-              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/andeluna.jpg" alt="Imagen de Andeluna">
+              <img class="img-fluid rounded-3 w-100" src="/static/img/andeluna.jpg" alt="Imagen de Andeluna">
           </div>
           <div class="col-12 col-sm-10 col-md-8">
-              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/salentein.jpg" alt="Imagen de Salentein">
+              <img class="img-fluid rounded-3 w-100" src="/static/img/salentein.jpg" alt="Imagen de Salentein">
           </div>
           <div class="col-12 col-sm-10 col-md-8">
-              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/alfa-crux.jpg" alt="Imagen de Alfa Crux">
+              <img class="img-fluid rounded-3 w-100" src="/static/img/alfa-crux.jpg" alt="Imagen de Alfa Crux">
           </div>
           <div class="col-12 col-sm-10 col-md-8">
-              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/la-azul.jpg" alt="Imagen de La Azul">
+              <img class="img-fluid rounded-3 w-100" src="/static/img/la-azul.jpg" alt="Imagen de La Azul">
           </div>
       </div>
   </div>
+</div>
 
 <!-- Espaciador antes del widget de WhatsApp -->
 <div style="margin-bottom: 80px;"></div>
@@ -135,7 +177,7 @@
 <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
 
 <!-- Footer responsive -->
-<footer class="text-white py-4 mt-5">
+<footer class=" py-4">
   <div class="container">
       <div class="row gy-4">
           <!-- Columna 1: Información de contacto -->
@@ -144,28 +186,28 @@
               <p class="small">Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados "a medida" por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos individuales.</p>
           </div>
           
-          <!-- Columna 2: Enlaces útiles -->
-          <div class="col-12 col-md-4">
-              <h5 class="montserrat-uniquifier3 mb-3">ENCUENTRA TU TOUR</h5>
-              <div class="row">
-                  <div class="col-6">
-                      <ul class="list-unstyled">
-                          <li class="mb-2"><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
-                          <li class="mb-2"><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
-                          <li class="mb-2"><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
-                          <li class="mb-2"><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-6">
-                      <ul class="list-unstyled">
-                          <li class="mb-2"><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
-                          <li class="mb-2"><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
-                          <li class="mb-2"><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
-                          <li class="mb-2"><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
+<!-- Columna 2: Enlaces útiles -->
+<div class="col-12 col-md-4">
+  <h5 class="montserrat-uniquifier3 mb-3">ENCUENTRA TU TOUR</h5>
+  <div class="d-flex flex-row justify-content-between"> <!-- Usar flexbox para mantener las columnas lado a lado -->
+      <div class="flex-grow-1"> <!-- Primera columna -->
+          <ul class="list-unstyled">
+              <li class="mb-2"><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+              <li class="mb-2"><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+              <li class="mb-2"><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
+              <li class="mb-2"><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
+          </ul>
+      </div>
+      <div class="flex-grow-1"> <!-- Segunda columna -->
+          <ul class="list-unstyled">
+              <li class="mb-2"><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
+              <li class="mb-2"><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
+              <li class="mb-2"><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
+              <li class="mb-2"><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
 
           <!-- Columna 3: Redes sociales -->
           <div class="col-12 col-md-4">
