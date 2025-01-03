@@ -100,55 +100,58 @@
             </div>
         </div>
     </nav>
-     <!-- Header responsive -->
-<header class="position-relative" style="height: 50vh; min-height: 300px; max-height: 600px; overflow: hidden;">
-    <img src="/static/img/01_banner_bodegas.jpg" 
-         id="background-img"
-         alt="grupo de personas disfrutando del tour de bodegas en Mendoza" 
-         class="w-100 h-100 d-flex-bodegas"
-         style="object-fit: cover;">
-    
-    <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
-        <h2 class="montserrat-uniquifier mb-3">
-            <span class=" bg-opacity-50 text-white px-3 py-2 rounded d-inline-block">
-                BODEGAS MAS POPULARES
-            </span>
-        </h2>
-        <div class=" bg-opacity-50 text-white p-2 rounded mx-auto" style="max-width: 600px;">
-            <h5 class="fst-italic mb-1 fs-6 fs-md-5">Eche un vistazo a las bodegas de moda</h5>
-            <h5 class="fst-italic mb-0 fs-6 fs-md-5">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
+<!-- Header responsive -->
+<header class="reduce-spacing position-relative mb-0">
+    <div class="reduce-spacing" style="width: 100%; height: 100%;">
+        <img src="/static/img/01_banner_bodegas.jpg" 
+             id="background-img"
+             alt="grupo de personas disfrutando del tour de bodegas en Mendoza" 
+             class="img-fluid mb-0 reduce-spacing"
+             style="object-fit: cover;">
+        
+        <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+            <h2 class="montserrat-uniquifier mb-3">
+                <span class="bg-opacity-50 text-white px-3 py-2 rounded d-inline-block">
+                    BODEGAS MAS POPULARES
+                </span>
+            </h2>
+            <div class="bg-opacity-50 text-white p-2 rounded mx-auto" style="max-width: 600px;">
+                <h5 class="fst-italic mb-1 fs-6 fs-md-5">Eche un vistazo a las bodegas de moda</h5>
+                <h5 class="fst-italic mb-0 fs-6 fs-md-5">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
+            </div>
         </div>
     </div>
+  
+    <!-- Nav mantiene su posición original al 20% -->
+    <nav class="bg-white py-2 position-absolute w-100" style="z-index: 1020; bottom: 20%;">
+        <div class="container">
+            <div class="d-flex flex-wrap gap-2 gap-md-3 justify-content-center">
+                <!-- Valle de Uco -->
+                <div class="d-flex align-items-center justify-content-center border border-dark p-1 rounded-5">
+                    <a href="/templates/bodegas.html" class="text-decoration-none d-flex align-items-center">
+                        <span class="badge text-bg-light border-0 montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">VALLE DE UCO</span>
+                    </a>
+                </div>
+                <!-- Maipu -->
+                <div class="d-flex align-items-center justify-content-center border border-dark p-1 rounded-5">
+                    <a href="/templates/bod_maipu.html" class="text-decoration-none d-flex align-items-center">
+                        <span class="badge text-bg-light border-0 montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">MAIPU</span>
+                    </a>
+                </div>
+                <!-- Lujan de Cuyo -->
+                <div class="d-flex align-items-center justify-content-center bg-dark border border-dark p-1 rounded-5">
+                    <a href="/templates/bod_lujan_de_cuyo.html" class="text-decoration-none d-flex align-items-center">
+                        <span class="badge text-white border-0 montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">LUJAN DE CUYO</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
   </header>
   
-  <nav class="bg-white py-3" style="z-index: 1020;">
-    <div class="container">
-        <div class="d-flex flex-wrap gap-2 gap-md-3 justify-content-center">
-            <!-- Valle de Uco -->
-            <div class="d-flex align-items-center justify-content-center border border-secondary p-1 rounded-5">
-                <a href="/templates/bodegas.html" class="text-decoration-none">
-                    <span class="badge text-bg-light montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">VALLE DE UCO</span>
-                </a>
-            </div>
-            <!-- Maipu - Active -->
-            <div class="d-flex align-items-center justify-content-center  border border-dark p-1 rounded-5">
-                <a href="/templates/bod_maipu.html" class="text-decoration-none d-flex align-items-center">
-                    <span class="badge text-bg-light border-0 montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">MAIPU</span>
-                </a>
-            </div>
-            <!-- Lujan de Cuyo -->
-            <div class="d-flex align-items-center justify-content-center bg-dark border border-dark p-1 rounded-5">
-                <a href="/templates/bod_lujan_de_cuyo.html" class="text-decoration-none d-flex align-items-center">
-                    <span class="badge text-white border-0 montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">LUJAN DE CUYO</span>
-                </a>
-            </div>
-        </div>
-    </div>
-  </nav>
-  
-  <div>
+  <div class="container position-relative" style="margin-top: min(-6.5rem, -8vw);"> <!-- Agregado margen superior consistente -->
     <!-- Contenedor de imágenes responsive -->
-    <div class="container py-4">
+    <div class="container py-1">
         <div class="row g-4 justify-content-center">
             <!-- Una imagen por fila -->
             <div class="col-12 col-sm-10 col-md-8">

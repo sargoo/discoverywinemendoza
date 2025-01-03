@@ -15,52 +15,71 @@
 </head>
 
 <body>
+
   <style>
     /* Estilos base para el título y subtítulo */
     .title-responsive {
-        font-size: 3.5rem;
-        line-height: 1.2;
-        word-wrap: break-word;
+      font-size: 3.5rem;
+      line-height: 1.2;
+      word-wrap: break-word;
     }
-    
+
     .subtitle-responsive {
-        font-size: 1.8rem;
-        line-height: 1.4;
+      font-size: 1.8rem;
+      line-height: 1.4;
     }
-    
+
     /* Media queries para dispositivos móviles */
     @media (max-width: 576px) {
-        .title-responsive {
-            font-size: 2rem;
-        }
-        
-        .subtitle-responsive {
-            font-size: 1.2rem;
-        }
+      .title-responsive {
+        font-size: 2rem;
+      }
+
+      .subtitle-responsive {
+        font-size: 1.2rem;
+      }
+      .vehiculo-img {
+        width: 50%; /* Fuerza 2 columnas en móvil */
+        float: left;
+      }
     }
-    
+
     /* Media queries para tablets */
     @media (min-width: 577px) and (max-width: 768px) {
-        .title-responsive {
-            font-size: 2.5rem;
-        }
-        
-        .subtitle-responsive {
-            font-size: 1.4rem;
-        }
+      .title-responsive {
+        font-size: 2.5rem;
+      }
+
+      .subtitle-responsive {
+        font-size: 1.4rem;
+      }
     }
-    
+    /* Override para el grid de vehículos */
+@media (max-width: 768px) {
+  .vehicles-grid {
+      flex-direction: row !important;
+    }
+}
+
     /* Media queries para pantallas medianas */
     @media (min-width: 769px) and (max-width: 992px) {
-        .title-responsive {
-            font-size: 3rem;
-        }
-        
-        .subtitle-responsive {
-            font-size: 1.6rem;
-        }
+      .title-responsive {
+        font-size: 3rem;
+      }
+
+      .subtitle-responsive {
+        font-size: 1.6rem;
+      }
     }
-    </style>
+
+    @media (max-width: 430px) {
+  .vehiculo-img {
+    width: 50%;
+    float: left;
+    }
+  }
+
+  </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
       <!-- Botón de menú hamburguesa -->
@@ -105,43 +124,35 @@
   </nav>
   <header class="position-relative vh-100 overflow-hidden">
     <!-- Video de fondo -->
-    <video 
-        autoplay 
-        loop 
-        muted 
-        playsinline 
-        class="position-absolute w-100 h-100" 
-        style="object-fit: cover;"
-    >
-        <source src="/static/img/web-welcome-1440.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
+    <video autoplay loop muted playsinline class="position-absolute w-100 h-100" style="object-fit: cover;">
+      <source src="/static/img/web-welcome-1440.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
     </video>
 
     <!-- Overlay para mejorar legibilidad del texto -->
-    <div class="position-absolute w-100 h-100" 
-         style="background: rgba(0, 0, 0, 0.3);">
+    <div class="position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.3);">
     </div>
 
     <!-- Contenido central -->
     <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
-        <div class="text-center text-white px-3">
-            <h1 class="title-responsive fw-bold mb-4 montserrat-uniquifier">
-                DISCOVERY WINE MENDOZA
-            </h1>
-            <p class="subtitle-responsive montserrat-uniquifier">
-                Private tours & real experience
-            </p>
-        </div>
+      <div class="text-center text-white px-3">
+        <h1 class="title-responsive fw-bold mb-4 montserrat-uniquifier">
+          DISCOVERY WINE MENDOZA
+        </h1>
+        <p class="subtitle-responsive montserrat-uniquifier">
+          Private tours & real experience
+        </p>
+      </div>
     </div>
-</header>
+  </header>
 
   <h1 class="montserrat-uniquifier" id="seccion-1" class="anchor">Conoce lo mejor de Mendoza: VINO, BODEGAS, MONTAÑAS,
     TRASLADOS, EXCURSIONES.</h1>
 
   <h2 class="montserrat-uniquifier">Descubrí las experiencias únicas que ofrecemos en Mendoza</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
+  <div class="container-fluid py-4">
+    <div class="row g-4 justify-content-center"> <!-- Agregado g-4 para espaciado uniforme -->
+      <div class="col-12 col-sm-6 col-lg-3"> <!-- Modificado para responsive -->
         <a href="/templates/maipu.html">
           <div class="card position-relative overflow-hidden">
             <img src="/static/img/01_tour_maipu.jpg" class="card-img-top zoom-effect" alt="Tour de Bodegas Maipú">
@@ -223,39 +234,61 @@
       </div>
     </div>
   </div>
-  <div class="row m-6 flex-wrap justify-content-center">
-    <h2 class="montserrat-uniquifier">Nuestros vehiculos</h2>
-    <div class="col-lg-2 col-md-3 col-6 mb-4 text-center vehiculo-img">
-      <img class="mw-100 mb-4 img-fluid zoom-effect" src="/static/img/01_hiace.png" alt="">
-      <p class="montserrat-uniquifier text-nowrap">TOYOTA HIACE</p>
-      <p>15 pasajeros</p>
-    </div>
-    <div class="col-lg-2 col-md-3 col-6 mb-4 text-center vehiculo-img">
-      <img class="mw-100 mb-4 img-fluid zoom-effect" src="/static/img/02_hilux.png" alt="">
-      <p class="montserrat-uniquifier text-nowrap">TOYOTA HILUX</p>
-      <p>4 pasajeros</p>
-    </div>
-    <div class="col-lg-2 col-md-3 col-6 mb-4 text-center vehiculo-img">
-      <img class="mw-100 mb-4 img-fluid zoom-effect" src="/static/img/03_transit.png" alt="">
-      <p class="montserrat-uniquifier text-nowrap">FORD TRANSIT</p>
-      <p>17 pasajeros</p>
-    </div>
-    <div class="col-lg-2 col-md-3 col-6 mb-4 text-center vehiculo-img">
-      <img class="mw-100 mb-4 img-fluid zoom-effect" src="/static/img/04_corolla.png" alt="">
-      <p class="montserrat-uniquifier text-nowrap">TOYOTA COROLLA</p>
-      <p>4 pasajeros</p>
-    </div>
-    <div class="col-lg-2 col-md-3 col-6 mb-4 text-center vehiculo-img">
-      <img class="mw-100 mb-4 img-fluid zoom-effect" src="/static/img/05_etios.png" alt="">
-      <p class="montserrat-uniquifier text-nowrap">TOYOTA ETIOS</p>
-      <p>4 pasajeros</p>
-    </div>
-    <div class="col-lg-2 col-md-3 col-6 mb-4 text-center vehiculo-img">
-      <img class="mw-100 mb-4 img-fluid zoom-effect" src="/static/img/06_sprinter.png" alt="">
-      <p class="montserrat-uniquifier text-nowrap">MERCEDES SPRINTER</p>
-      <p>15 pasajeros</p>
+  <div class="container-fluid py-4"> <!-- Cambiado a container-fluid -->
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-4">
+        <h2 class="montserrat-uniquifier">Nuestros vehiculos</h2>
+      </div>
+      
+      <!-- Grid de vehículos con clase específica -->
+      <div class="row vehicles-grid justify-content-evenly px-4"> <!-- Agregado justify-content-evenly y padding horizontal -->
+        <!-- Toyota Hiace -->
+        <div class="col-6 col-lg mb-4 text-center vehiculo-img"> <!-- Cambiado col-lg-2 a col-lg -->
+          <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/01_hiace.png" alt="Toyota Hiace">
+          <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA HIACE</p>
+          <p class="mb-0">15 pasajeros</p>
+        </div>
+  
+        <!-- Toyota Hilux -->
+        <div class="col-6 col-lg mb-4 text-center vehiculo-img">
+          <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/02_hilux.png" alt="Toyota Hilux">
+          <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA HILUX</p>
+          <p class="mb-0">4 pasajeros</p>
+        </div>
+  
+        <!-- Ford Transit -->
+        <div class="col-6 col-lg mb-4 text-center vehiculo-img">
+          <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/03_transit.png" alt="Ford Transit">
+          <p class="montserrat-uniquifier text-nowrap mb-1">FORD TRANSIT</p>
+          <p class="mb-0">17 pasajeros</p>
+        </div>
+  
+        <!-- Toyota Corolla -->
+        <div class="col-6 col-lg mb-4 text-center vehiculo-img">
+          <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/04_corolla.png" alt="Toyota Corolla">
+          <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA COROLLA</p>
+          <p class="mb-0">4 pasajeros</p>
+        </div>
+  
+        <!-- Toyota Etios -->
+        <div class="col-6 col-lg mb-4 text-center vehiculo-img">
+          <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/05_etios.png" alt="Toyota Etios">
+          <p class="montserrat-uniquifier text-nowrap mb-1">TOYOTA ETIOS</p>
+          <p class="mb-0">4 pasajeros</p>
+        </div>
+  
+        <!-- Mercedes Sprinter -->
+        <div class="col-6 col-lg mb-4 text-center vehiculo-img">
+          <img class="mw-100 mb-3 img-fluid zoom-effect" src="/static/img/06_sprinter.png" alt="Mercedes Sprinter">
+          <p class="montserrat-uniquifier text-nowrap mb-1">MERCEDES SPRINTER</p>
+          <p class="mb-0">15 pasajeros</p>
+        </div>
+      </div>
     </div>
   </div>
+  
+  
+
 
 
   <div>
@@ -521,9 +554,8 @@
 
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

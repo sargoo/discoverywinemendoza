@@ -15,6 +15,62 @@
 </head>
 
 <body>
+  <style>
+    .number {
+      font-size: 3.5rem;
+      /* Reducido de 4rem a 3.5rem */
+      font-weight: bold;
+      color: #be0048;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .icon-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      /* Reducido de 1.5rem a 1rem */
+      min-height: 100px;
+    }
+
+    .title-container {
+      width: 100%;
+      text-align: center;
+      min-height: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .display-1 {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .number {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .display-1 {
+        font-size: 3.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      .number {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary montserrat-uniquifier">
     <div class="container-fluid">
       <!-- Botón de menú hamburguesa -->
@@ -149,279 +205,352 @@
   </div>
 
 
-  <div class="d-flex justify-content-center align-items-center "
-    style="max-height: 100%; max-width: 100%; object-fit: contain;">
-    <img src="/static/img/pasos.png" class="img-fluid" style="max-width: 80%;">
-  </div>
+  <div class="container-fluid py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8"> <!-- Agregado contenedor para limitar el ancho -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
 
-  <h2 class="montserrat-uniquifier h2-tours" id="seccion-1" class="anchor">CONOCÉ MAS SOBRE MENDOZA</h2>
-  <h3 class="montserrat-uniquifier h3-tours">Combinalo con estos otros tours</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <a href="/templates/maipu.html">
-          <div class="card">
-            <img src="/static/img/01_tour_maipu.jpg" class="card-img-top" alt="Tour de Bodegas Maipú">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour de Bodegas Maipú</h5>
+          <!-- Step 1 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start"> <!-- Cambiado a align-items-start -->
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">1</span>
+              </div>
+              <div class="text-center w-100"> <!-- Contenido centrado pero número a la izquierda -->
+                <div class="mb-3">
+                  <img src="/static/img/reception-bell.png" alt="Hotel" class="img-fluid" style="width: 60px;">
+                </div>
+                <div class="title-container">
+                  <h3 class="text-uppercase mb-2" style="color: #be0048;">HOTEL<br>&nbsp;</h3>
+                </div>
+                <p class="fst-italic">el chofer lo buscará<br>a la hora pactada</p>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/valle_de_uco.html">
-          <div class="card">
-            <img src="/static/img/02_tour_valle_de_uco.jpg" class="card-img-top" alt="Tour Bodegas Valle de Uco">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour Bodegas Valle de Uco</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/lujan_de_cuyo.html">
-          <div class="card">
-            <img src="/static/img/03_tour_lujan_cuyo.jpg" class="card-img-top" alt="Tour Bodegas Lujan de Cuyo">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour Bodegas Lujan de Cuyo</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/city_tour.html">
-          <div class="card">
-            <img src="/static/img/04_tour_city.jpg" class="card-img-top" alt="City Tour">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">City Tour</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/alta_montana.html">
-          <div class="card">
-            <img src="/static/img/05_tour_alta_montana.jpg" class="card-img-top" alt="Tour Alta Montaña">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour Alta Montaña</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/4x4_experience.html">
-          <div class="card">
-            <img src="/static/img/06_tour_4x4_exp.jpg" class="card-img-top" alt="Tour 4x4">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Tour 4x4</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/cooking_class.html">
-          <div class="card">
-            <img src="/static/img/07_cooking_class.jpg" class="card-img-top" alt="Cooking Class">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Cooking Class</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="/templates/blending_experience.html">
-          <div class="card">
-            <img src="/static/img/08_blending_exp.jpg" class="card-img-top" alt="Blending Experience">
-            <div class="card-img-overlay">
-              <h5 class="card-title text-white">Blending Experience</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <div class="position-relative mb-0" style="width: 100%; height: 100vh;">
-    <img src="/static/img/blur-maipu.jpg" id="background-img" alt="">
-    <!-- Contenedor del texto centrado a la derecha -->
-    <div class="position-absolute"
-      style="top: 40%; right: 0; transform: translateY(-50%); text-align: right; padding-right: 2rem;">
-      <h2 class="montserrat-uniquifier text-white fw-bold" style="text-align: left;">
-        <div>EXPERIENCIAS <br>ÚNICAS</div>
-      </h2>
-      <div class="position-absolute" style=" transform: translateY(-50%); text-align: right; padding-right: 2rem;">
-        <h5 class="text-white fst-italic">Maipú, Mendoza</h5>
+          <!-- Step 2 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start">
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">2</span>
+              </div>
+              <div class="text-center w-100">
+                <div class="mb-3">
+                  <img src="/static/img/v&d.png" alt="Visita y Degustación" class="img-fluid" style="width: 120px;">
+                </div>
+                <h3 class="text-uppercase mb-2" style="color: #be0048;">VISITA Y<br>DEGUSTACIÓN</h3>
+                <p class="fst-italic">en la bodega<br>previamente acordada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start">
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">3</span>
+              </div>
+              <div class="text-center w-100">
+                <div class="mb-3">
+                  <img src="/static/img/v&d.png" alt="Visita y Degustación" class="img-fluid" style="width: 120px;">
+                </div>
+                <h3 class="text-uppercase mb-2" style="color: #be0048;">VISITA Y<br>DEGUSTACIÓN</h3>
+                <p class="fst-italic">en la bodega<br>previamente acordada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col">
+            <div class="d-flex flex-column align-items-start">
+              <div class="position-relative mb-4">
+                <span class="display-1 fw-bold number" style="color: #be0048;">4</span>
+              </div>
+              <div class="text-center w-100">
+                <div class="mb-3">
+                  <img src="/static/img/almuerzo.png" alt="Almuerzo y Degustación" class="img-fluid"
+                    style="width: 60px;">
+                </div>
+                <h3 class="text-uppercase mb-2" style="color: #be0048;">ALMUERZO Y<br> DEGUSTACIÓN</h3>
+                <p class="fst-italic">en la bodega<br>previamente acordada</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
 
-  <!-- whatsapp -->
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
-  <footer class=" footer-2 text-white py-4">
+
+    <h2 class="montserrat-uniquifier h2-tours" id="seccion-1" class="anchor">CONOCÉ MAS SOBRE MENDOZA</h2>
+    <h3 class="montserrat-uniquifier h3-tours">Combinalo con estos otros tours</h3>
     <div class="container">
       <div class="row">
-        <!-- Columna 1: Información de contacto -->
-        <div class="col-md-4">
-          <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
-          <ul class="list-unstyled">
-            <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
-              medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
-              reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
-              individuales.</li>
-          </ul>
+        <div class="col-md-3">
+          <a href="/templates/maipu.html">
+            <div class="card">
+              <img src="/static/img/01_tour_maipu.jpg" class="card-img-top" alt="Tour de Bodegas Maipú">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour de Bodegas Maipú</h5>
+              </div>
+            </div>
+          </a>
         </div>
-        <!-- Columna 2: Enlaces útiles -->
-        <div class="col-md-4">
-          <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
-          <div class="d-flex justify-content-between">
+        <div class="col-md-3">
+          <a href="/templates/valle_de_uco.html">
+            <div class="card">
+              <img src="/static/img/02_tour_valle_de_uco.jpg" class="card-img-top" alt="Tour Bodegas Valle de Uco">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour Bodegas Valle de Uco</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/templates/lujan_de_cuyo.html">
+            <div class="card">
+              <img src="/static/img/03_tour_lujan_cuyo.jpg" class="card-img-top" alt="Tour Bodegas Lujan de Cuyo">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour Bodegas Lujan de Cuyo</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/templates/city_tour.html">
+            <div class="card">
+              <img src="/static/img/04_tour_city.jpg" class="card-img-top" alt="City Tour">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">City Tour</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/templates/alta_montana.html">
+            <div class="card">
+              <img src="/static/img/05_tour_alta_montana.jpg" class="card-img-top" alt="Tour Alta Montaña">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour Alta Montaña</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/templates/4x4_experience.html">
+            <div class="card">
+              <img src="/static/img/06_tour_4x4_exp.jpg" class="card-img-top" alt="Tour 4x4">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Tour 4x4</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/templates/cooking_class.html">
+            <div class="card">
+              <img src="/static/img/07_cooking_class.jpg" class="card-img-top" alt="Cooking Class">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Cooking Class</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/templates/blending_experience.html">
+            <div class="card">
+              <img src="/static/img/08_blending_exp.jpg" class="card-img-top" alt="Blending Experience">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-white">Blending Experience</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative mb-0" style="width: 100%; height: 100vh;">
+      <img src="/static/img/blur-maipu.jpg" id="background-img" alt="">
+      <!-- Contenedor del texto centrado a la derecha -->
+      <div class="position-absolute"
+        style="top: 40%; right: 0; transform: translateY(-50%); text-align: right; padding-right: 2rem;">
+        <h2 class="montserrat-uniquifier text-white fw-bold" style="text-align: left;">
+          <div>EXPERIENCIAS <br>ÚNICAS</div>
+        </h2>
+        <div class="position-absolute" style=" transform: translateY(-50%); text-align: right; padding-right: 2rem;">
+          <h5 class="text-white fst-italic">Maipú, Mendoza</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- whatsapp -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+    <footer class=" footer-2 text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1: Información de contacto -->
+          <div class="col-md-4">
+            <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
             <ul class="list-unstyled">
-              <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
-              <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
-              <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
-              <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
-            </ul>
-            <ul class="list-unstyled">
-              <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
-              <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
-              <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
-              <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
+              <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
+                medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
+                reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
+                individuales.</li>
             </ul>
           </div>
-        </div>
+          <!-- Columna 2: Enlaces útiles -->
+          <div class="col-md-4">
+            <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
+            <div class="d-flex justify-content-between">
+              <ul class="list-unstyled">
+                <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+                <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+                <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
+                <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
+                <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
+                <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
+                <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
+              </ul>
+            </div>
+          </div>
 
-        <!-- Columna 3: Redes sociales -->
-        <div class="col-md-4">
-          <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
-          <div class="d-flex justify-content-center">
-            <ul class="list-unstyled">
-              <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
-              <li><a
-                  href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-                  class="text-reset">Opiniones</a></li>
-              <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
-              <li><a href="#" class="text-reset">Envíanos un correo</a></li>
-            </ul>
+          <!-- Columna 3: Redes sociales -->
+          <div class="col-md-4">
+            <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
+            <div class="d-flex justify-content-center">
+              <ul class="list-unstyled">
+                <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
+                <li><a
+                    href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+                    class="text-reset">Opiniones</a></li>
+                <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
+                <li><a href="#" class="text-reset">Envíanos un correo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
+          <img src="/static/img/facebook-favicon.png" alt="facebook">
+        </a>
+        <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+          target="_blank">
+          <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
+        </a>
+        <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
+          <img src="/static/img/instagram-favicon.png" alt="instagram">
+        </a>
+      </div>
+      <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Encabezado del modal -->
+          <div class="modal-header">
+            <h5 class="modal-title montserrat-uniquifier" id="reservationModalLabel">RESERVAR TOUR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Cuerpo del modal con el formulario -->
+          <div class="modal-body">
+            <form id="reservationForm" action="https://formsubmit.co/d303fee054e5cb714e495217bddd9bfc" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                <label for="lastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresa tu apellido"
+                  required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label" required>Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo"
+                  required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="guests" class="form-label">Cantidad de Personas</label>
+                <input type="number" class="form-control" id="guests" name="guests" placeholder="Número de personas"
+                  required>
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label">Fecha del Tour</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+
+              <!-- Lista de tours -->
+              <div class="mb-3">
+                <label class="form-label">Seleccione sus tours</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Maipú" value="Maipu" id="tourMaipu">
+                  <label class="form-check-label" for="tourMaipu">Maipú</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Valle de Uco" value="Valle de Uco"
+                    id="tourValleUco">
+                  <label class="form-check-label" for="tourValleUco">Valle de Uco</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Luján de Cuyo" value="Lujan de Cuyo"
+                    id="tourLujan">
+                  <label class="form-check-label" for="tourLujan">Luján de Cuyo</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="City Tour" value="City Tour" id="tourCity">
+                  <label class="form-check-label" for="tourCity">City Tour</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Alta Montaña" value="Alta Montaña"
+                    id="tourAltaMontana">
+                  <label class="form-check-label" for="tourAltaMontana">Alta Montaña</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="4x4 Experience" value="4x4 Experience"
+                    id="tour4x4">
+                  <label class="form-check-label" for="tour4x4">4x4 Experience</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Cooking Class" value="Cooking Class"
+                    id="tourCooking">
+                  <label class="form-check-label" for="tourCooking">Cooking Class</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Blending Experience" value="Blending Experience"
+                    id="tourBlending">
+                  <label class="form-check-label" for="tourBlending">Blending Experience</label>
+                </div>
+              </div>
+
+              <!-- Botones -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-warning">Enviar Reserva</button>
+              </div>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/valle_de_uco.html">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center mt-3">
-      <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
-        <img src="/static/img/facebook-favicon.png" alt="facebook">
-      </a>
-      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-        target="_blank">
-        <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
-      </a>
-      <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
-        <img src="/static/img/instagram-favicon.png" alt="instagram">
-      </a>
-    </div>
-    <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
-  </footer>
-
-  <!-- bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="/js/app.js"></script>
-  <!-- Modal -->
-  <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Encabezado del modal -->
-        <div class="modal-header">
-          <h5 class="modal-title montserrat-uniquifier" id="reservationModalLabel">RESERVAR TOUR</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- Cuerpo del modal con el formulario -->
-        <div class="modal-body">
-          <form id="reservationForm" action="https://formsubmit.co/d303fee054e5cb714e495217bddd9bfc" method="POST">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
-              <label for="lastName" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresa tu apellido"
-                required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label" required>Correo Electrónico</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Teléfono</label>
-              <input type="text" class="form-control" id="phone" name="phone" required>
-            </div>
-            <div class="mb-3">
-              <label for="guests" class="form-label">Cantidad de Personas</label>
-              <input type="number" class="form-control" id="guests" name="guests" placeholder="Número de personas"
-                required>
-            </div>
-            <div class="mb-3">
-              <label for="date" class="form-label">Fecha del Tour</label>
-              <input type="date" class="form-control" id="date" name="date" required>
-            </div>
-
-            <!-- Lista de tours -->
-            <div class="mb-3">
-              <label class="form-label">Seleccione sus tours</label>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="Maipú" value="Maipu" id="tourMaipu">
-                <label class="form-check-label" for="tourMaipu">Maipú</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="Valle de Uco" value="Valle de Uco"
-                  id="tourValleUco">
-                <label class="form-check-label" for="tourValleUco">Valle de Uco</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="Luján de Cuyo" value="Lujan de Cuyo"
-                  id="tourLujan">
-                <label class="form-check-label" for="tourLujan">Luján de Cuyo</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="City Tour" value="City Tour" id="tourCity">
-                <label class="form-check-label" for="tourCity">City Tour</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="Alta Montaña" value="Alta Montaña"
-                  id="tourAltaMontana">
-                <label class="form-check-label" for="tourAltaMontana">Alta Montaña</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="4x4 Experience" value="4x4 Experience"
-                  id="tour4x4">
-                <label class="form-check-label" for="tour4x4">4x4 Experience</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="Cooking Class" value="Cooking Class"
-                  id="tourCooking">
-                <label class="form-check-label" for="tourCooking">Cooking Class</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="Blending Experience" value="Blending Experience"
-                  id="tourBlending">
-                <label class="form-check-label" for="tourBlending">Blending Experience</label>
-              </div>
-            </div>
-
-            <!-- Botones -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-warning">Enviar Reserva</button>
-            </div>
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/valle_de_uco.html">
-            <input type="hidden" name="_captcha" value="false">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>
