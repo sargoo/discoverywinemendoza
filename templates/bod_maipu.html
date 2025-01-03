@@ -57,145 +57,143 @@
       </div>
     </div>
   </nav>
-  <header class="position-relative" style="height: auto; max-height: 60vh; overflow: hidden;">
-    <img src="/static/img/01_banner_bodegas.jpg" 
-         id="background-img"
-         alt="grupo de personas disfrutando del tour de bodegas en Mendoza" 
-         class="w-100 d-flex-bodegas"
-         style="object-fit: cover;">
-    
-    <div class="position-absolute top-50 start-50 translate-middle text-center">
-        <h2 class="montserrat-uniquifier mb-3">
-            <span class=" bg-opacity-50 text-white px-3 py-2 rounded">BODEGAS MAS POPULARES</span>
-        </h2>
-        <div class=" bg-opacity-50 text-white p-2 rounded">
-            <h5 class="fst-italic mb-1">Eche un vistazo a las bodegas de moda</h5>
-            <h5 class="fst-italic mb-0">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
-        </div>
-    </div>
+  <!-- Header responsive -->
+<header class="position-relative" style="height: 50vh; min-height: 300px; max-height: 600px; overflow: hidden;">
+  <img src="/static/img/01_banner_bodegas.jpg" 
+       id="background-img"
+       alt="grupo de personas disfrutando del tour de bodegas en Mendoza" 
+       class="w-100 h-100 d-flex-bodegas"
+       style="object-fit: cover;">
+  
+  <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+      <h2 class="montserrat-uniquifier mb-3">
+          <span class=" bg-opacity-50 text-white px-3 py-2 rounded d-inline-block">
+              BODEGAS MAS POPULARES
+          </span>
+      </h2>
+      <div class=" bg-opacity-50 text-white p-2 rounded mx-auto" style="max-width: 600px;">
+          <h5 class="fst-italic mb-1 fs-6 fs-md-5">Eche un vistazo a las bodegas de moda</h5>
+          <h5 class="fst-italic mb-0 fs-6 fs-md-5">en Maipu, Valle de Uco y Lujan de Cuyo</h5>
+      </div>
+  </div>
 </header>
 
-<nav class="container-fluid py-3" style="background-color: white; position: relative; z-index: 10;">
-    <div class="d-flex flex-wrap gap-3 justify-content-center">
-        <!-- Valle de Uco -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5 ">
-            <a href="/templates/bodegas.html" class="text-decoration-none">
-                <span class="badge text-bg-light montserrat-uniquifier px-3 ">VALLE DE UCO</span>
-            </a>
-        </div>
-        <!-- Maipu -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-            <a href="/templates/bod_maipu.html" class="text-decoration-none">
-                <span class="badge text-bg-light montserrat-uniquifier px-3">MAIPU</span>
-            </a>
-        </div>
-        <!-- Lujan de Cuyo -->
-        <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
-            <a href="/templates/bod_lujan_de_cuyo.html" class="text-decoration-none">
-                <span class="badge text-bg-light montserrat-uniquifier px-3">LUJAN DE CUYO</span>
-            </a>
-        </div>
-    </div>
-</nav>
-  
-
-
+<nav class="bg-white py-3 shadow-sm" style="z-index: 1020;">
   <div class="container">
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-md-8">
-        <img class="img-fluid rounded-3" src="/static/img/07-santa-julia.png" alt="Imagen de Zuccardi">
+      <div class="d-flex flex-wrap gap-2 gap-md-3 justify-content-center">
+          <!-- Valle de Uco -->
+          <div class="d-flex align-items-center justify-content-center border border-secondary p-1 rounded-5">
+              <a href="/templates/bodegas.html" class="text-decoration-none d-flex align-items-center">
+                  <span class="badge text-bg-light montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">VALLE DE UCO</span>
+              </a>
+          </div>
+          <!-- Maipu - Active -->
+          <div class="d-flex align-items-center justify-content-center bg-dark border border-dark p-1 rounded-5">
+              <a href="/templates/bod_maipu.html" class="text-decoration-none d-flex align-items-center">
+                  <span class="badge text-white border-0 montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">MAIPU</span>
+              </a>
+          </div>
+          <!-- Lujan de Cuyo -->
+          <div class="d-flex align-items-center border border-secondary p-1 rounded-5">
+              <a href="/templates/bod_lujan_de_cuyo.html" class="text-decoration-none d-flex align-items-center">
+                  <span class="badge text-bg-light montserrat-uniquifier px-2 px-md-3 fs-7 fs-md-6">LUJAN DE CUYO</span>
+              </a>
+          </div>
       </div>
-    </div>
-  
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-md-8">
-        <img class="img-fluid rounded-3" src="/static/img/08-lopez.png" alt="Imagen de Andeluna">
-      </div>
-    </div>
-  
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-md-8">
-        <img class="img-fluid rounded-3" src="/static/img/09-trapiche.png" alt="Imagen de Salentein">
-      </div>
-    </div>
-  
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-md-8">
-        <img class="img-fluid rounded-3" src="/static/img/10-casa-vigil.png" alt="Imagen de Alfa Crux">
-      </div>
-    </div>
+  </div>
+</nav>
 
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-md-8">
-          <img class="img-fluid rounded-3" src="/static/img/06-benegas.png" alt="Imagen de La Azul">
+<!-- Contenedor principal con espaciado adecuado -->
+<div class="mb-5 pb-5">
+  <!-- Contenedor de imágenes responsive -->
+  <div class="container py-4">
+      <div class="row g-4 justify-content-center">
+          <!-- Una imagen por fila -->
+          <div class="col-12 col-sm-10 col-md-8">
+              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/07-santa-julia.png" alt="Imagen de Zuccardi">
+          </div>
+          <div class="col-12 col-sm-10 col-md-8">
+              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/08-lopez.png" alt="Imagen de Andeluna">
+          </div>
+          <div class="col-12 col-sm-10 col-md-8">
+              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/09-trapiche.png" alt="Imagen de Salentein">
+          </div>
+          <div class="col-12 col-sm-10 col-md-8">
+              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/10-casa-vigil.png" alt="Imagen de Alfa Crux">
+          </div>
+          <div class="col-12 col-sm-10 col-md-8">
+              <img class="img-fluid rounded-3 w-100" style="object-fit: cover; height: 300px;" src="/static/img/06-benegas.png" alt="Imagen de La Azul">
+          </div>
       </div>
   </div>
-  </div>
-  
-<!-- whatsapp -->
+
+<!-- Espaciador antes del widget de WhatsApp -->
+<div style="margin-bottom: 80px;"></div>
+
+<!-- WhatsApp widget -->
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
-<footer class=" footer-2 text-white py-4">
+
+<!-- Footer responsive -->
+<footer class="text-white py-4 mt-5">
   <div class="container">
-    <div class="row">
-      <!-- Columna 1: Información de contacto -->
-      <div class="col-md-4">
-        <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
-        <ul class="list-unstyled">
-          <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
-            medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
-            reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
-            individuales.</li>
-        </ul>
-      </div>
-      <!-- Columna 2: Enlaces útiles -->
-      <div class="col-md-4">
-        <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
-        <div class="d-flex justify-content-between">
-          <ul class="list-unstyled">
-            <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
-            <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
-            <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
-            <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
-          </ul>
-          <ul class="list-unstyled">
-            <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
-            <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
-            <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
-            <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
-          </ul>
-        </div>
+      <div class="row gy-4">
+          <!-- Columna 1: Información de contacto -->
+          <div class="col-12 col-md-4">
+              <h5 class="montserrat-uniquifier3 mb-3">DISCOVERY WINE</h5>
+              <p class="small">Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados "a medida" por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos individuales.</p>
+          </div>
+          
+          <!-- Columna 2: Enlaces útiles -->
+          <div class="col-12 col-md-4">
+              <h5 class="montserrat-uniquifier3 mb-3">ENCUENTRA TU TOUR</h5>
+              <div class="row">
+                  <div class="col-6">
+                      <ul class="list-unstyled">
+                          <li class="mb-2"><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+                          <li class="mb-2"><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+                          <li class="mb-2"><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
+                          <li class="mb-2"><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-6">
+                      <ul class="list-unstyled">
+                          <li class="mb-2"><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
+                          <li class="mb-2"><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
+                          <li class="mb-2"><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
+                          <li class="mb-2"><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Columna 3: Redes sociales -->
+          <div class="col-12 col-md-4">
+              <h5 class="montserrat-uniquifier3 mb-3">INFORMACIÓN Y CONTACTO</h5>
+              <ul class="list-unstyled text-center text-md-start">
+                  <li class="mb-2"><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
+                  <li class="mb-2"><a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html" class="text-reset">Opiniones</a></li>
+                  <li class="mb-2"><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
+                  <li class="mb-2"><a href="#" class="text-reset">Envíanos un correo</a></li>
+              </ul>
+          </div>
       </div>
 
-      <!-- Columna 3: Redes sociales -->
-      <div class="col-md-4">
-        <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
-        <div class="d-flex justify-content-center">
-          <ul class="list-unstyled">
-            <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
-            <li><a
-                href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-                class="text-reset">Opiniones</a></li>
-            <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
-            <li><a href="#" class="text-reset">Envíanos un correo</a></li>
-          </ul>
-        </div>
+      <!-- Redes sociales -->
+      <div class="text-center mt-4">
+          <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank" class="mx-2">
+              <img src="/static/img/facebook-favicon.png" alt="facebook" style="width: 30px; height: 30px;">
+          </a>
+          <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html" target="_blank" class="mx-2">
+              <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor" style="width: 30px; height: 30px;">
+          </a>
+          <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank" class="mx-2">
+              <img src="/static/img/instagram-favicon.png" alt="instagram" style="width: 30px; height: 30px;">
+          </a>
       </div>
-    </div>
+
+      <p class="text-center text-dark mt-4 mb-0">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
   </div>
-  <div class="text-center mt-3">
-    <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
-      <img src="/static/img/facebook-favicon.png" alt="facebook">
-    </a>
-    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-      target="_blank">
-      <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
-    </a>
-    <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
-      <img src="/static/img/instagram-favicon.png" alt="instagram">
-    </a>
-  </div>
-  <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
 </footer>
 
 <!-- bootstrap -->
