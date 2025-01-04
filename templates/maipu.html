@@ -370,8 +370,8 @@
     </div>
   </div>
 
-  <div class=" position-relative mb-0" style="width: 100%; height: 100vh;">
-    <img src="/static/img/blur-maipu.jpg" id="background-img" alt="">
+  <div class="position-relative d-flex flex-column" style="width: 100%; height: 100vh; margin: 0 0 3rem 0; padding: 0;">
+    <img src="/static/img/blur-maipu.jpg"  id="background-img" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; padding: 0;">
     <!-- Contenedor del texto centrado a la derecha -->
     <div class="position-absolute"
       style="top: 40%; right: 0; transform: translateY(-50%); text-align: right; padding-right: 2rem;">
@@ -385,10 +385,8 @@
   </div>
 
 
-  <!-- whatsapp -->
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
-  <footer class=" footer-2 text-white py-4 mt-0">
+  
+  <footer class=" footer-2 text-white py-4">
     <div class="container">
       <div class="row">
         <!-- Columna 1: Información de contacto -->
@@ -450,7 +448,8 @@
     </div>
     <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
   </footer>
-
+  <!-- whatsapp -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

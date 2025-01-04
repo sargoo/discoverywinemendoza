@@ -1,92 +1,131 @@
-
-
-.container-header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+/* Variables */
+:root {
+    --primary-color: #8b0000;
+    --text-color: #ffffff;
+    --bg-dark: #000000;
+    --bg-darker: #1a1a1a;
 }
 
-.fondo{
-    width: 100%;
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-dark);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+}
+
+.brand-logo {
+    width: 5rem;
     height: auto;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
- .copas{
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url('assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-logo {
+    max-width: 80%;
     height: auto;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
 }
 
-.textos-header{
-    color: white;
-    display: grid ;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.wine-bottle-img {
+    position: absolute;
+    height: 140%;
+    max-width: none;
+    top: -20%;
+    right: -20%;
 }
 
-h1{
-    display: grid;
+/* Alliance Section */
+.alliance {
+    background-color: var(--bg-darker);
+}
+
+.alliance h3 {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+/* Varietals Section */
+.varietals h2 {
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.varietal-card {
+    transition: transform 0.3s ease;
+}
+
+.varietal-card:hover {
+    transform: scale(1.05);
+}
+
+/* Process Section */
+.process {
+    background-color: var(--primary-color);
+}
+
+.process-card {
     text-align: center;
-    color:#be0048;
+    padding: 2rem;
 }
 
-@media (width < 400px ) {
-    .container-header{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 107px ;
-    } 
+.process-icon {
+    width: 80px;
+    margin-bottom: 1.5rem;
+}
 
-    .copas{
-        width: 100%;
-        height: auto;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 2rem;
     }
     
-    .textos-header{
-        color: black;
-        display: grid ;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .wine-bottle-img {
+        position: relative;
+        height: auto;
+        max-width: 100%;
+        top: 0;
+        right: 0;
+        margin-top: 2rem;
+    }
+    
+    .varietal-card {
+        margin-bottom: 2rem;
     }
 }
 
-@media (width < 590 ) {
-    .container-header{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 200px ;
-    } 
-
-    .copas{
-        width: 100%;
-        height: auto;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+@media (max-width: 576px) {
+    .brand-logo {
+        width: 4rem;
     }
     
-    .textos-header{
-        color: black;
-        display: grid ;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .hero-logo {
+        max-width: 90%;
     }
 }
