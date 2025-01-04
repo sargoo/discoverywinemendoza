@@ -22,7 +22,6 @@
       font-size: 3.5rem;
       line-height: 1.2;
       word-wrap: break-word;
-    
     }
 
     .subtitle-responsive {
@@ -30,29 +29,24 @@
       line-height: 1.4;
     }
 
-    /* Estilos base para el texto */
-    .text-responsive {
-      font-size: 1rem;
-      line-height: 1.4;
+    /* Estilos base para los títulos responsivos */
+    .heading-primary {
+      font-size: 1.8rem;
+      line-height: 1.3;
       text-align: center;
-      color: #000; /* Cambiado de #be0048 a #000 */
+      margin-bottom: 1.5rem;
+      padding: 0 1rem;
     }
 
-    /* Estilos para el título */
-    .title-responsive {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-
+    .heading-secondary {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
     }
 
     /* Media queries para dispositivos móviles */
-    @media (max-width: 430px) {
-      .vehiculo-img {
-        width: 50%;
-        float: left;
-      }
-    }
-
     @media (max-width: 576px) {
       .title-responsive {
         font-size: 2rem;
@@ -68,12 +62,12 @@
         float: left;
       }
 
-      .text-responsive {
-        font-size: 1.1rem;
+      .heading-primary {
+        font-size: 2rem;
       }
 
-      .title-responsive {
-        font-size: 2.25rem;
+      .heading-secondary {
+        font-size: 1.7rem;
       }
     }
 
@@ -93,14 +87,6 @@
       .vehicles-grid {
         flex-direction: row !important;
       }
-
-      .text-responsive {
-        font-size: 1.2rem;
-      }
-
-      .title-responsive {
-        font-size: 2.5rem;
-      }
     }
 
     /* Media queries para pantallas medianas */
@@ -112,27 +98,44 @@
       .subtitle-responsive {
         font-size: 1.6rem;
       }
-    }
 
-
-
-    @media (min-width: 992px) {
-      .text-responsive {
-        font-size: 1.25rem;
+      .heading-primary {
+        font-size: 2.3rem;
       }
 
-      .title-responsive {
-        font-size: 2.75rem;
+      .heading-secondary {
+        font-size: 1.9rem;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .vehiculo-img {
+        width: 50%;
+        float: left;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .heading-primary {
+        font-size: 2.6rem;
+        padding: 0 2rem;
+      }
+
+      .heading-secondary {
+        font-size: 2.1rem;
+        padding: 0 2rem;
       }
     }
 
     @media (min-width: 1200px) {
-      .text-responsive {
-        font-size: 1.3rem;
+      .heading-primary {
+        font-size: 2.8rem;
+        padding: 0 3rem;
       }
 
-      .title-responsive {
-        font-size: 3rem;
+      .heading-secondary {
+        font-size: 2.3rem;
+        padding: 0 3rem;
       }
     }
   </style>
@@ -202,20 +205,29 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="container-fluid"> <!-- Cambiado de container a container-fluid -->
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <h1 class="title-responsive text-center montserrat-uniquifier">DISCOVERY WINE MENDOZA</h1>
-        <h2 class="text-responsive montserrat-uniquifier" >Discovery Wine Mendoza™ Somos una empresa dedicada a la
-          planificación y ejecución de tours privados "a medida" por los viñedos y bodegas de Mendoza, Argentina. En el
-          corazón de una de las capitales del vino reconocidas a nivel mundial, ofrecemos experiencias personalizadas
-          que se adaptan a tus gustos individuales.</h2>
+      <div class="col-12 col-lg-11 col-xl-10"> <!-- Aumentado de col-lg-10 col-xl-8 a col-lg-11 col-xl-10 -->
+        <h1 class="heading-primary montserrat-uniquifier" id="seccion-1">
+          Conoce lo mejor de Mendoza: Tour en bodegas, alta montaña, traslados y excursiones.
+        </h1>
+  
+        <!-- El h2 mantiene su contenedor más estrecho -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <h2 class="heading-secondary montserrat-uniquifier">
+                Descubrí las experiencias únicas que ofrecemos en Mendoza
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="container-fluid py-4">
     <div class="row g-4 justify-content-center"> <!-- Agregado g-4 para espaciado uniforme -->
-      <div class="col-md-3"> <!-- Modificado para responsive -->
+      <div class="col-12 col-sm-6 col-lg-3"> <!-- Modificado para responsive -->
         <a href="/templates/maipu.html">
           <div class="card position-relative overflow-hidden">
             <img src="/static/img/01_tour_maipu.jpg" class="card-img-top zoom-effect" alt="Tour de Bodegas Maipú">
@@ -545,75 +557,77 @@
   </div>
   <!-- tripadivsor -->
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-bbf17d2b-c5f7-414f-90bc-17ee5093933f" data-elfsight-app-lazy></div>
+  <div class="elfsight-app-c961e7b8-727c-474d-9e83-70c107fa4a36" id="montserrat-uniquifier" data-elfsight-app-lazy>
+  </div>
   <!-- instagram -->
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
   <div class="elfsight-app-bd739fa8-2f61-438f-9b4c-b1a1f3b7259e" data-elfsight-app-lazy></div>
   <!-- whatsapp -->
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-fcce12e7-cd01-4ae5-be2e-6d15acfe3057" data-elfsight-app-lazy></div>
-  <footer class=" footer-2 text-white py-4">
-    <div class="container">
-      <div class="row">
-        <!-- Columna 1: Información de contacto -->
-        <div class="col-md-4">
-          <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
+  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+<!-- Footer responsive -->
+<footer class=" footer-2 text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1: Información de contacto -->
+      <div class="col-md-4">
+        <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
+        <ul class="list-unstyled">
+          <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
+            medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
+            reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
+            individuales.</li>
+        </ul>
+      </div>
+      <!-- Columna 2: Enlaces útiles -->
+      <div class="col-md-4">
+        <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
+        <div class="d-flex justify-content-between">
           <ul class="list-unstyled">
-            <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
-              medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
-              reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
-              individuales.</li>
+            <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+            <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+            <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
+            <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
+            <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
+            <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
+            <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
           </ul>
         </div>
-        <!-- Columna 2: Enlaces útiles -->
-        <div class="col-md-4">
-          <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
-          <div class="d-flex justify-content-between">
-            <ul class="list-unstyled">
-              <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
-              <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
-              <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
-              <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
-            </ul>
-            <ul class="list-unstyled">
-              <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
-              <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
-              <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
-              <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
-            </ul>
-          </div>
-        </div>
+      </div>
 
-        <!-- Columna 3: Redes sociales -->
-        <div class="col-md-4">
-          <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
-          <div class="d-flex justify-content-center">
-            <ul class="list-unstyled">
-              <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
-              <li><a
-                  href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-                  class="text-reset">Opiniones</a></li>
-              <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
-              <li><a href="#" class="text-reset">Envíanos un correo</a></li>
-            </ul>
-          </div>
+      <!-- Columna 3: Redes sociales -->
+      <div class="col-md-4">
+        <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
+        <div class="d-flex justify-content-center">
+          <ul class="list-unstyled">
+            <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
+            <li><a
+                href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+                class="text-reset">Opiniones</a></li>
+            <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
+            <li><a href="#" class="text-reset">Envíanos un correo</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="text-center mt-3">
-      <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
-        <img src="/static/img/facebook-favicon.png" alt="facebook">
-      </a>
-      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-        target="_blank">
-        <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
-      </a>
-      <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
-        <img src="/static/img/instagram-favicon.png" alt="instagram">
-      </a>
-    </div>
-    <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
-  </footer>
+  </div>
+  <div class="text-center mt-3">
+    <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
+      <img src="/static/img/facebook-favicon.png" alt="facebook">
+    </a>
+    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+      target="_blank">
+      <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
+    </a>
+    <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
+      <img src="/static/img/instagram-favicon.png" alt="instagram">
+    </a>
+  </div>
+  <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
+</footer>
 
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

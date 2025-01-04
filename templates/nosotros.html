@@ -15,6 +15,77 @@
 </head>
 
 <body>
+
+  <style>
+    .profile-section {
+      position: relative;
+      margin-bottom: 4rem;
+    }
+
+    .content-box {
+      background-color: #be0048;
+      color: white;
+      padding: 0.9rem;
+      border-radius: 15px;
+      width: 85%;
+      margin: 3rem auto;
+      min-height: 250px;
+    }
+
+    .profile-image {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .profile-image-right {
+      right: 5%;
+    }
+
+    .profile-image-left {
+      left: 5%;
+    }
+
+   /* Media queries para móvil */
+@media (max-width: 768px) {
+  .profile-section {
+    margin-bottom: 2rem;
+    padding-top: 180px; /* Espacio para la imagen */
+  }
+
+  .content-box {
+    width: 100%;
+    margin: 0;
+    min-height: auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  .profile-image-right,
+  .profile-image-left {
+    right: auto;
+  }
+
+  /* Ajustes para el offset en móvil */
+  .offset-md-4 {
+    margin-left: 0;
+  }
+}
+  </style>
+
   <nav class="navbar navbar-expand-lg bg-black navbar-dark montserrat-uniquifier">
     <div class="container-fluid">
       <!-- Botón de menú hamburguesa -->
@@ -23,17 +94,17 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <!-- Logo centrado en móvil -->
       <a href="/index.html" class="navbar-brand mx-auto d-lg-none">
         <img class="brand-logo" src="/static/img/BASE.png" alt="Logo">
       </a>
-  
+
       <!-- Logo para desktop -->
       <a href="/index.html" class="d-none d-lg-block ps-3 position-absolute start-0 top-50 translate-middle-y">
         <img class="brand-logo" src="/static/img/BASE.png" alt="Logo">
       </a>
-  
+
       <!-- Menú centrado -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
@@ -52,31 +123,37 @@
           <li class="nav-item">
             <a class="nav-link" href="/templates/blogs.html">Blogs</a>
           </li>
-          
+
         </ul>
       </div>
     </div>
   </nav>
-  
 
-  
+
+
   <header class="position-relative mb-5" style="height: 100vh; overflow: hidden;">
     <!-- Imagen de fondo -->
-    <img src="/static/img/02_bg_completo.jpg" alt="Fondo" class="w-100 h-100 position-absolute" style="object-fit: cover; z-index: -1;">
-  
+    <img src="/static/img/02_bg_completo.jpg" alt="Fondo" class="w-100 h-100 position-absolute"
+      style="object-fit: cover; z-index: -1;">
+
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <!-- Columna izquierda: Imagen -->
         <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <img src="/static/img/01_intro.png" alt="Copas" class="img-fluid" 
+          <img src="/static/img/01_intro.png" alt="Copas" class="img-fluid"
             style="max-width: 85vw; max-height: 100vh; object-fit: contain;">
         </div>
-        
+
         <!-- Columna derecha: Texto -->
         <div class="col-md-6 text-white text-start">
-          <p>Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y viñedos de Mendoza, una de las capitales mundiales del vino.</p>
-          <p>Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la región y date el gusto de probar los más exquisitos varietales, acompañados de deliciosas comidas gourmet y regionales.</p>
-          <p>Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está preparado para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo logístico listo para cumplir las demandas más exigentes.</p>
+          <p>Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y viñedos de
+            Mendoza, una de las capitales mundiales del vino.</p>
+          <p>Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la región y
+            date el gusto de probar los más exquisitos varietales, acompañados de deliciosas comidas gourmet y
+            regionales.</p>
+          <p>Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está preparado
+            para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo logístico listo para
+            cumplir las demandas más exigentes.</p>
         </div>
       </div>
     </div>
@@ -85,158 +162,151 @@
   <h1 class="staff fw-bold">STAFF</h1>
   <h3 class="text-center mb-5">Conoce a lequipo detrás de las mejores experiencias turisticas de Mendoza</h3>
 
-  <div class="tour-info container " style="max-width: 70vw; max-height: 60vh; margin: 0 auto; position: relative;">
-    <div class="row align-items-center ">
-      <!-- Columna del texto -->
-      <div class="col-md-7 text-start">
-        <h2 class="montserrat-uniquifier">HUGO LARICCHIA</h2>
-        <h4 class="fst-italic">FUNDADOR</h4>
-        <p class="mt-4">
-          Su conocimiento sobre vinos mendocinos es propio de un apasionado; su experiencia laboral le permitió dotar a
-          este proyecto de un nivel de profesionalismo pocas veces visto y su amor por Mendoza lo llevó a participar en
-          la política local liderando listas en las elecciones.
-        </p>
-        <p class="fst-italic">
-          Fue una irrupción meteórica desde el sector privado a la política tradicional.
-        </p>
-      </div>
-      <!-- Columna de la imagen -->
-      <div class="col-md-5 text-center">
-        <img src="/static/img/hugo.png" alt="Hugo Laricchia" class="img-fluid" style="position: absolute; top: 0; right: -20px; transform: translateY(-5%); width: 30%;">
-      </div>
-    </div>
-  </div>
-  
-  
-  
-
-  <div class="tour-info container  mt-5 " style="max-width: 70vw; max-height: 50vh; margin: 0 auto; position: relative;">
-    <div class="row align-items-center ">
-      <!-- Contenedor de la imagen -->
-      <div class="col-md-5 text-center">
-        <div class="col-md-5 text-center">
-          <img src="/static/img/nico.png" alt="Nicolás Laricchia" class="img-fluid mb-5" style="position: absolute; top: 0; left: 35px; transform: translateY(-5%); width: 40%;">
-        </div>
-      </div>
-      <!-- Contenedor del texto -->
-      <div class="col-md-5 text-center text-md-start order-1 order-md-2">
-        <h2 class="montserrat-uniquifier">NICOLAS LARICCHIA</h2>
-        <h4 class="fst-italic">RRPP Y ADMINISTRACIÓN</h4>
-        <p class="mt-4">
-          Durante varios años, exploró y vivió en diversos países, enriqueciendo su perspectiva y adquieriendo
-          conocimientos. Ahora, emocionado, regresa a Mendoza con la intención de compartir su profunda pasión por el
-          vino a través de encuentros en los viñedos.
-        </p>
-        <p class="fst-italic">
-          Comprometido con su comunidad, contribuye al avance de la cultura del vino fusionando la tradición local con
-          una visión contemporánea y diversa.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tour-info container mt-5 mb-5" style="max-width: 70vw; max-height: 60vh; margin: 0 auto; position: relative;">
-    <div class="row align-items-center ">
-      <!-- Contenedor del texto -->
-      <div class="col-md-7 text-start">
-        <h2 class="montserrat-uniquifier">MALENA LARICCHIA</h2>
-        <h4 class="fst-italic">LOGÍSTICA Y FINANZAS</h4>
-        <p class="mt-4">
-          Despeñó el rol de guía de turismo en una de las bodegas más destacadas de Mendoza. Alandes de Karim Mussi y
-          simultáneamente aportaba su experiencia en Discovery Wine Mendoza.
-        </p>
-        <p class="fst-italic">
-          Además de su dedicación profesional, encuentra tiempo para cultivar su faceta artística como música y
-          cantante, habiendo grabado discos y participando en eventos culturales.
-        </p>
-      </div>
-      <!-- Contenedor de la imagen -->
-      <div class="col-md-5 text-center ">
-        <div class="image-wrapper">
-          <img src="/static/img/malena.png" alt="Malena Laricchia" class="img-fluid" style="position: absolute; top: 0; right: -20px; transform: translateY(-15%); width: 35%;">
+  <!-- Hugo Section -->
+<div class="container px-4">
+  <div class="profile-section">
+    <img src="/static/img/hugo.png" alt="Hugo Laricchia" class="profile-image profile-image-right">
+    <div class="content-box">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2 class="montserrat-uniquifier text-center text-md-start">HUGO LARICCHIA</h2>
+          <h4 class="fst-italic text-center text-md-start">FUNDADOR</h4>
+          <p class="mt-4">
+            Su conocimiento sobre vinos mendocinos es propio de un apasionado; su experiencia laboral le permitió dotar a
+            este proyecto de un nivel de profesionalismo pocas veces visto y su amor por Mendoza lo llevó a participar en
+            la política local liderando listas en las elecciones.
+          </p>
+          <p class="fst-italic">
+            Fue una irrupción meteórica desde el sector privado a la política tradicional.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-
-    <h3 class="text-center ">Destras de <strong>cada servicio</strong> que ofrece Discovery Wine Mendoza, hay un <br> trabajo en equipo de <strong>gran precisión</strong>, que asegura una experiencia <br> <strong>irrepetible</strong> y de caracteristicas únicas, que las reseñas ofrecidas <br>por nuestros clientes, apoyan esta afirmacion.</h3>
-
-
-
-
-
-<!-- whatsapp -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
-<footer class=" footer-2 text-white py-4">
-  <div class="container">
-    <div class="row">
-      <!-- Columna 1: Información de contacto -->
-      <div class="col-md-4">
-        <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
-        <ul class="list-unstyled">
-          <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
-            medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
-            reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
-            individuales.</li>
-        </ul>
+  <!-- Nicolas Section -->
+  <div class="profile-section">
+    <img src="/static/img/nico.png" alt="Nicolás Laricchia" class="profile-image profile-image-left">
+    <div class="content-box">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-4">
+          <h2 class="montserrat-uniquifier text-center text-md-start">NICOLÁS LARICCHIA</h2>
+          <h4 class="fst-italic text-center text-md-start">RRPP Y ADMINISTRACIÓN</h4>
+          <p class="mt-4">
+            Durante varios años, exploró y vivió en diversos países, enriqueciendo su perspectiva y adquieriendo
+            conocimientos. Ahora, emocionado, regresa a Mendoza con la intención de compartir su profunda pasión por el
+            vino a través de encuentros en los viñedos.
+          </p>
+          <p class="fst-italic">
+            Comprometido con su comunidad, contribuye al avance de la cultura del vino fusionando la tradición local con
+            una visión contemporánea y diversa.
+          </p>
+        </div>
       </div>
-      <!-- Columna 2: Enlaces útiles -->
-      <div class="col-md-4">
-        <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
-        <div class="d-flex justify-content-between">
+    </div>
+  </div>
+
+  <!-- Malena Section -->
+  <div class="profile-section">
+    <img src="/static/img/malena.png" alt="Malena Laricchia" class="profile-image profile-image-right">
+    <div class="content-box">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2 class="montserrat-uniquifier text-center text-md-start">MALENA LARICCHIA</h2>
+          <h4 class="fst-italic text-center text-md-start">LOGÍSTICA Y FINANZAS</h4>
+          <p class="mt-4">
+            Despeñó el rol de guía de turismo en una de las bodegas más destacadas de Mendoza. Alandes de Karim Mussi y
+            simultáneamente aportaba su experiencia en Discovery Wine Mendoza.
+          </p>
+          <p class="fst-italic">
+            Además de su dedicación profesional, encuentra tiempo para cultivar su faceta artística como música y
+            cantante, habiendo grabado discos y participando en eventos culturales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <h3 class="text-center ">Destras de <strong>cada servicio</strong> que ofrece Discovery Wine Mendoza, hay un <br>
+    trabajo en equipo de <strong>gran precisión</strong>, que asegura una experiencia <br> <strong>irrepetible</strong>
+    y de caracteristicas únicas, que las reseñas ofrecidas <br>por nuestros clientes, apoyan esta afirmacion.</h3>
+
+
+
+
+
+  <!-- whatsapp -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-4ebddb3d-2d41-4b90-b9df-a2dfb21cad2c" data-elfsight-app-lazy></div>
+  <footer class=" footer text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1: Información de contacto -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">DISCOVERY WINE</h5>
           <ul class="list-unstyled">
-            <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
-            <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
-            <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
-            <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
-          </ul>
-          <ul class="list-unstyled">
-            <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
-            <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
-            <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
-            <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
+            <li>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours privados “a
+              medida” por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las capitales del vino
+              reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se adaptan a tus gustos
+              individuales.</li>
           </ul>
         </div>
-      </div>
+        <!-- Columna 2: Enlaces útiles -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">ENCUENTRA TU TOUR</h5>
+          <div class="d-flex justify-content-between">
+            <ul class="list-unstyled">
+              <li><a href="/templates/maipu.html" class="text-reset">Bodegas Maipú</a></li>
+              <li><a href="/templates/lujan_de_cuyo.html" class="text-reset">Bodegas Lujan de Cuyo</a></li>
+              <li><a href="/templates/valle_de_uco.html" class="text-reset">Bodegas Valle de Uco</a></li>
+              <li><a href="/templates/alta_montana.html" class="text-reset">Alta Montaña</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="/templates/4x4_experience.html" class="text-reset">4x4 Experience</a></li>
+              <li><a href="/templates/city_tour.html" class="text-reset">City Tour</a></li>
+              <li><a href="/templates/cooking_class.html" class="text-reset">Cooking Class</a></li>
+              <li><a href="/templates/blending_experience.html" class="text-reset">Blending Experience</a></li>
+            </ul>
+          </div>
+        </div>
 
-      <!-- Columna 3: Redes sociales -->
-      <div class="col-md-4">
-        <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
-        <div class="d-flex justify-content-center">
-          <ul class="list-unstyled">
-            <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
-            <li><a
-                href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-                class="text-reset">Opiniones</a></li>
-            <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
-            <li><a href="#" class="text-reset">Envíanos un correo</a></li>
-          </ul>
+        <!-- Columna 3: Redes sociales -->
+        <div class="col-md-4">
+          <h5 class="montserrat-uniquifier3">INFORMACIÓN Y CONTACTO</h5>
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled">
+              <li><a href="/templates/nosotros.html" class="text-reset">Por qué Discovery Wine</a></li>
+              <li><a
+                  href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+                  class="text-reset">Opiniones</a></li>
+              <li><a href="/templates/blogs.html" class="text-reset">Blog</a></li>
+              <li><a href="#" class="text-reset">Envíanos un correo</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="text-center mt-3">
-    <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
-      <img src="/static/img/facebook-favicon.png" alt="facebook">
-    </a>
-    <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
-      target="_blank">
-      <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
-    </a>
-    <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
-      <img src="/static/img/instagram-favicon.png" alt="instagram">
-    </a>
-  </div>
-  <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
-</footer>
+    <div class="text-center mt-3">
+      <a href="https://www.facebook.com/profile.php?id=61560257780554" target="_blank">
+        <img src="/static/img/facebook-favicon.png" alt="facebook">
+      </a>
+      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312781-d27117797-Reviews-Discovery_Wine_Mendoza-Mendoza_Province_of_Mendoza_Cuyo.html"
+        target="_blank">
+        <img src="/static/img/tripadvisor-favicon.png" alt="tripadvisor">
+      </a>
+      <a href="https://www.instagram.com/discoverywinemendoza?igsh=ejFwZW84N3d2NnJ5" target="_blank">
+        <img src="/static/img/instagram-favicon.png" alt="instagram">
+      </a>
+    </div>
+    <p class="text-center text-dark">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
+  </footer>
 
-<!-- bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous">
-</script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

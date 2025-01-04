@@ -1,22 +1,379 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/PRUEBASBORRAR.CSS">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Discovery Wine Mendoza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
 
-    <header class="container-header">
-        <img class="fondo" src="/static/img/02_bg_completo.jpg" alt="">
-        <img class="copas" src="/static/img/01_intro.png" alt="">
-            <p class="textos-header">Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y viñedos de Mendoza, una de las capitales mundiales del vino. <br>Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la región y date el gusto de probar los más exquisitos varietales, acompañados de deliciosas comidas gourmet y regionales. <br>Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está preparado para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo logístico listo para cumplir las demandas más exigentes.</p>
+        /* Navbar Styles */
+        .navbar {
+            background-color: black !important;
+        }
+
+        .brand-logo {
+            height: 40px;
+        }
+
+
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('02_bg_completo.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 600px;
+        }
+
+        /* Staff Section */
+        .staff-title {
+            color: #8B0000;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 4rem 0 1rem;
+        }
+
+        .staff-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 4rem;
+        }
+
+        .staff-member {
+            position: relative;
+            margin: 6rem 0;
+            padding: 2rem;
+        }
+
+        .staff-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .staff-image-right {
+            right: -50px;
+            top: -50px;
+        }
+
+        .staff-image-left {
+            left: -50px;
+            top: -50px;
+        }
+
+        .staff-info {
+            padding: 2rem;
+        }
+
+        .staff-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .staff-role {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .staff-description {
+            line-height: 1.6;
+        }
+
+        .staff-quote {
+            font-style: italic;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+
+        .staff-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .staff-card {
+            background-color: #be0048;
+            border-radius: 15px;
+            color: white;
+            padding: 40px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: visible;
+        }
+
+        .staff-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .staff-image-container {
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .footer h5 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #8B0000;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .staff-image {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto 2rem;
+            }
+
+            .staff-image-right,
+            .staff-image-left {
+                right: auto;
+                left: auto;
+                top: auto;
+            }
+
+            .staff-info {
+                text-align: center;
+            }
+
+            .staff-content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .staff-image-container {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .staff-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark montserrat-uniquifier">
+        <div class="container-fluid">
+            <!-- Botón de menú hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent-bodegas" aria-controls="navbarSupportedContent-bodegas"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Logo centrado en móvil -->
+            <a href="/index.html" class="navbar-brand mx-auto d-lg-none">
+                <img class="brand-logo" src="/static/img/BASE.png" alt="Logo">
+            </a>
+
+            <!-- Logo para desktop -->
+            <a href="/index.html" class="d-none d-lg-block ps-3 position-absolute start-0 top-50 translate-middle-y">
+                <img class="brand-logo" src="/static/img/BASE.png" alt="Logo">
+            </a>
+
+            <!-- Menú centrado -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-bodegas">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#seccion-1">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/templates/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/templates/bodegas.html">Bodegas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/templates/blogs.html">Blogs</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="position-relative" style="height: 100vh; overflow: hidden;">
+        <!-- Imagen de fondo -->
+        <img src="/static/img/02_bg_completo.jpg" alt="Fondo" class="w-100 h-100 position-absolute"
+            style="object-fit: cover; z-index: -1;">
+
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="/static/img/01_intro.png" alt="Wine Toast" class="img-fluid"
+                        style="max-width: 85vw; max-height: 100vh; object-fit: contain;">
+                </div>
+                <div class="col-md-6 text-white text-start">
+                    <p>Somos una empresa dedicada a la planificación y ejecución de tours privados por las bodegas y
+                        viñedos de Mendoza, una de las capitales mundiales del vino.</p>
+                    <p>Experimenta las mejores áreas de cultivo, procesamiento y fabricación de los mejores vinos de la
+                        región y date el gusto de probar los más exquisitos varietales, acompañados de deliciosas
+                        comidas gourmet y regionales.</p>
+                    <p>Ya sea para individuos, parejas, creadores de contenido o grupos de amigos, nuestro staff está
+                        preparado para ofrecer una experiencia inigualable en la región. Además, contamos con un equipo
+                        logístico listo para cumplir las demandas más exigentes.</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <h1>STAFF</h1>
-    <h3 class="text-center mb-5">Conoce a lequipo detrás de las mejores experiencias turisticas de Mendoza</h3>
+    <!-- Staff Section -->
+    <div class="staff-container">
+        <!-- Hugo -->
+        <div class="staff-card">
+            <div class="staff-content">
+                <div class="staff-info">
+                    <h2 class="staff-name">HUGO LARICCHIA</h2>
+                    <h4 class="staff-role">FUNDADOR</h4>
+                    <p class="staff-description">Su conocimiento sobre vinos mendocinos es propio de un apasionado; su experiencia laboral le permitió dotar a este proyecto de un nivel de profesionalismo pocas veces visto y su amor por Mendoza lo llevó a participar en la política local liderando listas en las elecciones.</p>
+                    <p class="staff-quote">Fue una irrupción meteórica desde el sector privado a la política tradicional.</p>
+                </div>
+                <div class="staff-image-container">
+                    <img src="/static/img/hugo.png" alt="Hugo Laricchia" class="staff-image">
+                </div>
+            </div>
+        </div>
     
+        <!-- Nicolas -->
+        <div class="staff-card">
+            <div class="staff-content">
+                <div class="staff-image-container" style="text-align: left;">
+                    <img src="/static/img/nico.png" alt="Nicolas Laricchia" class="staff-image">
+                </div>
+                <div class="staff-info">
+                    <h2 class="staff-name">NICOLAS LARICCHIA</h2>
+                    <h4 class="staff-role">RRPP Y ADMINISTRACIÓN</h4>
+                    <p class="staff-description">Durante varios años, exploró y vivió en diversos países, enriqueciendo su perspectiva y adquieriendo conocimientos. Ahora, emocionado, regresa a Mendoza con la intención de compartir su profunda pasión por el vino a través de encuentros en los viñedos.</p>
+                    <p class="staff-quote">Comprometido con su comunidad, contribuye al avance de la cultura del vino fusionando la tradición local con una visión contemporánea y diversa.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Malena -->
+        <div class="staff-card">
+            <div class="staff-content">
+                <div class="staff-info">
+                    <h2 class="staff-name">MALENA LARICCHIA</h2>
+                    <h4 class="staff-role">LOGÍSTICA Y FINANZAS</h4>
+                    <p class="staff-description">Despeñó el rol de guía de turismo en una de las bodegas más destacadas de Mendoza, Alandes de Karim Mussi y simultáneamente aportaba su experiencia en Discovery Wine Mendoza.</p>
+                    <p class="staff-quote">Además de su dedicación profesional, encuentra tiempo para cultivar su faceta artística como música y cantante, habiendo grabado discos y participando en eventos culturales.</p>
+                </div>
+                <div class="staff-image-container">
+                    <img src="/static/img/malena.png" alt="Malena Laricchia" class="staff-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="text-center mb-5">
+            <h3>Detrás de <strong>cada servicio</strong> que ofrece Discovery Wine Mendoza, hay un<br>
+                trabajo en equipo de <strong>gran precisión</strong>, que asegura una experiencia<br>
+                <strong>irrepetible</strong> y de características únicas, que las reseñas ofrecidas<br>
+                por nuestros clientes, apoyan esta afirmación.
+            </h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>DISCOVERY WINE</h5>
+                    <p>Discovery Wine Mendoza™ Somos una empresa dedicada a la planificación y ejecución de tours
+                        privados "a medida" por los viñedos y bodegas de Mendoza, Argentina. En el corazón de una de las
+                        capitales del vino reconocidas a nivel mundial, ofrecemos experiencias personalizadas que se
+                        adaptan a tus gustos individuales.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>ENCUENTRA TU TOUR</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Bodegas Maipú</a></li>
+                                <li><a href="#">Bodegas Lujan de Cuyo</a></li>
+                                <li><a href="#">Bodegas Valle de Uco</a></li>
+                                <li><a href="#">Alta Montaña</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">4x4 Experience</a></li>
+                                <li><a href="#">City Tour</a></li>
+                                <li><a href="#">Cooking Class</a></li>
+                                <li><a href="#">Blending Experience</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>INFORMACIÓN Y CONTACTO</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Por qué Discovery Wine</a></li>
+                        <li><a href="#">Opiniones</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Envíanos un correo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4 social-icons">
+                <a href="#"><img src="facebook-favicon.png" alt="Facebook"></a>
+                <a href="#"><img src="tripadvisor-favicon.png" alt="TripAdvisor"></a>
+                <a href="#"><img src="instagram-favicon.png" alt="Instagram"></a>
+            </div>
+            <p class="text-center mt-4">© Discovery Wine Mendoza 2024 - todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

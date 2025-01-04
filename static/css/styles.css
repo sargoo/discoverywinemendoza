@@ -83,6 +83,7 @@ body .bg-black {
 
 
 
+
 /*----------------------------------------------------------- HEADER ---------------------------------------------- */
 
 header {
@@ -145,14 +146,14 @@ c
 #background-img {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
   height: 70%;
   object-fit: cover;
-  overflow: hidden;
+
 }
 
 .blending-experience{
@@ -182,20 +183,19 @@ c
 
 /*----------------------------------------------------------- FOOTER ---------------------------------------------- */
 
-footer {
-background-color: darkgrey;
-margin-top: -13% !important;
+.footer{
+  background-color: darkgrey; 
 }
+
 
 .footer-2 {
-  background-color: darkgrey;
-  margin-top: -1% !important;
+  background-color: darkgrey; 
+  margin-top: -2rem !important; /* Ajustar según necesidad */
+  padding-top: -10rem !important;
+  position: a;
+  z-index: 1;
   }
-
-.footer-3 {
-  margin-top: 0% !important;
-
-}
+  
 
 /*----------------------------------------------------------- H1, H2, H3, ETC ---------------------------------------------- */
 
